@@ -1,4 +1,4 @@
-using NaughtyAttributes;
+﻿using NaughtyAttributes;
 using System;
 using System.Collections.Generic;
 using Unity.Properties;
@@ -237,14 +237,39 @@ public class AdventureMode : MonoBehaviour
     {
         if (visible)
         {
-            testScreenRoot.style.opacity = 1;
+            testScreenRoot.AddToClassList("Visible");
+            testScreenRoot.RemoveFromClassList("Hidden");
             testScreen.sortingOrder = 3;
         }
         else
         {
+            testScreenRoot.AddToClassList("Hidden");
+            testScreenRoot.RemoveFromClassList("Visible");
             testScreen.sortingOrder = 0;
-            testScreenRoot.style.opacity = 0;
         }
+    }
+
+    IEnumerator WaitForInputBeforeProceeding()
+    {
+        bool inBattle = true;
+        if (enemyCurrentHP == 0)
+        {
+            inBattle = false;
+            SetBattleUIVisibility(false);
+        }
+
+        float time = 0;
+        currentDirectionInput = DungeonDirection.None;
+        while (time < inputDelay)
+        {
+            time += Time.deltaTime;
+            if (currentDirectionInput != DungeonDirection.None && inBattle)
+            {
+                time = inputDelay;
+            }
+            yield return null;
+        }
+        NextQuestionOrQuiz();
     }
 
     private void NextQuestionOrQuiz()
@@ -279,11 +304,12 @@ public class AdventureMode : MonoBehaviour
             restartAction.Invoke();
             return;
         }
-        //Final boss uses a randomized question type
-        if (campaignOrder.TryPeek(out _) == false)
+
+        if (currentCategory == QuestionCategory.FinalBoss)
         {
             quizMediator.CurrentQuiz.SetQuestionType(GetRandomQuestionType(config.questionTypes));
         }
+
         quizMediator.CurrentQuiz.PrepareNextQuestion();
         SetTestVisible(true);
     }
@@ -298,10 +324,8 @@ public class AdventureMode : MonoBehaviour
 
     private void PathChoosingSequence()
     {
-        
         SetDialogueBoxText("");
         StartCoroutine(ChooseDungeonPath(null));
-        SetBattleUIVisibility(false);
     }
 
     IEnumerator ChooseDungeonPath(Action action)
@@ -323,6 +347,18 @@ public class AdventureMode : MonoBehaviour
     private List<QuestionType> GenerateQuestionTypes(List<DungeonEndPoint> endpoints)
     {
         List<QuestionType> questionLibrary = new();
+        if (campaignOrder.Count <= 1)
+        {
+            QuestionType finalBoss = new();
+            finalBoss.Title = "らすぼす";
+            finalBoss.Category = QuestionCategory.FinalBoss;
+            foreach (var endpoint in endpoints)
+            {
+                questionLibrary.Add(finalBoss);
+            }
+            return questionLibrary;
+        }
+
         questionLibrary.AddRange(config.questionTypes);
         List <QuestionType> choices = new();
 
@@ -367,28 +403,28 @@ public class AdventureMode : MonoBehaviour
         return 0;
     }
 
-    private void InitializeDirectionButtons(List<DungeonEndPoint> Endpoints, List<QuestionType> monsters)
+    private void InitializeDirectionButtons(List<DungeonEndPoint> endpoints, List<QuestionType> options)
     {
         SetDirectionButtonVisibility(false);
-        for (int i = 0; i < Endpoints.Count; i++)
+        for (int i = 0; i < endpoints.Count; i++)
         {
-            if (Endpoints[i].Direction == DungeonDirection.Left)
+            if (endpoints[i].Direction == DungeonDirection.Left)
             {
                 leftButton.AddToClassList("Visible");
                 leftButton.RemoveFromClassList("Hidden");
-                leftText = monsters[i].Title;
+                leftText = options[i].Title;
             }
-            else if (Endpoints[i].Direction == DungeonDirection.Forward)
+            else if (endpoints[i].Direction == DungeonDirection.Forward)
             {
                 centerButton.AddToClassList("Visible");
                 centerButton.RemoveFromClassList("Hidden");
-                forwardText = monsters[i].Title;
+                forwardText = options[i].Title;
             }
-            else if (Endpoints[i].Direction == DungeonDirection.Right)
+            else if (endpoints[i].Direction == DungeonDirection.Right)
             {
                 rightButton.AddToClassList("Visible");
                 rightButton.RemoveFromClassList("Hidden");
-                rightText = monsters[i].Title;
+                rightText = options[i].Title;
             }
         }
     }
@@ -399,7 +435,6 @@ public class AdventureMode : MonoBehaviour
         currentDirectionInput = direction;
     }
 
-    [Button("Debug Next Encounter", EButtonEnableMode.Playmode)]
     private void SetBattleUIVisibility(bool visibility)
     {
         if (visibility)
@@ -444,7 +479,7 @@ public class AdventureMode : MonoBehaviour
         animator.SetBool("Spawned", true);
         monsterSprite.enabled = true;
 
-        Invoke("NextQuestionOrQuiz", inputDelay);
+        StartCoroutine("WaitForInputBeforeProceeding");
     }
 
     private bool TryGenerateRandomMonster()
@@ -514,7 +549,7 @@ public class AdventureMode : MonoBehaviour
             SetDialogueBoxText($"Defeat: You have been Conjugated.");
         }
 
-        Invoke("NextQuestionOrQuiz", inputDelay);
+        StartCoroutine("WaitForInputBeforeProceeding");
     }
 
     private void OnDestroy()

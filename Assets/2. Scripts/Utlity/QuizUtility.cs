@@ -259,6 +259,19 @@ public static class QuizUtility
             return correctAnswers[0];
     }
 
+    public static (Question, Texture) GetKoSOADoQuestion(WordLists wordlist)
+    {
+        KoSoADo data = GetKoSOADo(wordlist);
+        Noun word = new();
+        Question question = new(data.Question, data.Answer, word, QuestionCategory.KoSoADo, "No Hint Implemented");
+        return (question, data.Image);
+    }
+
+    public static KoSoADo GetKoSOADo(WordLists wordlist)
+    {
+        return wordlist.KoSoADos[UnityEngine.Random.Range(0, wordlist.KoSoADos.Count)];
+    }
+
     public static Question GetExpressionQuestion(IWord word)
     {
         string questionType = "Expression Meaning";
@@ -286,7 +299,6 @@ public static class QuizUtility
             word.kanji = number.ToString();
             return new Question(questionType, NumberTranslator.GetNumberTranslation(number), word, QuestionCategory.Numbers, hint);
         }
-
     }
 
     public static Question GetVocabQuestion(ref WordLists wordlist)
@@ -294,7 +306,7 @@ public static class QuizUtility
         string questionType = "Meaning";
         string hint = "No hints are available for meaning questions";
 
-        IWord word = GetRandomWord(ref wordlist, GetRandomWordType(wordlist));
+        IWord word = GetRandomWordByType(ref wordlist, GetRandomWordType(wordlist));
         return new Question(questionType, word.Meaning, word, QuestionCategory.Vocab, hint);
     }
 
@@ -493,27 +505,38 @@ public static class QuizUtility
     public static WordType GetRandomWordType(WordLists words)
     {
         List<WordType> wordTypes = new();
+
         if (words.Adjectives.Count > 0)
         {
-            wordTypes.Add(WordType.Adjective);
+            for (int i = 0; i < words.Adjectives.Count; i++)
+            {
+                wordTypes.Add(WordType.Adjective);
+            }
         }
 
         if (words.Nouns.Count > 0)
         {
-            wordTypes.Add(WordType.Noun);
+            for (int i = 0; i < words.Nouns.Count; i++)
+            {
+                wordTypes.Add(WordType.Noun);
+            }
         }
 
         if (words.Verbs.Count > 0)
         {
-            wordTypes.Add(WordType.Verb);
+            for (int i = 0; i < words.Verbs.Count; i++)
+            {
+                wordTypes.Add(WordType.Verb);
+            }
         }
 
         if (words.Adverbs.Count > 0)
         {
-            wordTypes.Add(WordType.Adverb);
+            for (int i = 0; i < words.Adverbs.Count; i++)
+            {
+                wordTypes.Add(WordType.Adverb);
+            }
         }
-
-
 
         return wordTypes[UnityEngine.Random.Range(0, wordTypes.Count)];
     }
@@ -526,10 +549,10 @@ public static class QuizUtility
         answers.Add(example.Answer);
         Noun fakeWord = new Noun(example.Question, "", answers);
 
-        return new Question(example.Hint, answers, fakeWord, QuestionCategory.Grammer, example.Translation);
+        return new Question(example.Hint, answers, fakeWord, QuestionCategory.Grammar, example.Translation);
     }
 
-    public static IWord GetRandomWord(ref WordLists words, WordType wordtype)
+    public static IWord GetRandomWordByType(ref WordLists words, WordType wordtype)
     {
         IWord word = null;
         int index = 0;

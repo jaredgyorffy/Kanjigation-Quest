@@ -16,3 +16,52 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3b12034fa6c333c439d2326554d037c5, type: 2}
   - {fileID: 11400000, guid: 990c302f43b4e2541be4d27fc4f13887, type: 2}
   - {fileID: 11400000, guid: e5cb4208d715ec142880aebc26ba4b9e, type: 2}
+  <KoSoDoAs>k__BackingField:
+  - Question: "\uFF3F\uFF3F\uFF3F\u308A\u3093\u3054\u306F\u304A\u3044\u3057\u3044\u3067\u3059\u304B"
+    Image: {fileID: 2800000, guid: f724752ad573e5d49a6db7becaa3a096, type: 3}
+    Answer:
+    - "\u3042\u306E"
+  - Question: "\uFF3F\uFF3F\uFF3F\u306F\u308A\u3093\u3054\u3067\u3059\u3002"
+    Image: {fileID: 2800000, guid: 28e4acae217be8349be5761fe107537c, type: 3}
+    Answer:
+    - "\u3042\u308C"
+  - Question: "\uFF3F\uFF3F\uFF3F\u3002"
+    Image: {fileID: 2800000, guid: 97dc2e52227882b458ef3c5b31f1e62a, type: 3}
+    Answer:
+    - "\u3042\u305D\u3053"
+  - Question: "\uFF3F\uFF3F\uFF3F\u3002"
+    Image: {fileID: 2800000, guid: 754c45ca6155216478d8f5128fc36902, type: 3}
+    Answer:
+    - "\u3069\u3053"
+  - Question: "\uFF3F\uFF3F\uFF3F\u308A\u3093\u3054\u304C\u3059\u304D\u3067\u3059\u304B"
+    Image: {fileID: 2800000, guid: 3c7c3d599f6bc99408781ccd0c211823, type: 3}
+    Answer:
+    - "\u3069\u306E"
+  - Question: "\uFF3F\uFF3F\uFF3F\u304C\u308A\u3093\u3054\u3067\u3059\u304B"
+    Image: {fileID: 2800000, guid: 35f3db1eec45fed4bbe4f49ff4bf5b87, type: 3}
+    Answer:
+    - "\u3069\u308C"
+  - Question: "\uFF3F\uFF3F\uFF3F\u3002"
+    Image: {fileID: 2800000, guid: d989abd6713fab44bb4c3698e3ba6295, type: 3}
+    Answer:
+    - "\u3053\u3053"
+  - Question: "\uFF3F\uFF3F\uFF3F\u308A\u3093\u3054\u306F\u304A\u3044\u3057\u3044\u3067\u3059\u3046"
+    Image: {fileID: 2800000, guid: 6c78e15e9f13620419e4da74018052d4, type: 3}
+    Answer:
+    - "\u3053\u306E"
+  - Question: "\uFF3F\uFF3F\uFF3F\u306F\u308A\u3093\u3054\u304A\u3067\u3059"
+    Image: {fileID: 2800000, guid: ceeace879f8a7b749be04b31098e3870, type: 3}
+    Answer:
+    - "\u3053\u308C"
+  - Question: "\uFF3F\uFF3F\uFF3F\u3002"
+    Image: {fileID: 2800000, guid: 94898f1be51ec8042bb6e6ac2aff7b52, type: 3}
+    Answer:
+    - "\u305D\u3053"
+  - Question: "\uFF3F\uFF3F\uFF3F\u308A\u3093\u3054\u306F\u304A\u3044\u3057\u3044\u3067\u3059\u304B"
+    Image: {fileID: 2800000, guid: 6254c6b81d3a0974aa120c9e28122fdf, type: 3}
+    Answer:
+    - "\u305D\u306E"
+  - Question: "\uFF3F\uFF3F\uFF3F\u306F\u308A\u3093\u3054\u3067\u3059"
+    Image: {fileID: 2800000, guid: 388799b4ba4641f4686a46e421d4dbb7, type: 3}
+    Answer:
+    - "\u305D\u308C"

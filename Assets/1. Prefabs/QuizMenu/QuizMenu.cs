@@ -16,6 +16,11 @@ public class QuizMenu : MonoBehaviour
     private VisualElement informationBox;
     private VisualElement number;
 
+    private VisualElement QuestionTextElement;
+    private VisualElement QuestionImageElement;
+
+
+
     [CreateProperty] public string PreviousAnswer => informationText;
     private string informationText;
 
@@ -24,6 +29,8 @@ public class QuizMenu : MonoBehaviour
 
     [CreateProperty] public string CurrentKana => currentKana;
     private string currentKana;
+
+    private Texture questionImage;
     [CreateProperty] public string QuestionType => question;
     private string question;
 
@@ -51,7 +58,8 @@ public class QuizMenu : MonoBehaviour
         submitButton = quizMenuRoot.MQ<Button>("Submit");
         submitButton.clicked += OnPressSubmit;
         number = quizMenuRoot.MQ<VisualElement>("Number");
-
+        QuestionTextElement = quizMenuRoot.MQ<VisualElement>("QuestionText");
+        QuestionImageElement = quizMenuRoot.MQ<VisualElement>("QuestionImage");
         hintButton = quizMenuRoot.MQ<Button>("Hint");
         hintButton.clicked += ToggleHint;
 
@@ -163,6 +171,7 @@ public class QuizMenu : MonoBehaviour
 
     public void SetKana(string kana, string Kanji)
     {
+        SetKanaVisibility(true);
         if (string.IsNullOrEmpty(Kanji))
         {
             currentKanji = kana;
@@ -172,6 +181,41 @@ public class QuizMenu : MonoBehaviour
         {
             currentKanji = Kanji;
             currentKana = kana;
+        }
+    }
+
+    private void SetKanaVisibility(bool visible)
+    {
+        if (visible)
+        {
+            QuestionTextElement.style.display = DisplayStyle.Flex;
+            SetImageVisibility(false);
+        }
+        else
+        {
+            QuestionTextElement.style.display = DisplayStyle.None;
+        }
+    }
+
+    public void SetQuestionImage(Texture image)
+    {
+        SetImageVisibility(true);
+        questionImage = image;
+        Background background = new();
+        background.texture = (Texture2D)questionImage;
+        QuestionImageElement.style.backgroundImage = background;
+    }
+
+    private void SetImageVisibility(bool visible)
+    {
+        if (visible)
+        {
+            SetKanaVisibility(false);
+            QuestionImageElement.style.display = DisplayStyle.Flex;
+        }
+        else
+        {
+            QuestionImageElement.style.display = DisplayStyle.None;
         }
     }
     public void SetQuestion(string question)

@@ -20,28 +20,45 @@ MonoBehaviour:
       VerbConjugationTypes: 
       AdjectiveConjugationTypes: 
       NounConjugationTypes: 
+    Data: 
     UseKanaKeyboard: 0
+    EnabledByDefault: 1
   - Title: Expressions
     Category: 301
     ConjugationTypes:
       VerbConjugationTypes: 
       AdjectiveConjugationTypes: 
       NounConjugationTypes: 
+    Data: 
     UseKanaKeyboard: 0
-  - Title: Grammer
+    EnabledByDefault: 1
+  - Title: Grammar
     Category: 500
     ConjugationTypes:
       VerbConjugationTypes: 
       AdjectiveConjugationTypes: 
       NounConjugationTypes: 
+    Data: 
     UseKanaKeyboard: 1
+    EnabledByDefault: 1
   - Title: Standard Negative Noun
     Category: 1
     ConjugationTypes:
       VerbConjugationTypes: 
       AdjectiveConjugationTypes: 
       NounConjugationTypes: 05000000
+    Data: 
     UseKanaKeyboard: 1
+    EnabledByDefault: 1
+  - Title: Numbers (Basic)
+    Category: 501
+    ConjugationTypes:
+      VerbConjugationTypes: 
+      AdjectiveConjugationTypes: 
+      NounConjugationTypes: 
+    Data: 99
+    UseKanaKeyboard: 1
+    EnabledByDefault: 1
   VocabData:
     VerbList: []
     NounList:

@@ -7,6 +7,7 @@ public class QuestionType
     public string Title;
     public QuestionCategory Category;
     public ConjugationTypes ConjugationTypes;
+    public string Data;
     public bool UseKanaKeyboard = true;
     public bool EnabledByDefault = true;
 }
@@ -34,7 +35,9 @@ public enum QuestionCategory
     Adverb = 404,
     Particle = 405,
 
-    Grammer = 500,
+    Grammar = 500,
     Numbers = 501,
     KoSoADo = 502,
+
+    FinalBoss = 1000,
 }

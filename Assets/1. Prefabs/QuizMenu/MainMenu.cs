@@ -274,9 +274,23 @@ public class MainMenu : MonoBehaviour
                 config.Verbs.AddRange(globalVariables.WordLists[i].VocabData.VerbList);
                 config.Adjectives.AddRange(globalVariables.WordLists[i].VocabData.AdjectiveList);
                 config.Nouns.AddRange(globalVariables.WordLists[i].VocabData.NounList);
-                config.Expressions.AddRange(globalVariables.WordLists[i].VocabData.ExpressionList);
                 config.Adverbs.AddRange(globalVariables.WordLists[i].VocabData.AdverbList);
-                config.Grammers.AddRange(globalVariables.WordLists[i].VocabData.GrammerList);
+
+                foreach (var question in globalVariables.WordLists[i].QuestionTypes)
+                {
+                    if (question.Category == QuestionCategory.Grammar)
+                    {
+                        config.Grammers.AddRange(globalVariables.WordLists[i].VocabData.GrammerList);
+                    }
+                    else if (question.Category == QuestionCategory.Expression)
+                    {
+                        config.Expressions.AddRange(globalVariables.WordLists[i].VocabData.ExpressionList);
+                    }
+                    else if (question.Category == QuestionCategory.KoSoADo)
+                    {
+                        config.KoSOADo.AddRange(globalVariables.WordLists[i].VocabData.KoSoDoAs);
+                    }
+                }
 
                 for (int j = 0; j < contentToggles[i].Count -1 ; j++)
                 {
@@ -285,7 +299,7 @@ public class MainMenu : MonoBehaviour
                         bool includesType = true;
                         foreach (var question in config.questionTypes)
                         {
-                            if (globalVariables.WordLists[i].QuestionTypes[j].Category == question.Category)
+                            if (globalVariables.WordLists[i].QuestionTypes[j].Title == question.Title)
                             {
                                 includesType = false;
                             }
@@ -356,6 +370,7 @@ public class QuizConfiguration
     public List<Expression> Expressions = new();
     public List<Noun> Nouns = new();
     public List<Grammer> Grammers = new();
+    public List<KoSoADo> KoSOADo = new();
 
     public bool IsValid()
     {

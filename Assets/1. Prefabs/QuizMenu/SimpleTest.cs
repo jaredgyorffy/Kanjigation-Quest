@@ -42,7 +42,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
 
     public void InitializeQuiz(QuizConfiguration config, QuizMenu quizmenu)
     {
-        WordLists = new WordLists(config.Verbs, config.Adjectives, config.Nouns, config.Expressions, config.Adverbs, config.Grammers);
+        WordLists = new WordLists(config.Verbs, config.Adjectives, config.Nouns, config.Expressions, config.Adverbs, config.Grammers, config.KoSOADo);
         quizMenu = quizmenu;
         quizMenu.SetNumberVisible(false);
         askedQuestions = new();
@@ -114,7 +114,10 @@ public class SimpleTest : MonoBehaviour, IQuiz
         currentQuestion = question;
         quizMenu.SetQuestion(question.QuestionText);
 
-        SetKana(question.Word);
+        if (question.Category != QuestionCategory.KoSoADo)
+        {
+            SetKana(question.Word);
+        }
     }
 
     private void SetKana(string kana, string Kanji)
@@ -133,23 +136,44 @@ public class SimpleTest : MonoBehaviour, IQuiz
         {
         case QuestionCategory.Conjugation:
             return GetConjugationQuesiton();
-        case QuestionCategory.Grammer:
+        case QuestionCategory.Grammar:
             return GetGrammerQuestion();
         case QuestionCategory.Expression:
             return GetExpressionQuestion();
         case QuestionCategory.Vocab:
             return GetVocabQuestion();
         case QuestionCategory.Numbers:
-            return GetNumbersQuestion();
+            int maxRange = 99;
+            int.TryParse(questionType.Data, out maxRange);
+            return GetNumbersQuestion(maxRange);
+        case QuestionCategory.KoSoADo:
+            return GetKoSoADoQuestion();
         default:
             Debug.LogError($"invalid Question Category {questionType.Category}");
             return null;
         }
     }
 
-    private Question GetNumbersQuestion()
+    private Question GetKoSoADoQuestion()
     {
-        int number = UnityEngine.Random.Range(0, 99);
+        (Question question, Texture texture) data = QuizUtility.GetKoSOADoQuestion(WordLists);
+        quizMenu.SetQuestionImage(data.texture);
+
+        return data.question;
+    }
+
+    private Question GetNumbersQuestion(int maxRange)
+    {
+        int number = 0;
+        if (maxRange > 99)
+        {
+            number = UnityEngine.Random.Range(99, maxRange);
+        }
+        else
+        {
+            number = UnityEngine.Random.Range(0, maxRange);
+        }
+
         return QuizUtility.GetNumbersQuestion(number);
     }
 
@@ -160,7 +184,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
 
     private Question GetExpressionQuestion()
     {
-        IWord word = QuizUtility.GetRandomWord(ref WordLists, WordType.Expression);
+        IWord word = QuizUtility.GetRandomWordByType(ref WordLists, WordType.Expression);
         if (word == null)
         {
             Debug.LogError("Ran out of expressions");
@@ -174,7 +198,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
 
         WordType wordType = QuizUtility.GetRandomWordType(questionType.ConjugationTypes, WordLists);
         ConjugationType form = questionType.ConjugationTypes.GetConjugationTypeByWordType(wordType);
-        IWord word = QuizUtility.GetRandomWord(ref WordLists, wordType);
+        IWord word = QuizUtility.GetRandomWordByType(ref WordLists, wordType);
 
         if (word == null)
         {
