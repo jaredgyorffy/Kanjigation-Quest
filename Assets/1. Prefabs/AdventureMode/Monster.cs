@@ -16,6 +16,7 @@ public enum MonsterType
 {
     Slime = 0,
     Skeleton = 1,
+    Orc = 2,
 }
 
 public enum MonsterDifficulty

@@ -58,16 +58,16 @@ MonoBehaviour:
   - Name: Manny
     Description: 
     MaxHP: 5
-    Tint: {r: 1, g: 0, b: 0, a: 1}
-    MonsterType: 0
-  - Name: The Trickster
+    Tint: {r: 1, g: 1, b: 1, a: 1}
+    MonsterType: 2
+  - Name: Xenox
     Description: 
     MaxHP: 5
     Tint: {r: 1, g: 0, b: 0, a: 1}
-    MonsterType: 0
+    MonsterType: 2
   BossMonsters:
   - Name: "\u30E9\u30B9\u30DC\u30B9"
     Description: Boss
     MaxHP: 10
     Tint: {r: 0, g: 0, b: 0, a: 1}
-    MonsterType: 1
+    MonsterType: 2
