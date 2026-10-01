@@ -3,15 +3,16 @@ using System.Collections.Generic;
 
 public class WordLists
 {
-    public WordLists(List<Verb> Verbs, List<Adjective> Adjectives, 
-        List<Noun> Nouns, List<Expression> expressions, List<Adverb> adverbs, List<Grammer> grammers)
+    public WordLists(List<Verb> verbs, List<Adjective> adjectives, 
+        List<Noun> nouns, List<Expression> expressions, List<Adverb> adverbs, List<Grammer> grammers, List<KoSoADo> koSoADo)
     {
-        this.Verbs = Verbs;
-        this.Adjectives = Adjectives;
-        this.Nouns = Nouns;
-        this.Expressions = expressions;
-        this.Adverbs = adverbs;
-        this.Grammers = grammers;
+        Verbs = verbs;
+        Adjectives = adjectives;
+        Nouns = nouns;
+        Expressions = expressions;
+        Adverbs = adverbs;
+        Grammers = grammers;
+        KoSoADos = koSoADo;
     }
 
     public List<Grammer> Grammers;
@@ -20,4 +21,5 @@ public class WordLists
     public List<Noun> Nouns;
     public List<Adverb> Adverbs;
     public List<Expression> Expressions;
+    public List<KoSoADo> KoSoADos;
 }

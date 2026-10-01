@@ -55,6 +55,69 @@ public static class NumberTranslator
             return translation;
         }
     }
+
+    public static List<string> GetTensColumn(int number)
+    {
+        List<string> translation = new();
+        int tensRemainder = number % 10;
+        int tens = number / 10;
+
+        switch (tens)
+        {
+        case 1:
+            translation.Add("じゅう");
+            break;
+        case 2:
+            translation.Add("にじゅう");
+            break;
+        case 3:
+            translation.Add("さんじゅう");
+            break;
+        case 4:
+            translation.Add("よんじゅう");
+            break;
+        case 5:
+            translation.Add("ごじゅう");
+            break;
+        case 6:
+            translation.Add("ろくじゅう");
+            break;
+        case 7:
+            translation.Add("しちじゅう");
+            translation.Add("ななじゅう");
+            break;
+        case 8:
+            translation.Add("はちじゅう");
+            break;
+        case 9:
+            translation.Add("きゅうじゅう");
+            translation.Add("くじゅう");
+            break;
+        default:
+            translation.Add("");
+            return translation;
+        }
+
+        List<string> newStrings = new();
+
+        if (tensRemainder > 0)
+        {
+            for (int i = 0; i < translation.Count; i++)
+            {
+                List<string> onesColumn = GetOnesColumn(tensRemainder);
+                {
+                    foreach (string ones in onesColumn)
+                    {
+                        string combinedWord = translation[i] + ones;
+                        newStrings.Add(combinedWord);
+                    }
+                }
+            }
+            return newStrings;
+        }
+        return translation;
+    }
+
     public static List<string> GetNumberTranslation(int number)
     {
         List<string> translation = new();
@@ -64,67 +127,67 @@ public static class NumberTranslator
         }
         else if (number < 100)
         {
-            int remainder = number % 10;
-            int tens = number / 10;
-            switch (tens)
+            return GetTensColumn(number);
+        }
+        else
+        {
+            int hundredRemainder = number % 100;
+            int hundreds = number / 100;
+
+            switch (hundreds)
             {
             case 1:
-                translation.Add("じゅう");
+                translation.Add("ひゃく");
                 break;
             case 2:
-                translation.Add("にじゅう");
+                translation.Add("にひゃく");
                 break;
             case 3:
-                translation.Add("さんじゅう");
+                translation.Add("さんびゃく");
                 break;
             case 4:
-                translation.Add("よんじゅう");
+                translation.Add("よんひゃく");
                 break;
             case 5:
-                translation.Add("ごじゅう");
+                translation.Add("ごひゃく");
                 break;
             case 6:
-                translation.Add("ろくじゅう");
+                translation.Add("ろっぴゃく");
                 break;
             case 7:
-                translation.Add("しちじゅう");
-                translation.Add("ななじゅう");
+                translation.Add("しちひゃく");
+                translation.Add("ななひゃく");
                 break;
             case 8:
-                translation.Add("はちじゅう");
+                translation.Add("はちぴゃく");
                 break;
             case 9:
-                translation.Add("きゅうじゅう");
-                translation.Add("くじゅう");
+                translation.Add("きゅうひゃく");
+                translation.Add("くひゃく");
                 break;
             default:
                 translation.Add("");
                 return translation;
             }
 
-            
-            List<string> newStrings = new();
-
-            if (remainder > 0)
-            {
-                for (int i = 0; i < translation.Count; i++)
-                {
-                    List<string> onesColumn = GetOnesColumn(remainder);
-                    {
-                        foreach (string ones in onesColumn)
-                        {
-                            string combinedWord = translation[i] + ones;
-                            newStrings.Add(combinedWord);
-                        }
-                    }
-                }
-                return newStrings;
-            }
-            else
+            if (hundredRemainder == 0)
             {
                 return translation;
             }
+
+            List<string> newStrings = new();
+            for (int i = 0; i < translation.Count; i++)
+            {
+                List<string> tensColumn = GetTensColumn(hundredRemainder);
+                {
+                    foreach (string tens in tensColumn)
+                    {
+                        string combinedWord = translation[i] + tens;
+                        newStrings.Add(combinedWord);
+                    }
+                }
+            }
+            return newStrings;
         }
-        return translation;
     }
 }

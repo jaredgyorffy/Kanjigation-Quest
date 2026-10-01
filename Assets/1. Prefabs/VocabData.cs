@@ -22,6 +22,7 @@ public class VocabData
     public List<Grammer> GrammerList;
     [SpreadsheetPage("grammerExamples")]
     public List<GrammerExample> GrammerExamples;
+    public List<KoSoADo> KoSoDoAs;
 }
 
 [CreateAssetMenu(fileName = "SpreadsheetContainer", menuName = "SpreadsheetContainer")]
