@@ -180,6 +180,8 @@ MonoBehaviour:
     Romaji: ju
   - Kana: "\u3058\u3087"
     Romaji: jo
+  - Kana: "\u3075"
+    Romaji: hu
   ThreeLetterPairs:
   - Kana: "\u304D\u3083"
     Romaji: kya

@@ -105,13 +105,11 @@ public class AdventureMode : MonoBehaviour
     private void Update()
     {
         uiMonsterSprite.style.backgroundImage = new StyleBackground(monsterSprite.sprite);
-        if (currentMonster != null)
-        {
-            if (campaignOrder.Count <= 0)
-            {
-                uiMonsterSprite.style.unityBackgroundImageTintColor = Color.HSVToRGB((Time.time/2) % 1, 1, 1);
-            }
-        }
+    }
+
+    private void MonsterTintRGB()
+    {
+        uiMonsterSprite.style.unityBackgroundImageTintColor = Color.HSVToRGB((Time.time / 2) % 1, 1, 1);
     }
 
     public void InitializeAdventure(float playerMaxHP, int enemies, QuizConfiguration config, Action restartAction = null)
@@ -331,17 +329,29 @@ public class AdventureMode : MonoBehaviour
     IEnumerator ChooseDungeonPath(Action action)
     {
         List<QuestionType> questionTypes = GenerateQuestionTypes(dungeonGenerator.CurrentTile.Endpoints);
-        InitializeDirectionButtons(dungeonGenerator.CurrentTile.Endpoints, questionTypes);
+        List<DungeonDirection> directions = InitializeDirectionButtons(dungeonGenerator.CurrentTile.Endpoints, questionTypes);
         SetDialogueBoxText ($"Waiting for Input");
 
         currentDirectionInput = DungeonDirection.None;
-        yield return new WaitUntil(() => currentDirectionInput != DungeonDirection.None);
+        yield return new WaitUntil(() => IsValidDirectionChoice(directions, currentDirectionInput));
         SetDialogueBoxText($"");
         SetDirectionButtonVisibility(false);
         int currentQuestionTypeIndex = GetSelectedDirectionIndex(currentDirectionInput, dungeonGenerator.CurrentTile.Endpoints);
         SetQuizQuestionType(questionTypes[currentQuestionTypeIndex]);
         TryGenerateRandomMonster();
         DungeonTile nextTile = dungeonGenerator.GenerateNextTile(currentDirectionInput);
+    }
+
+    private bool IsValidDirectionChoice(List<DungeonDirection> validDirections, DungeonDirection direction)
+    {
+        if (validDirections.Contains(direction))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     private List<QuestionType> GenerateQuestionTypes(List<DungeonEndPoint> endpoints)
@@ -403,9 +413,10 @@ public class AdventureMode : MonoBehaviour
         return 0;
     }
 
-    private void InitializeDirectionButtons(List<DungeonEndPoint> endpoints, List<QuestionType> options)
+    private List<DungeonDirection> InitializeDirectionButtons(List<DungeonEndPoint> endpoints, List<QuestionType> options)
     {
         SetDirectionButtonVisibility(false);
+        List<DungeonDirection> directions = new List< DungeonDirection>();
         for (int i = 0; i < endpoints.Count; i++)
         {
             if (endpoints[i].Direction == DungeonDirection.Left)
@@ -413,25 +424,28 @@ public class AdventureMode : MonoBehaviour
                 leftButton.AddToClassList("Visible");
                 leftButton.RemoveFromClassList("Hidden");
                 leftText = options[i].Title;
+                directions.Add(DungeonDirection.Left);
             }
             else if (endpoints[i].Direction == DungeonDirection.Forward)
             {
                 centerButton.AddToClassList("Visible");
                 centerButton.RemoveFromClassList("Hidden");
                 forwardText = options[i].Title;
+                directions.Add(DungeonDirection.Forward);
             }
             else if (endpoints[i].Direction == DungeonDirection.Right)
             {
                 rightButton.AddToClassList("Visible");
                 rightButton.RemoveFromClassList("Hidden");
                 rightText = options[i].Title;
+                directions.Add(DungeonDirection.Right);
             }
         }
+        return directions;
     }
 
     private void SetNextDirection(DungeonDirection direction)
     {
-        Debug.Log(direction);
         currentDirectionInput = direction;
     }
 

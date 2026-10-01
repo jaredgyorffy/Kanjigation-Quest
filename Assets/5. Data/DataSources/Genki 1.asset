@@ -446,9 +446,11 @@ MonoBehaviour:
       - Mr.
     - kana: "\u3058"
       kanji: "\uFF5E\u6642"
-      meaningFull: "o\u2019clock"
+      meaningFull: "o\u2019clock, o clock, oclock"
       meaning:
       - "o\u2019clock"
+      - o clock
+      - oclock
     - kana: "\u3058\u3093"
       kanji: "\uFF5E\u4EBA"
       meaningFull: people
@@ -613,12 +615,7 @@ MonoBehaviour:
         Translation: Lunch is not bread.
         Hint: It is not
         Key: "\u3058\u3083\u306A\u3044"
-      - Question: "\u3042\u306E\u5E97\u306F\u3001\u9759\u304B\u3067\u306F\u306A\u3044\uFF0E"
-        Answer: "\u3058\u3083\u306A\u3044"
-        Translation: That store is not quiet.
-        Hint: It is not
-        Key: "\u3058\u3083\u306A\u3044"
-      - Question: "\u30C6\u30B9\u30C8\u306F\u3001\u91D1\u66DC\u65E5____\u3002"
+      - Question: "\u30C6\u30B9\u30C8\u306F\u3001\u91D1\u66DC\u65E5___\u3002"
         Answer: "\u3058\u3083\u306A\u3044"
         Translation: The test is not on Friday.
         Hint: It is not
@@ -628,12 +625,7 @@ MonoBehaviour:
         Translation: The study that I dislike is not grammar.
         Hint: It is not
         Key: "\u3058\u3083\u306A\u3044"
-      - Question: "\u4ECA\u3001\u5348\u524D\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u3002"
-        Answer: "\u3058\u3083\u306A\u3044"
-        Translation: It is not morning right now.
-        Hint: It is not
-        Key: "\u3058\u3083\u306A\u3044"
-      - Question: "\u305D\u308C\u306F\u3001\u7802\u7CD6____\u3067\u3057\u3087\u3046\u3002"
+      - Question: "\u305D\u308C\u306F\u3001\u7802\u7CD6___\u3067\u3057\u3087\u3046\u3002"
         Answer: "\u3058\u3083\u306A\u3044"
         Translation: That is not sugar, right?
         Hint: It is not
@@ -993,12 +985,7 @@ MonoBehaviour:
       Translation: Lunch is not bread.
       Hint: It is not
       Key: "\u3058\u3083\u306A\u3044"
-    - Question: "\u3042\u306E\u5E97\u306F\u3001\u9759\u304B\u3067\u306F\u306A\u3044\uFF0E"
-      Answer: "\u3058\u3083\u306A\u3044"
-      Translation: That store is not quiet.
-      Hint: It is not
-      Key: "\u3058\u3083\u306A\u3044"
-    - Question: "\u30C6\u30B9\u30C8\u306F\u3001\u91D1\u66DC\u65E5____\u3002"
+    - Question: "\u30C6\u30B9\u30C8\u306F\u3001\u91D1\u66DC\u65E5___\u3002"
       Answer: "\u3058\u3083\u306A\u3044"
       Translation: The test is not on Friday.
       Hint: It is not
@@ -1008,12 +995,7 @@ MonoBehaviour:
       Translation: The study that I dislike is not grammar.
       Hint: It is not
       Key: "\u3058\u3083\u306A\u3044"
-    - Question: "\u4ECA\u3001\u5348\u524D\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u3002"
-      Answer: "\u3058\u3083\u306A\u3044"
-      Translation: It is not morning right now.
-      Hint: It is not
-      Key: "\u3058\u3083\u306A\u3044"
-    - Question: "\u305D\u308C\u306F\u3001\u7802\u7CD6____\u3067\u3057\u3087\u3046\u3002"
+    - Question: "\u305D\u308C\u306F\u3001\u7802\u7CD6___\u3067\u3057\u3087\u3046\u3002"
       Answer: "\u3058\u3083\u306A\u3044"
       Translation: That is not sugar, right?
       Hint: It is not
@@ -1138,3 +1120,4 @@ MonoBehaviour:
       Translation: This is mom's room.
       Hint: Possessive Indicator
       Key: "\u306E"
+    KoSoDoAs: []

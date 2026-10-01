@@ -49,6 +49,8 @@ public class KanaRomajiTranslator : MonoBehaviour
             return;
         }
 
+        TrimWhitespace();
+
         foreach (var pair in KanaRomajiList.ThreeLetterPairs)
         {
             FindAndReplaceKanjiWithSmallTu(pair);
@@ -65,6 +67,13 @@ public class KanaRomajiTranslator : MonoBehaviour
         {
             FindAndReplaceRomaji(pair);
         }
+    }
+
+    private void TrimWhitespace()
+    {
+        string value = input.Value;
+        value = value.Trim();
+        textField.value = value;
     }
     private void FindAndReplaceKanjiWithSmallTu(KanaRomajiPair pair)
     {

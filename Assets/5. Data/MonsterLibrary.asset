@@ -21,7 +21,7 @@ MonoBehaviour:
   - Name: Creepy
     Description: 
     MaxHP: 2
-    Tint: {r: 0, g: 0.4156863, b: 0, a: 1}
+    Tint: {r: 1, g: 1, b: 1, a: 1}
     MonsterType: 0
   - Name: Blinky
     Description: 
@@ -69,5 +69,5 @@ MonoBehaviour:
   - Name: "\u30E9\u30B9\u30DC\u30B9"
     Description: Boss
     MaxHP: 10
-    Tint: {r: 0, g: 0, b: 0, a: 1}
-    MonsterType: 2
+    Tint: {r: 1, g: 1, b: 1, a: 1}
+    MonsterType: 3

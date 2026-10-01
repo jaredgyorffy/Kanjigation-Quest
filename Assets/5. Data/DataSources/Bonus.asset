@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a672388ace1b614981178c265045edd, type: 3}
+  m_Name: Bonus
+  m_EditorClassIdentifier: Assembly-CSharp::DataSource
+  <SourceName>k__BackingField: Bonus
+  QuestionTypes:
+  - Title: Expressions
+    Category: 301
+    ConjugationTypes:
+      VerbConjugationTypes: 
+      AdjectiveConjugationTypes: 
+      NounConjugationTypes: 
+    Data: 
+    UseKanaKeyboard: 0
+    EnabledByDefault: 1
+  VocabData:
+    VerbList: []
+    NounList: []
+    AdjectiveList: []
+    ExpressionList:
+    - kana: "\u306F\u3058\u3081\u307E\u3057\u3087\u3046\u3002"
+      kanji: 
+      meaningFull: Let's begin, lets begin, lets start, let us start, let us begin
+      meaning:
+      - Let's begin
+      - lets begin
+      - lets start
+      - let us start
+      - let us begin
+    - kana: "\u3088\u3057\u3001  \u3075\u304F\u3057\u3085\u3046 \u3057\u307E\u3057\u3087\u3046\u3002"
+      kanji: "\u3088\u3057\u3001\u5FA9\u7FD2\u3057\u307E\u3057\u3087\u3046\u3002"
+      meaningFull: "Okay let\u2019s review, let's review, let us review"
+      meaning:
+      - "Okay let\u2019s review"
+      - let's review
+      - let us review
+    - kana: "\u30DA\u30FC\u30B8 \u3092 \u307F\u3066 \u304F\u3060\u3055\u3044"
+      kanji: "\u30DA\u30FC\u30B8\u3092\u898B\u3066\u304F\u3060\u3055\u3044"
+      meaningFull: Please look at page, please open page, please turn to page, look
+        at page, turn to page, open page
+      meaning:
+      - Please look at page
+      - please open page
+      - please turn to page
+      - look at page
+      - turn to page
+      - open page
+    - kana: "\u308C\u3044\u3076\u3093 \u3092 \u3088\u3093\u3067 \u304F\u3060\u3055\u3044"
+      kanji: "\u4F8B\u6587\u3092\u8AAD\u3093\u3067\u304F\u3060\u3055\u3044"
+      meaningFull: 'Please read the example sentence, read the example sentence, '
+      meaning:
+      - Please read the example sentence
+      - read the example sentence
+    - kana: "\u304D\u3044\u3066 \u304F\u3060\u3055\u3044"
+      kanji: "\u805E\u3044\u3066\u304F\u3060\u3055\u3044"
+      meaningFull: Please listen, listen, listen to this
+      meaning:
+      - Please listen
+      - listen
+      - listen to this
+    - kana: "\u3082\u3046 \u3044\u3061 \u3069 \u3044\u3063\u3066 \u304F\u3060\u3055\u3044"
+      kanji: "\u3082\u3046\u4E00\u5EA6\u8A00\u3063\u3066\u304F\u3060\u3055\u3044"
+      meaningFull: Please say it again, please repeat yourself, please repeat, say
+        it again, repeat yourself
+      meaning:
+      - Please say it again
+      - please repeat yourself
+      - please repeat
+      - say it again
+      - repeat yourself
+    - kana: "\u304F\u308A\u304B\u3048\u3057\u3066 \u304F\u3060\u3055\u3044"
+      kanji: "\u7E70\u308A\u8FD4\u3057\u3066\u304F\u3060\u3055\u3044"
+      meaningFull: Please say it again, please repeat yourself, please repeat, say
+        it again, repeat yourself
+      meaning:
+      - Please say it again
+      - please repeat yourself
+      - please repeat
+      - say it again
+      - repeat yourself
+    - kana: "\u3055\u3042\u3001  \u308C\u3093\u3057\u3085\u3046 \u3057\u307E\u3057\u3087\u3046"
+      kanji: "\u3055\u3042\u3001\u7DF4\u7FD2\u3057\u307E\u3057\u3087\u3046"
+      meaningFull: "Now, let\u2019s practice, lets practice, let's practice, let
+        us practice, "
+      meaning:
+      - Now
+      - "let\u2019s practice"
+      - lets practice
+      - let's practice
+      - let us practice
+    - kana: " \u3057\u3064\u3082\u3093 \u306B \u3053\u305F\u3048\u3066 \u304F\u3060\u3055\u3044 "
+      kanji: "\u8CEA\u554F\u306B\u7B54\u3048\u3066\u304F\u3060\u3055\u3044"
+      meaningFull: Please answer the question, answer the question, answer my question,
+        answer
+      meaning:
+      - Please answer the question
+      - answer the question
+      - answer my question
+      - answer
+    - kana: "\u306B\u3063\u307D\u3093 \u3054 \u3067 \u3044\u3063\u3066 \u304F\u3060\u3055\u3044"
+      kanji: "\u65E5\u672C\u8A9E\u3067\u8A00\u3063\u3066\u304F\u3060\u3055\u3044"
+      meaningFull: Please say it in Japanese, say it in japanese, speak in japanese
+      meaning:
+      - Please say it in Japanese
+      - say it in japanese
+      - speak in japanese
+    - kana: "\u3082\u3046 \u3059\u3053\u3057 \u304A\u304A\u304D\u306A \u3053\u3048
+        \u3067 \u306F\u306A\u3057\u3066 \u304F\u3060\u3055\u3044"
+      kanji: "\u3082\u3046\u5C11\u3057\u5927\u304D\u306A\u58F0\u3067\u8A71\u3057\u3066\u304F\u3060\u3055\u3044"
+      meaningFull: Please speak a little louder, please speak up, speak a little
+        lowder, speak up, talk louder, please speak louder
+      meaning:
+      - Please speak a little louder
+      - please speak up
+      - speak a little lowder
+      - speak up
+      - talk louder
+      - please speak louder
+    - kana: "\u3044\u3044\u3067\u3059\u306D"
+      kanji: 
+      meaningFull: That's good, thats good, it's good, its good
+      meaning:
+      - That's good
+      - thats good
+      - it's good
+      - its good
+    - kana: "\u304A\u3057\u3044"
+      kanji: "\u60DC\u3057\u3044"
+      meaningFull: 'so close, almost, regretable, '
+      meaning:
+      - so close
+      - almost
+      - regretable
+    - kana: "\u3061\u3087\u3063\u3068 \u3061\u304C\u3044\u307E\u3059"
+      kanji: "\u3061\u3087\u3063\u3068\u3061\u304C\u3044\u307E\u3059"
+      meaningFull: that's a little different, thats a little different, not quite,
+        not quite right, that's not quite right, thats not quite right, that's a
+        little wrong
+      meaning:
+      - that's a little different
+      - thats a little different
+      - not quite
+      - not quite right
+      - that's not quite right
+      - thats not quite right
+      - that's a little wrong
+    - kana: "\u3082\u3046 \u3044\u3061 \u3069 \u3084\u3063\u3066 \u307F\u307E\u3057\u3087\u3046"
+      kanji: "\u3082\u3046\u4E00\u5EA6\u3084\u3063\u3066\u307F\u307E\u3057\u3087\u3046"
+      meaningFull: Let's try that again, lets try again, we should try again, take
+        it from the top
+      meaning:
+      - Let's try that again
+      - lets try again
+      - we should try again
+      - take it from the top
+    - kana: "\u3061\u3087\u3063\u3068 \u307E\u3063\u3066 \u304F\u3060\u3055\u3044"
+      kanji: "\u3061\u3087\u3063\u3068\u5F85\u3063\u3066\u304F\u3060\u3055\u3044"
+      meaningFull: please wait a moment, give me a second, give me a moment, please
+        wait
+      meaning:
+      - please wait a moment
+      - give me a second
+      - give me a moment
+      - please wait
+    - kana: "\u30C1\u30A7\u30C3\u30AF\u3057\u307E\u3059\u306D"
+      kanji: 
+      meaningFull: Let me check, I will check, I am checking
+      meaning:
+      - Let me check
+      - I will check
+      - I am checking
+    - kana: "\u3053\u3053\u307E\u3067\u306B\u3057\u307E\u3057\u3087\u3046"
+      kanji: 
+      meaningFull: lets stop here, lets stop, lets end here, lets end
+      meaning:
+      - lets stop here
+      - lets stop
+      - lets end here
+      - lets end
+    - kana: "\u3088\u304F\u3067\u304D\u307E\u3057\u305F"
+      kanji: 
+      meaningFull: 'Well done, you did good, great job, '
+      meaning:
+      - Well done
+      - you did good
+      - great job
+    - kana: "\u307E\u305F \u3089\u3044\u3057\u3085\u3046 \u3042\u3044\u307E\u3057\u3087\u3046"
+      kanji: "\u307E\u305F\u6765\u9031\u4F1A\u3044\u307E\u3057\u3087\u3046"
+      meaningFull: See you next week, see you, lets meet next week
+      meaning:
+      - See you next week
+      - see you
+      - lets meet next week
+    - kana: "\u306F\u3044\u3001\u308F\u304B\u308A\u307E\u3059"
+      kanji: 
+      meaningFull: yes I understand, I understand.
+      meaning:
+      - yes I understand
+      - I understand.
+    - kana: "\u3059\u307F\u307E\u305B\u3093\u3001  \u3082\u3046 \u3044\u3061 \u3069
+        \u304A \u306D\u304C\u3044\u3057\u307E\u3059"
+      kanji: "\u3059\u307F\u307E\u305B\u3093\u3001\u3082\u3046\u4E00\u5EA6\u304A\u9858\u3044\u3057\u307E\u3059"
+      meaningFull: excuse me, on more time please, one more time please, please say
+        that again, say it again, one more time
+      meaning:
+      - excuse me
+      - on more time please
+      - one more time please
+      - please say that again
+      - say it again
+      - one more time
+    - kana: "\u3059\u307F\u307E\u305B\u3093 \u3061\u3087\u3063\u3068 \u308F\u304B\u308A\u307E\u305B\u3093"
+      kanji: 
+      meaningFull: 'excuse me I don''t understand, I don''t understand, '
+      meaning:
+      - excuse me I don't understand
+      - I don't understand
+    - kana: "\u3082\u3046 \u3059\u3053\u3057 \u3086\u3063\u304F\u308A \u306F\u306A\u3057\u3066
+        \u3044\u305F\u3060\u3051\u307E\u3059 \u304B"
+      kanji: "\u3082\u3046 \u5C11\u3057 \u3086\u3063\u304F\u308A \u8A71\u3057\u3066
+        \u3044\u305F\u3060\u3051\u307E\u3059\u304B"
+      meaningFull: Could you speak a little more slowly please, please speak more
+        slowly, please speak a little slower, speak slower, speak slowly
+      meaning:
+      - Could you speak a little more slowly please
+      - please speak more slowly
+      - please speak a little slower
+      - speak slower
+      - speak slowly
+    - kana: "~\u306F \u3069\u3046 \u3044\u3046 \u3044\u307F \u3067\u3059 \u304B"
+      kanji: "~\u306F \u3069\u3046\u3044\u3046\u610F\u5473 \u3067\u3059\u304B"
+      meaningFull: what is the meaning, what is the meaning of ~, what does it mean,
+        what means, what does ~ mean
+      meaning:
+      - what is the meaning
+      - what is the meaning of ~
+      - what does it mean
+      - what means
+      - what does ~ mean
+    - kana: " \u305D\u308C \u306F~ \u3068 \u3044\u3046 \u3044\u307F \u3067\u3059 "
+      kanji: "\u305D\u308C\u306F ~ \u3068\u3044\u3046\u610F\u5473 \u3067\u3059"
+      meaningFull: That means ~, that means, it means ~, it means
+      meaning:
+      - That means ~
+      - that means
+      - it means ~
+      - it means
+    AdverbList: []
+    GrammerList: []
+    GrammerExamples: []
+    KoSoDoAs: []
