@@ -222,7 +222,9 @@ public class MainMenu : MonoBehaviour
 
         var useAutoKeyboard = togglePrefab.Instantiate();
         useAutoKeyboard.MQ<Label>().text = "Use Kana Keyboard";
-
+        Toggle useAutoKeyboardToggle = useAutoKeyboard.MQ<Toggle>();
+        //Set Keyboard to Default On when on PC build
+        useAutoKeyboardToggle.value = true;
         optionsToggles.Add(useAutoKeyboard.MQ<Toggle>());
         option.Add(useAutoKeyboard);
 
@@ -361,7 +363,7 @@ public class QuizConfiguration
     public bool NounStandardPastNegativeForm;
 
     public bool Strictmode = false;
-    public bool UseKanaKeyboard = false;
+    public bool UseKanaKeyboard = true;
 
     public List<QuestionType> questionTypes = new();
     public List<Verb> Verbs = new();
