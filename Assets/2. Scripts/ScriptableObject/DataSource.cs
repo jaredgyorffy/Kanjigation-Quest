@@ -22,8 +22,9 @@ public class DataSource : ScriptableObject
     {
         foreach (Noun noun in VocabData.NounList)
         {
+            noun.Meaning.Clear();
             List<string> items = noun.MeaningFull
-            .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+            .Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries)
             .Select(x => x.Trim())
             .Where(x => !string.IsNullOrEmpty(x))
             .Distinct(StringComparer.OrdinalIgnoreCase)
@@ -36,8 +37,9 @@ public class DataSource : ScriptableObject
     {
         foreach (Verb verb in VocabData.VerbList)
         {
+            verb.Meaning.Clear();
             List<string> items = verb.MeaningFull
-            .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+            .Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries)
             .Select(x => x.Trim())
             .Where(x => !string.IsNullOrEmpty(x))
             .Distinct(StringComparer.OrdinalIgnoreCase)
@@ -48,15 +50,16 @@ public class DataSource : ScriptableObject
 
     public void AddAnswersAdjectives()
     {
-        foreach (Adjective verb in VocabData.AdjectiveList)
+        foreach (Adjective adjectives in VocabData.AdjectiveList)
         {
-            List<string> items = verb.MeaningFull
-            .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+            adjectives.Meaning.Clear();
+            List<string> items = adjectives.MeaningFull
+            .Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries)
             .Select(x => x.Trim())
             .Where(x => !string.IsNullOrEmpty(x))
             .Distinct(StringComparer.OrdinalIgnoreCase)
             .ToList();
-            verb.Meaning.AddRange(items);
+            adjectives.Meaning.AddRange(items);
         }
     }
 
@@ -64,8 +67,9 @@ public class DataSource : ScriptableObject
     {
         foreach (Expression expression in VocabData.ExpressionList)
         {
+            expression.Meaning.Clear();
             List<string> items = expression.MeaningFull
-            .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+            .Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries)
             .Select(x => x.Trim())
             .Where(x => !string.IsNullOrEmpty(x))
             .Distinct(StringComparer.OrdinalIgnoreCase)
@@ -78,8 +82,9 @@ public class DataSource : ScriptableObject
     {
         foreach (Adverb adverb in VocabData.AdverbList)
         {
+            adverb.Meaning.Clear();
             List<string> items = adverb.MeaningFull
-            .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+            .Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries)
             .Select(x => x.Trim())
             .Where(x => !string.IsNullOrEmpty(x))
             .Distinct(StringComparer.OrdinalIgnoreCase)
@@ -91,10 +96,10 @@ public class DataSource : ScriptableObject
     [Button]
     public void PopulateGrammerExamples()
     {
+        VocabData.GrammerList.Clear();
         foreach (GrammerExample example in VocabData.GrammerExamples)
         {
             bool containsKey = false;
-
             foreach (var grammer in VocabData.GrammerList)
             {
                 if (grammer.Key == example.Key)
@@ -112,19 +117,6 @@ public class DataSource : ScriptableObject
             newGrammer.Examples = new();
             newGrammer.Examples.Add(example);
             VocabData.GrammerList.Add(newGrammer);
-        }
-    }
-
-    public void RemoveDuplicates()
-    {
-        foreach (Noun noun in VocabData.NounList)
-        {
-            HashSet<string> noDuplicates = new HashSet<string>(
-                    noun.Meaning,
-                    System.StringComparer.OrdinalIgnoreCase
-                );
-            noun.Meaning.Clear();
-            noun.Meaning.AddRange(new List<string>(noDuplicates).ToArray());
         }
     }
 

@@ -14,49 +14,49 @@ public class Verb : IWord
 
     public WordType WordType => WordType.Verb;
 
-    public VerbType VerbType => verbType;
-    [SerializeField] private VerbType verbType;
+    public VerbType Type => type;
+    [SerializeField] private VerbType type;
     public string MeaningFull => meaningFull;
     [SerializeField] private string meaningFull;
     public List <string> Meaning => meaning;
     [SerializeField] private List<string> meaning;
     public string PoliteNonpast => ConjugatePoliteNonpast(kana);
-    [Foldout("Irregular Conjugation")][ShowIf("VerbType", VerbType.IRR)][SerializeField][AllowNesting] private string politeNonpast;
+    [Foldout("Irregular Conjugation")][ShowIf("Type", VerbType.IRR)][SerializeField][AllowNesting] private string politeNonpast;
 
     public string PolitePast => ConjugatePolitePast(kana);
-    [Foldout("Irregular Conjugation")][ShowIf("VerbType", VerbType.IRR)][SerializeField][AllowNesting] private string politePast;
+    [Foldout("Irregular Conjugation")][ShowIf("Type", VerbType.IRR)][SerializeField][AllowNesting] private string politePast;
 
     public string PoliteNonPastNegative => ConjugatePoliteNonPastNegative(kana);
-    [Foldout("Irregular Conjugation")][ShowIf("VerbType", VerbType.IRR)][SerializeField][AllowNesting] private string politeNonPastNegative;
+    [Foldout("Irregular Conjugation")][ShowIf("Type", VerbType.IRR)][SerializeField][AllowNesting] private string politeNonPastNegative;
 
     public string PolitePastNegative => ConjugatePolitePastNegative(kana);
-    [Foldout("Irregular Conjugation")][ShowIf("VerbType", VerbType.IRR)][SerializeField][AllowNesting] private string politePastNegative;
+    [Foldout("Irregular Conjugation")][ShowIf("Type", VerbType.IRR)][SerializeField][AllowNesting] private string politePastNegative;
     public string StandardNonpast => kana;
 
     public string StandardPast => ConjugateStandardpast(kana);
-    [Foldout("Irregular Conjugation")][ShowIf("VerbType", VerbType.IRR)][SerializeField][AllowNesting] private string standardPast;
+    [Foldout("Irregular Conjugation")][ShowIf("Type", VerbType.IRR)][SerializeField][AllowNesting] private string standardPast;
 
     public string StandardNonpastNegative => ConjugateStandardNonPastNegative(kana);
-    [Foldout("Irregular Conjugation")][ShowIf("VerbType", VerbType.IRR)][SerializeField][AllowNesting] private string standardNonpastNegative;
+    [Foldout("Irregular Conjugation")][ShowIf("Type", VerbType.IRR)][SerializeField][AllowNesting] private string standardNonpastNegative;
 
     public string StandardPastNegative => ConjugateStandardPastNegative(kana);
-    [Foldout("Irregular Conjugation")][ShowIf("VerbType", VerbType.IRR)][SerializeField][AllowNesting] private string standardPastNegative;
+    [Foldout("Irregular Conjugation")][ShowIf("Type", VerbType.IRR)][SerializeField][AllowNesting] private string standardPastNegative;
     public string PoliteVolitional => ConjugatePoliteVolitional(kana);
-    [Foldout("Irregular Conjugation")][ShowIf("VerbType", VerbType.IRR)][SerializeField][AllowNesting] private string politeVolitional;
+    [Foldout("Irregular Conjugation")][ShowIf("Type", VerbType.IRR)][SerializeField][AllowNesting] private string politeVolitional;
 
     public string CasualVolitional => ConjugateCasualVolitional(kana);
-    [Foldout("Irregular Conjugation")][ShowIf("VerbType", VerbType.IRR)][SerializeField][AllowNesting] private  string casualVolitional;
+    [Foldout("Irregular Conjugation")][ShowIf("Type", VerbType.IRR)][SerializeField][AllowNesting] private  string casualVolitional;
     public string TeForm => ConjugateTeForm(kana);
-    [Foldout("Irregular Conjugation")][ShowIf("VerbType", VerbType.IRR)][SerializeField][AllowNesting] private string teForm;
+    [Foldout("Irregular Conjugation")][ShowIf("Type", VerbType.IRR)][SerializeField][AllowNesting] private string teForm;
 
     private string ConjugatePoliteNonpast(string dictionaryForm)
     {
         string conjugatedForm = "";
-        if (VerbType == VerbType.RU)
+        if (Type == VerbType.RU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 1) + "ます";
         }
-        else if (VerbType == VerbType.U)
+        else if (Type == VerbType.U)
         {
             string stem = dictionaryForm.Substring(0, dictionaryForm.Length - 1);
             char lastChar = dictionaryForm[dictionaryForm.Length - 1];
@@ -94,11 +94,11 @@ public class Verb : IWord
                 throw new Exception("Invalid verb ending for U-verb.");
             }
         }
-        else if (VerbType == VerbType.IRR)
+        else if (Type == VerbType.IRR)
         {
             return politeNonpast;
         }
-        else if (VerbType == VerbType.SURU)
+        else if (Type == VerbType.SURU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 2) + "します";
         }
@@ -108,11 +108,11 @@ public class Verb : IWord
     private string ConjugatePoliteNonPastNegative(string dictionaryForm)
     {
         string conjugatedForm = "";
-        if (VerbType == VerbType.RU)
+        if (Type == VerbType.RU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 1) + "ません";
         }
-        else if (VerbType == VerbType.U)
+        else if (Type == VerbType.U)
         {
             string stem = dictionaryForm.Substring(0, dictionaryForm.Length - 1);
             char lastChar = dictionaryForm[dictionaryForm.Length - 1];
@@ -147,11 +147,11 @@ public class Verb : IWord
                 break;
             }
         }
-        else if (VerbType == VerbType.IRR)
+        else if (Type == VerbType.IRR)
         {
             return politeNonPastNegative;
         }
-        else if (VerbType == VerbType.SURU)
+        else if (Type == VerbType.SURU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 2) + "しません";
         }
@@ -160,11 +160,11 @@ public class Verb : IWord
     private string ConjugatePolitePast(string dictionaryForm)
     {
         string conjugatedForm = "";
-        if (VerbType == VerbType.RU)
+        if (Type == VerbType.RU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 1) + "ました";
         }
-        else if (VerbType == VerbType.U)
+        else if (Type == VerbType.U)
         {
             string stem = dictionaryForm.Substring(0, dictionaryForm.Length - 1);
             char lastChar = dictionaryForm[dictionaryForm.Length - 1];
@@ -202,11 +202,11 @@ public class Verb : IWord
                 throw new Exception("Invalid verb ending for U-verb.");
             }
         }
-        else if (VerbType == VerbType.IRR)
+        else if (Type == VerbType.IRR)
         {
             return politePast;
         }
-        else if (VerbType == VerbType.SURU)
+        else if (Type == VerbType.SURU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 2) + "しました";
         }
@@ -215,11 +215,11 @@ public class Verb : IWord
     private string ConjugatePolitePastNegative(string dictionaryForm)
     {
         string conjugatedForm = "";
-        if (VerbType == VerbType.RU)
+        if (Type == VerbType.RU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 1) + "ませんでした";
         }
-        else if (VerbType == VerbType.U)
+        else if (Type == VerbType.U)
         {
             string stem = dictionaryForm.Substring(0, dictionaryForm.Length - 1);
             char lastChar = dictionaryForm[dictionaryForm.Length - 1];
@@ -257,7 +257,7 @@ public class Verb : IWord
                 throw new Exception("Invalid verb ending for U-verb.");
             }
         }
-        else if (VerbType == VerbType.IRR)
+        else if (Type == VerbType.IRR)
         {
             return politePastNegative;
         }
@@ -266,11 +266,11 @@ public class Verb : IWord
     private string ConjugateStandardpast(string dictionaryForm)
     {
         string conjugatedForm = "";
-        if (VerbType == VerbType.RU)
+        if (Type == VerbType.RU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 1) + "た";
         }
-        else if (VerbType == VerbType.U)
+        else if (Type == VerbType.U)
         {
             string stem = dictionaryForm.Substring(0, dictionaryForm.Length - 1);
             char lastChar = dictionaryForm[dictionaryForm.Length - 1];
@@ -308,11 +308,11 @@ public class Verb : IWord
                 throw new Exception("Invalid verb ending for U-verb.");
             }
         }
-        else if (VerbType == VerbType.IRR)
+        else if (Type == VerbType.IRR)
         {
             return standardPast;
         }
-        else if (VerbType == VerbType.SURU)
+        else if (Type == VerbType.SURU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 2) + "した";
         }
@@ -321,11 +321,11 @@ public class Verb : IWord
     private string ConjugateStandardNonPastNegative(string dictionaryForm)
     {
         string conjugatedForm = "";
-        if (VerbType == VerbType.RU)
+        if (Type == VerbType.RU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 1) + "ない";
         }
-        else if (VerbType == VerbType.U)
+        else if (Type == VerbType.U)
         {
             char lastChar = dictionaryForm[^1];
             string stem = dictionaryForm.Substring(0, dictionaryForm.Length -1);
@@ -364,11 +364,11 @@ public class Verb : IWord
                 throw new Exception("Invalid verb ending for U-verb.");
             }
         }
-        else if (VerbType == VerbType.IRR)
+        else if (Type == VerbType.IRR)
         {
             return standardNonpastNegative;
         }
-        else if (VerbType == VerbType.SURU)
+        else if (Type == VerbType.SURU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 2) + "しない";
         }
@@ -377,11 +377,11 @@ public class Verb : IWord
     private string ConjugateStandardPastNegative(string dictionaryForm)
     {
         string conjugatedForm = "";
-        if (VerbType == VerbType.RU)
+        if (Type == VerbType.RU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 1) + "なかった";
         }
-        else if (VerbType == VerbType.U)
+        else if (Type == VerbType.U)
         {
             string stem = dictionaryForm.Substring(0, dictionaryForm.Length - 1);
             char lastChar = dictionaryForm[dictionaryForm.Length - 1];
@@ -419,11 +419,11 @@ public class Verb : IWord
                 throw new Exception("Invalid verb ending for U-verb.");
             }
         }
-        else if (VerbType == VerbType.IRR)
+        else if (Type == VerbType.IRR)
         {
             return standardNonpastNegative;
         }
-        else if (VerbType == VerbType.SURU)
+        else if (Type == VerbType.SURU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 2) + "しなかった";
         }
@@ -432,11 +432,11 @@ public class Verb : IWord
     private string ConjugatePoliteVolitional(string dictionaryForm)
     {
         string conjugatedForm = "";
-        if (VerbType == VerbType.RU)
+        if (Type == VerbType.RU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 1) + "ましょう";
         }
-        else if (VerbType == VerbType.U)
+        else if (Type == VerbType.U)
         {
             string stem = dictionaryForm.Substring(0, dictionaryForm.Length - 1);
             char lastChar = dictionaryForm[dictionaryForm.Length - 1];
@@ -474,11 +474,11 @@ public class Verb : IWord
                 throw new Exception("Invalid verb ending for U-verb.");
             }
         }
-        else if (VerbType == VerbType.IRR)
+        else if (Type == VerbType.IRR)
         {
             return politeVolitional;
         }
-        else if (VerbType == VerbType.SURU)
+        else if (Type == VerbType.SURU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 2) + "しましょう";
         }
@@ -487,11 +487,11 @@ public class Verb : IWord
     private string ConjugateCasualVolitional(string dictionaryForm)
     {
         string conjugatedForm = "";
-        if (VerbType == VerbType.RU)
+        if (Type == VerbType.RU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 1) + "よう";
         }
-        else if (VerbType == VerbType.U)
+        else if (Type == VerbType.U)
         {
             string stem = dictionaryForm.Substring(0, dictionaryForm.Length - 1);
             char lastChar = dictionaryForm[dictionaryForm.Length - 1];
@@ -529,11 +529,11 @@ public class Verb : IWord
                 throw new Exception("Invalid verb ending for U-verb.");
             }
         }
-        else if (VerbType == VerbType.IRR)
+        else if (Type == VerbType.IRR)
         {
             return casualVolitional;
         }
-        else if (VerbType == VerbType.SURU)
+        else if (Type == VerbType.SURU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 2) + "しよう";
         }
@@ -542,11 +542,11 @@ public class Verb : IWord
     private string ConjugateTeForm(string dictionaryForm)
     {
         string conjugatedForm = "";
-        if (VerbType == VerbType.RU)
+        if (Type == VerbType.RU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 1) + "て";
         }
-        else if (VerbType == VerbType.U)
+        else if (Type == VerbType.U)
         {
             string stem = dictionaryForm.Substring(0, dictionaryForm.Length - 1);
             char lastChar = dictionaryForm[dictionaryForm.Length - 1];
@@ -587,11 +587,11 @@ public class Verb : IWord
                 throw new Exception("Invalid verb ending for U-verb.");
             }
         }
-        else if (VerbType == VerbType.IRR)
+        else if (Type == VerbType.IRR)
         {
             return teForm;
         }
-        else if (VerbType == VerbType.SURU)
+        else if (Type == VerbType.SURU)
         {
             conjugatedForm = dictionaryForm.Substring(0, dictionaryForm.Length - 2) + "して";
         }

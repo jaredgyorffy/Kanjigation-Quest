@@ -43,6 +43,7 @@ public class QuizMenu : MonoBehaviour
     public Action<bool> HintPressed;
     public Action<string> SubmitButtonPressed;
     public bool Initialized { get; private set; }
+    private PlayerInventory playerInventory;
 
     private void Awake()
     {
@@ -52,6 +53,7 @@ public class QuizMenu : MonoBehaviour
     public void TryInitialize()
     {
         if (Initialized) return;
+        playerInventory = ServiceLocator.Instance.Get<PlayerInventory>();
         quizMenuRoot = quizMenu.rootVisualElement;
         quizMenuRoot.dataSource = this;
         textField = quizMenuRoot.MQ<TextField>("TextField");
@@ -141,6 +143,8 @@ public class QuizMenu : MonoBehaviour
             ToggleHint();
         }
 
+        SetHintButtonVisibility();
+
         if (textField.value == "")
         {
             SetInformationText("Please submit an Answer");
@@ -226,7 +230,6 @@ public class QuizMenu : MonoBehaviour
 
     public void ToggleHint()
     {
-
         if (hintVisible)
         {
             hintVisible = false;
@@ -234,12 +237,28 @@ public class QuizMenu : MonoBehaviour
             SetInformationText("");
             HintPressed?.Invoke(true);
         }
-        else
+        else if (playerInventory.TryUseHint())
         {
             hintVisible = true;
             hintButton.AddToClassList("Pressed");
             hintButton.Focus();
+            SetInformationText(question);
             HintPressed?.Invoke(false);
+        }
+        SetHintButtonVisibility();
+    }
+
+    private void SetHintButtonVisibility()
+    {
+        if (playerInventory.Hints > 0)
+        {
+            hintButton.RemoveFromClassList("Hidden");
+            hintButton.AddToClassList("Visible");
+        }
+        else
+        {
+            hintButton.RemoveFromClassList("Visible");
+            hintButton.AddToClassList("Hidden");
         }
     }
 

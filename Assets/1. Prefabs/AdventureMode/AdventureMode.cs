@@ -43,7 +43,6 @@ public class AdventureMode : MonoBehaviour
     private bool debugEnemyHealth = false;
 
     [SerializeField] private float inputDelay = 5;
-    private int playerDefaultMaxHP;
     private QuizConfiguration config;
     private Monster currentMonster;
     [SerializeField] private GameObject monster;
@@ -65,6 +64,8 @@ public class AdventureMode : MonoBehaviour
     public Action leftButtonPressed;
     public Action rightButtonPressed;
     public Action centerButtonPressed;
+
+    private PlayerInventory inventory;
     public bool Initialized { get; private set; }
 
     void Start()
@@ -84,6 +85,7 @@ public class AdventureMode : MonoBehaviour
         leftButton = battleMenuRoot.MQ<Button>("Left");
         rightButton = battleMenuRoot.MQ<Button>("Right");
         centerButton = battleMenuRoot.MQ<Button>("Forward");
+        inventory = ServiceLocator.Instance.Get<PlayerInventory>();
     }
 
     private void SetDialogueBoxText(string text)
@@ -112,7 +114,7 @@ public class AdventureMode : MonoBehaviour
         uiMonsterSprite.style.unityBackgroundImageTintColor = Color.HSVToRGB((Time.time / 2) % 1, 1, 1);
     }
 
-    public void InitializeAdventure(float playerMaxHP, int enemies, QuizConfiguration config, Action restartAction = null)
+    public void InitializeAdventure(float playerMaxHP, QuizConfiguration config, Action restartAction = null)
     {
         SetTestVisible(false);
         SetBattleScreenVisible(true);
@@ -130,14 +132,6 @@ public class AdventureMode : MonoBehaviour
         leftButton.clicked += () => SetNextDirection(DungeonDirection.Left);
         centerButton.clicked += () => SetNextDirection(DungeonDirection.Forward);
         rightButton.clicked += () => SetNextDirection(DungeonDirection.Right);
-
-        SetQuizQuestionType(GetRandomQuestionType(config.questionTypes));
-        SetDirectionButtonVisibility(false);
-        campaignOrder = GenerateMonsterOrder(enemies);
-        TryGenerateRandomMonster();
-        DeployMonster();
-        monsterSprite.enabled = true;
-        animator.SetBool("Spawned", true);
         this.restartAction = restartAction;
         if (Initialized)
         {
@@ -145,7 +139,18 @@ public class AdventureMode : MonoBehaviour
         }
         quizMediator.AnswerSubmitted += ResolveBattle;
         Initialized = true;
+        SetQuizQuestionType(GetRandomQuestionType(config.questionTypes));
+        SetDirectionButtonVisibility(false);
+        StartAdventure();
+    }
 
+    private void StartAdventure()
+    {
+        campaignOrder = GenerateMonsterOrder(config.AdventureLength);
+        TryGenerateRandomMonster();
+        DeployMonster();
+        monsterSprite.enabled = true;
+        animator.SetBool("Spawned", true);
     }
 
     private void SetQuizQuestionType(QuestionType questionType)
@@ -184,20 +189,24 @@ public class AdventureMode : MonoBehaviour
         Queue<MonsterDifficulty> monsters = new Queue<MonsterDifficulty>();
         for (int i = 1; i <= monsterCount; i++)
         {
-            if (i <= monsterCount * 0.33f)
+            if (i <= Mathf.Floor(monsterCount * 0.33f))
             {
+                Debug.Log($"{i}: easy");
                 monsters.Enqueue(MonsterDifficulty.Easy);
             }
-            else if (i <= monsterCount * 0.66f)
+            else if (i <= Mathf.Floor(monsterCount * 0.66f))
             {
+                Debug.Log($"{i}: medium");
                 monsters.Enqueue(MonsterDifficulty.Medium);
             }
             else if (i < monsterCount)
             {
+                Debug.Log($"{i}: hard");
                 monsters.Enqueue(MonsterDifficulty.Hard);
             }
             else if (i == monsterCount)
             {
+                Debug.Log($"{i}: boss");
                 monsters.Enqueue(MonsterDifficulty.Boss);
             }
         }
@@ -274,6 +283,7 @@ public class AdventureMode : MonoBehaviour
     {
         if (enemyCurrentHP <= 0)
         {
+            CombatRewards();
             if (dungeonGenerator.CurrentTile.Endpoints.Count > 1)
             {
                 if (campaignOrder.TryPeek(out _) == false)
@@ -312,12 +322,38 @@ public class AdventureMode : MonoBehaviour
         SetTestVisible(true);
     }
 
+    private void CombatRewards()
+    {
+        if (RandomUtility.PercentageChanceOfTrue(0.5f))
+        {
+            Debug.Log("Hints increased");
+            inventory.IncreaseHints();
+        }
+        else
+        {
+            Debug.Log("Health Restored");
+            ModifyPlayerHealth(2);
+        }
+    }
+
+    private void ModifyPlayerHealth(int health)
+    {
+        playerCurrentHP = Mathf.Clamp(playerCurrentHP + health, 0, playerMaxHP);
+    }
+
     private void StartVictorySequence()
     {
-        SetBattleUIVisibility(false);
-        SetDialogueBoxText($"You are the Conjugation Master!");
-        Invoke("VictoryCondition", inputDelay);
-        return;
+        if (config.EndlessMode)
+        {
+            StartAdventure();
+        }
+        else
+        {
+            SetBattleUIVisibility(false);
+            SetDialogueBoxText($"You are the Conjugation Master!");
+            Invoke("VictoryCondition", inputDelay);
+            return;
+        }
     }
 
     private void PathChoosingSequence()
@@ -470,7 +506,6 @@ public class AdventureMode : MonoBehaviour
     }
     private void DeployMonster()
     {
-        playerCurrentHP = playerMaxHP;
         if (debugEnemyHealth)
         {
             enemyMaxHP = 1;
@@ -498,7 +533,7 @@ public class AdventureMode : MonoBehaviour
 
     private bool TryGenerateRandomMonster()
     {
-        if (campaignOrder.TryPeek(out _))
+        if (campaignOrder.TryPeek(out MonsterDifficulty difficulty))
         {
             currentMonster = monsterLibrary.GetRandomMonsterByDifficulty(campaignOrder.Dequeue());
             return true;
@@ -547,7 +582,7 @@ public class AdventureMode : MonoBehaviour
         }
         else
         {
-            playerCurrentHP -= 1;
+            ModifyPlayerHealth(-1);
             SetDialogueBoxText($"Incorrect! The correct answer was {answer}.");
             animator.SetTrigger("Attack");
         }

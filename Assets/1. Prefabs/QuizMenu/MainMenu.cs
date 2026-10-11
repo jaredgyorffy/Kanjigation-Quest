@@ -52,23 +52,10 @@ public class MainMenu : MonoBehaviour
     private void Adventure()
     {
         QuizConfiguration config = InitializeQuiz();
-        /*if (sequenceTest.Initialized)
-        {
-            sequenceTest.Unsubscribe();
-        }*/
 
-        int adventureLength = 3;
-        if (AdventureLength != null)
-        {
-            adventureLength = AdventureLength.value;
-        }
-
-
-        int startingHealth = 3;
-        if (AdventureLength != null)
-        {
-            startingHealth = StartingHealth.value;
-        }
+        int adventureLength = PlayerPrefs.GetInt("AdventureLength", 4);
+        config.AdventureLength = adventureLength;
+        int startingHealth = PlayerPrefs.GetInt("StartingHealth", 6);
         if (startingHealth <= 0 || adventureLength <= 0)
         {
             warningText.visible = true;
@@ -82,7 +69,8 @@ public class MainMenu : MonoBehaviour
             return;
         }
 
-        adventure.InitializeAdventure(startingHealth, adventureLength, config, Restart);
+        SetPlayerPrefs();
+        adventure.InitializeAdventure(startingHealth, config, Restart);
         root.visible = false;
     }
 
@@ -129,8 +117,6 @@ public class MainMenu : MonoBehaviour
     private void InitializeOptions()
     {
         QuizConfiguration config = new QuizConfiguration();
-
-
 
         VisualElement meanings = root.MQ<VisualElement>("Meanings");
         var listOfMeanings = config.GetMeanings();
@@ -182,14 +168,15 @@ public class MainMenu : MonoBehaviour
         {
             var toggleBox = togglePrefab.Instantiate();
             toggleBox.MQ<Label>().text = globalVariables.WordLists[i].SourceName;
+            var sourceToggle = toggleBox.MQ<Toggle>();
 
-            if (globalVariables.WordLists[i].SourceName.Contains("Debug") == false)
-            {
-                toggleBox.MQ<Toggle>().value = true;
-            }
+            int SavedSourceEnabled = PlayerPrefs.GetInt($"Source.{globalVariables.WordLists[i].SourceName}",1);
+            bool sourceEnabled = SavedSourceEnabled == 1 ? true : false;
+            sourceToggle.value = sourceEnabled;
+
             List<Toggle> subjectToggles = new List<Toggle>();
             contentToggles.Add(subjectToggles);
-            subjectToggles.Add(toggleBox.MQ<Toggle>());
+            subjectToggles.Add(sourceToggle);
             content.Add(toggleBox);
             Foldout section = new Foldout();
             section.AddToClassList("SubToggle");
@@ -208,7 +195,11 @@ public class MainMenu : MonoBehaviour
             }
         }
 
-
+        int adventureLength = PlayerPrefs.GetInt("AdventureLength", 4);
+        AdventureLength.value = adventureLength;
+        config.AdventureLength = adventureLength;
+        int startingHealth = PlayerPrefs.GetInt("StartingHealth", 6);
+        StartingHealth.value = startingHealth;
 
 
         VisualElement option = root.MQ<VisualElement>("Options");
@@ -216,22 +207,45 @@ public class MainMenu : MonoBehaviour
         var strictModeOption = togglePrefab.Instantiate();
         strictModeOption.MQ<Label>().text = "Strict mode";
         Toggle strictModeToggle = strictModeOption.MQ<Toggle>();
-        strictModeToggle.value = true;
+
+        int strictMode = PlayerPrefs.GetInt("StrictMode", 1);
+        bool strictModeValue = strictMode == 1 ? true : false;
+        strictModeToggle.value = strictModeValue;
         optionsToggles.Add(strictModeToggle);
         option.Add(strictModeOption);
 
         var useAutoKeyboard = togglePrefab.Instantiate();
         useAutoKeyboard.MQ<Label>().text = "Use Kana Keyboard";
 
+        var useAutoKeyboardToggle = useAutoKeyboard.MQ<Toggle>();
         optionsToggles.Add(useAutoKeyboard.MQ<Toggle>());
         option.Add(useAutoKeyboard);
+
+        int autoKeyboard = PlayerPrefs.GetInt("AutoKeyboard", 1);
+        bool autoKeyboardValue = autoKeyboard == 1 ? true : false;
+        useAutoKeyboardToggle.value = autoKeyboardValue;
 
         var DebugEnemyHealth = togglePrefab.Instantiate();
         DebugEnemyHealth.MQ<Label>().text = "Debug Enemy Health";
         Toggle DebugEnemyHealthToggle = DebugEnemyHealth.MQ<Toggle>();
-        DebugEnemyHealthToggle.value = false;
+
+        int debugEnemyHealth = PlayerPrefs.GetInt("DebugEnemyHealth", 1);
+        bool debugEnemyHealthValue = debugEnemyHealth == 1 ? true : false;
+        useAutoKeyboardToggle.value = debugEnemyHealthValue;
+
         optionsToggles.Add(DebugEnemyHealthToggle);
         option.Add(DebugEnemyHealth);
+
+        var EndlessMode = togglePrefab.Instantiate();
+        EndlessMode.MQ<Label>().text = "Endless Mode";
+        Toggle EndlessModeToggle = DebugEnemyHealth.MQ<Toggle>();
+
+        int endlessMode = PlayerPrefs.GetInt("EndlessMode", 1);
+        bool endlessModeValue = debugEnemyHealth == 1 ? true : false;
+        EndlessModeToggle.value = endlessModeValue;
+
+        optionsToggles.Add(EndlessModeToggle);
+        option.Add(EndlessMode);
     }
 
     private QuizConfiguration InitializeQuiz()
@@ -318,8 +332,25 @@ public class MainMenu : MonoBehaviour
         config.Strictmode = optionsToggles[0].value;
         config.UseKanaKeyboard = optionsToggles[1].value;
         config.DebugEnemyHealth = optionsToggles[2].value;
-
+        config.EndlessMode = optionsToggles[3].value;
         return config;
+    }
+
+    private void SetPlayerPrefs()
+    {
+
+        for (int i = 0; i < contentToggles.Count; i++)
+        {
+            PlayerPrefs.SetInt($"Source.{globalVariables.WordLists[i].SourceName}", contentToggles[i][0].value ? 1 : 0);
+        }
+
+        PlayerPrefs.SetInt("AdventureLength", AdventureLength.value);
+        PlayerPrefs.SetInt("StartingHealth", StartingHealth.value);
+
+        PlayerPrefs.SetInt("StrictMode", optionsToggles[0].value ? 1 : 0);
+        PlayerPrefs.SetInt("AutoKeyboard", optionsToggles[1].value ? 1 : 0);
+        PlayerPrefs.SetInt("DebugEnemyHealth", optionsToggles[2].value ? 1 : 0);
+        PlayerPrefs.SetInt("EndlessMode", optionsToggles[3].value ? 1 : 0);
     }
 
     private void Restart()
@@ -360,8 +391,12 @@ public class QuizConfiguration
     public bool NounStandardNonpastNegativeForm;
     public bool NounStandardPastNegativeForm;
 
+    public int AdventureLength;
+    public int StartingHealth;
+
     public bool Strictmode = false;
     public bool UseKanaKeyboard = false;
+    public bool EndlessMode = false;
 
     public List<QuestionType> questionTypes = new();
     public List<Verb> Verbs = new();

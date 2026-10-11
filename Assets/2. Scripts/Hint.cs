@@ -9,7 +9,7 @@ public static class Hint
 
         if (word.WordType == WordType.Verb)
         {
-            VerbType vType = ((Verb)word).VerbType;
+            VerbType vType = ((Verb)word).Type;
             return VerbHint(vType, conjugationType);
         }
         
