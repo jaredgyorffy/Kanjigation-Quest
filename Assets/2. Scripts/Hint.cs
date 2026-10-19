@@ -32,7 +32,7 @@ public static class Hint
        string hint = "";
         switch (conjugationType)
         {
-            case ConjugationType.PoliteNonpast:
+            case ConjugationType.PolitePresent:
             {
                 if (aType == AdjectiveType.I)
                 {
@@ -49,7 +49,7 @@ public static class Hint
 
                 break;
             }
-            case  ConjugationType.PoliteNonpastNegative:
+            case  ConjugationType.PolitePresentNegative:
             {
                 if (aType == AdjectiveType.I)
                 {
@@ -101,7 +101,7 @@ public static class Hint
                 break;
             }
 
-            case ConjugationType.StandardNonpast:
+            case ConjugationType.StandardPresent:
             {
                 if (aType == AdjectiveType.I)
                 {
@@ -117,7 +117,7 @@ public static class Hint
                 }
                 break;
             }
-            case ConjugationType.StandardNonpastNegative:
+            case ConjugationType.StandardPresentNegative:
             {
                 if (aType == AdjectiveType.I)
                 {
@@ -184,7 +184,7 @@ public static class Hint
         string hint = "";
         switch (conjugationType)
         {
-            case ConjugationType.PoliteNonpast:
+            case ConjugationType.PolitePresent:
             {
                 if (vType == VerbType.RU)
                 {
@@ -200,7 +200,7 @@ public static class Hint
                 }
                 break;
             }
-            case  ConjugationType.PoliteNonpastNegative:
+            case  ConjugationType.PolitePresentNegative:
             {
                 if (vType == VerbType.RU)
                 {
@@ -275,7 +275,7 @@ public static class Hint
                 break;
             }
 
-            case ConjugationType.StandardNonpast:
+            case ConjugationType.StandardPresent:
             {
                 if (vType == VerbType.RU)
                 {
@@ -291,7 +291,7 @@ public static class Hint
                 }
                 break;
             }
-            case ConjugationType.StandardNonpastNegative:
+            case ConjugationType.StandardPresentNegative:
             {
                 if (vType == VerbType.RU)
                 {
@@ -419,11 +419,11 @@ public static class Hint
     {
         switch (conjugationType)
         {
-        case ConjugationType.PoliteNonpast:
+        case ConjugationType.PolitePresent:
             {
                 return "Take the dictionary form and add です";
             }
-        case ConjugationType.PoliteNonpastNegative:
+        case ConjugationType.PolitePresentNegative:
             {
                 return "Take the dictionary form and add じゃありません";
             }
@@ -437,11 +437,11 @@ public static class Hint
                 return "Take the dictionary form and add じゃありませんでした";
             }
 
-        case ConjugationType.StandardNonpast:
+        case ConjugationType.StandardPresent:
             {
                 return "Take the dictionary form and add だ";
             }
-        case ConjugationType.StandardNonpastNegative:
+        case ConjugationType.StandardPresentNegative:
             {
                 return "Take the dictionary form and add じゃない";
             }

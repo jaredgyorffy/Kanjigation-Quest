@@ -16,6 +16,7 @@ public class DataSource : ScriptableObject
         AddAnswersAdjectives();
         AddAnswersAdverbs();
         AddAnswersExpressions();
+        AddAnswersReading();
     }
 
     public void AddAnswersNouns()
@@ -117,6 +118,33 @@ public class DataSource : ScriptableObject
             newGrammer.Examples = new();
             newGrammer.Examples.Add(example);
             VocabData.GrammerList.Add(newGrammer);
+        }
+    }
+
+    private void AddAnswersReading()
+    {
+
+        List<ReadingQuestion> answers = new List<ReadingQuestion>(VocabData.ReadingList);
+        VocabData.ReadingList.Clear();
+        foreach (ReadingQuestion question in answers)
+        {
+            bool containsKey = false;
+            foreach (var answer in VocabData.ReadingList)
+            {
+                if (question.Key == answer.Key)
+                {
+                    answer.Answers.Add(question.Answer);
+                    containsKey = true;
+                }
+            }
+
+            if (containsKey)
+            {
+                continue;
+            }
+            ReadingQuestion NewReading = new ReadingQuestion(question.Kana, question.Answer, question.Key);
+            NewReading.Answers.Add(question.Answer);
+            VocabData.ReadingList.Add(NewReading);
         }
     }
 

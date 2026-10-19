@@ -13,11 +13,11 @@ public static class QuizUtility
         List<ConjugationType> verbConjugationTypes = new List<ConjugationType>();
         if (config.VerbPoliteNonpastForm)
         {
-            verbConjugationTypes.Add(ConjugationType.PoliteNonpast);
+            verbConjugationTypes.Add(ConjugationType.PolitePresent);
         }
         if (config.VerbPoliteNonpastNegativeForm)
         {
-            verbConjugationTypes.Add(ConjugationType.PoliteNonpastNegative);
+            verbConjugationTypes.Add(ConjugationType.PolitePresentNegative);
         }
         if (config.VerbPolitePastForm)
         {
@@ -33,7 +33,7 @@ public static class QuizUtility
         }
         if (config.VerbStandardNonpastNegativeForm)
         {
-            verbConjugationTypes.Add(ConjugationType.StandardNonpastNegative);
+            verbConjugationTypes.Add(ConjugationType.StandardPresentNegative);
         }
         if (config.VerbStandardPastNegativeForm)
         {
@@ -51,7 +51,7 @@ public static class QuizUtility
         List<ConjugationType> adjectiveConjugationTypes = new List<ConjugationType>();
         if (config.AdjectivePoliteNonpastNegativeForm)
         {
-            adjectiveConjugationTypes.Add(ConjugationType.PoliteNonpastNegative);
+            adjectiveConjugationTypes.Add(ConjugationType.PolitePresentNegative);
         }
         if (config.AdjectivePolitePastForm)
         {
@@ -67,7 +67,7 @@ public static class QuizUtility
         }
         if (config.AdjectiveStandardNonpastNegativeForm)
         {
-            adjectiveConjugationTypes.Add(ConjugationType.StandardNonpastNegative);
+            adjectiveConjugationTypes.Add(ConjugationType.StandardPresentNegative);
         }
         if (config.AdjectiveStandardPastNegativeForm)
         {
@@ -77,7 +77,7 @@ public static class QuizUtility
         List<ConjugationType> nounConjugationTypes = new List<ConjugationType>();
         if (config.NounPoliteNonpastNegativeForm)
         {
-            nounConjugationTypes.Add(ConjugationType.PoliteNonpastNegative);
+            nounConjugationTypes.Add(ConjugationType.PolitePresentNegative);
         }
         if (config.NounPolitePastForm)
         {
@@ -93,7 +93,7 @@ public static class QuizUtility
         }
         if (config.NounStandardNonpastNegativeForm)
         {
-            nounConjugationTypes.Add(ConjugationType.StandardNonpastNegative);
+            nounConjugationTypes.Add(ConjugationType.StandardPresentNegative);
         }
         if (config.NounStandardPastNegativeForm)
         {
@@ -107,11 +107,11 @@ public static class QuizUtility
         List<ConjugationType> verbConjugationTypes = new List<ConjugationType>();
         if (config.VerbPoliteNonpastForm)
         {
-            verbConjugationTypes.Add(ConjugationType.PoliteNonpast);
+            verbConjugationTypes.Add(ConjugationType.PolitePresent);
         }
         if (config.VerbPoliteNonpastNegativeForm)
         {
-            verbConjugationTypes.Add(ConjugationType.PoliteNonpastNegative);
+            verbConjugationTypes.Add(ConjugationType.PolitePresentNegative);
         }
         if (config.VerbPolitePastForm)
         {
@@ -127,7 +127,7 @@ public static class QuizUtility
         }
         if (config.VerbStandardNonpastNegativeForm)
         {
-            verbConjugationTypes.Add(ConjugationType.StandardNonpastNegative);
+            verbConjugationTypes.Add(ConjugationType.StandardPresentNegative);
         }
         if (config.VerbStandardPastNegativeForm)
         {
@@ -145,7 +145,7 @@ public static class QuizUtility
         List<ConjugationType> adjectiveConjugationTypes = new List<ConjugationType>();
         if (config.AdjectivePoliteNonpastNegativeForm)
         {
-            adjectiveConjugationTypes.Add(ConjugationType.PoliteNonpastNegative);
+            adjectiveConjugationTypes.Add(ConjugationType.PolitePresentNegative);
         }
         if (config.AdjectivePolitePastForm)
         {
@@ -161,7 +161,7 @@ public static class QuizUtility
         }
         if (config.AdjectiveStandardNonpastNegativeForm)
         {
-            adjectiveConjugationTypes.Add(ConjugationType.StandardNonpastNegative);
+            adjectiveConjugationTypes.Add(ConjugationType.StandardPresentNegative);
         }
         if (config.AdjectiveStandardPastNegativeForm)
         {
@@ -171,7 +171,7 @@ public static class QuizUtility
         List<ConjugationType> nounConjugationTypes = new List<ConjugationType>();
         if (config.NounPoliteNonpastNegativeForm)
         {
-            nounConjugationTypes.Add(ConjugationType.PoliteNonpastNegative);
+            nounConjugationTypes.Add(ConjugationType.PolitePresentNegative);
         }
         if (config.NounPolitePastForm)
         {
@@ -187,7 +187,7 @@ public static class QuizUtility
         }
         if (config.NounStandardNonpastNegativeForm)
         {
-            nounConjugationTypes.Add(ConjugationType.StandardNonpastNegative);
+            nounConjugationTypes.Add(ConjugationType.StandardPresentNegative);
         }
         if (config.NounStandardPastNegativeForm)
         {
@@ -323,13 +323,13 @@ public static class QuizUtility
 
             switch (form)
             {
-            case ConjugationType.PoliteNonpast:
+            case ConjugationType.PolitePresent:
                 answer.Add(Word.PoliteNonpast);
-                questionType = "Polite Non-past Form";
+                questionType = "Polite Present Form";
                 break;
-            case ConjugationType.PoliteNonpastNegative:
+            case ConjugationType.PolitePresentNegative:
                 answer.Add(Word.PoliteNonPastNegative);
-                questionType = "Polite Non-past Negative Form";
+                questionType = "Polite Present Negative Form";
                 break;
             case ConjugationType.PolitePast:
                 answer.Add(Word.PolitePast);
@@ -343,13 +343,13 @@ public static class QuizUtility
                 answer.Add(Word.StandardPast);
                 questionType = "Standard Past Form";
                 break;
-            case ConjugationType.StandardNonpast:
+            case ConjugationType.StandardPresent:
                 answer.Add(Word.StandardNonpast);
                 questionType = "Type the Hiragana";
                 break;
-            case ConjugationType.StandardNonpastNegative:
+            case ConjugationType.StandardPresentNegative:
                 answer.Add(Word.StandardNonpastNegative);
-                questionType = "Standard Non-past Negative Form";
+                questionType = "Standard Present Negative Form";
                 break;
             case ConjugationType.StandardPastNegative:
                 answer.Add(Word.StandardPastNegative);
@@ -378,9 +378,9 @@ public static class QuizUtility
             switch (form)
             {
 
-            case ConjugationType.PoliteNonpastNegative:
+            case ConjugationType.PolitePresentNegative:
                 answer.Add(Word.PoliteNonpastNegative);
-                questionType = "Polite Non-past Negative Form";
+                questionType = "Polite Present Negative Form";
                 break;
             case ConjugationType.PolitePast:
                 answer.Add(Word.PolitePast);
@@ -394,15 +394,15 @@ public static class QuizUtility
                 answer.Add(Word.StandardPast);
                 questionType = "Standard Past Form";
                 break;
-            case ConjugationType.StandardNonpastNegative:
+            case ConjugationType.StandardPresentNegative:
                 answer.Add(Word.StandardNonpastNegative);
-                questionType = "Standard Non-past Negative Form";
+                questionType = "Standard Present Negative Form";
                 break;
             case ConjugationType.StandardPastNegative:
                 answer.Add(Word.StandardPastNegative);
                 questionType = "Standard Past Negative Form";
                 break;
-            case ConjugationType.StandardNonpast:
+            case ConjugationType.StandardPresent:
                 answer.Add(Word.StandardNonpast);
                 questionType = "Type the Hiragana";
                 break;
@@ -416,9 +416,9 @@ public static class QuizUtility
             Noun Word = word as Noun;
             switch (form)
             {
-            case ConjugationType.PoliteNonpastNegative:
+            case ConjugationType.PolitePresentNegative:
                 answer.Add(Word.PoliteNonpastNegative);
-                questionType = "Polite Non-past Negative Form";
+                questionType = "Polite Present Negative Form";
                 break;
             case ConjugationType.PolitePast:
                 answer.Add(Word.PolitePast);
@@ -432,15 +432,15 @@ public static class QuizUtility
                 answer.Add(Word.StandardPast);
                 questionType = "Standard Past Form";
                 break;
-            case ConjugationType.StandardNonpastNegative:
+            case ConjugationType.StandardPresentNegative:
                 answer.Add(Word.StandardNonpastNegative);
-                questionType = "Standard Non-past Negative Form";
+                questionType = "Standard Present Negative Form";
                 break;
             case ConjugationType.StandardPastNegative:
                 answer.Add(Word.StandardPastNegative);
                 questionType = "Standard Past Negative Form";
                 break;
-            case ConjugationType.StandardNonpast:
+            case ConjugationType.StandardPresent:
                 answer.Add(Word.StandardNonpast);
                 questionType = "Type the Hiragana";
                 break;

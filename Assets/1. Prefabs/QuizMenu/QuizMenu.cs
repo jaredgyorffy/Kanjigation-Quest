@@ -18,9 +18,11 @@ public class QuizMenu : MonoBehaviour
 
     private VisualElement QuestionTextElement;
     private VisualElement QuestionImageElement;
-
-
-
+    private Button[] MultipleChoiceButton;
+    private Label[] MultipleChoiceLabels;
+    private VisualElement MultipleChoice;
+    private VisualElement TextAnswer;
+    private string[] MultipleChoiceAnswers;
     [CreateProperty] public string PreviousAnswer => informationText;
     private string informationText;
 
@@ -72,11 +74,85 @@ public class QuizMenu : MonoBehaviour
         informationBox = quizMenuRoot.MQ<VisualElement>("InformationBox");
         textField.RegisterCallback<NavigationSubmitEvent>(OnPressEnterToSubmit, TrickleDown.TrickleDown);
 
+        MultipleChoice = quizMenuRoot.MQ<VisualElement>("MultipleChoice");
+        MultipleChoiceButton = new Button[4];
+        MultipleChoiceButton[0] = MultipleChoice.MQ<Button>("Option1");
+        MultipleChoiceButton[1] = MultipleChoice.MQ<Button>("Option2");
+        MultipleChoiceButton[2] = MultipleChoice.MQ<Button>("Option3");
+        MultipleChoiceButton[3] = MultipleChoice.MQ<Button>("Option4");
+
+        MultipleChoiceButton[0].clicked += Choice1;
+        MultipleChoiceButton[1].clicked += Choice2;
+        MultipleChoiceButton[2].clicked += Choice3;
+        MultipleChoiceButton[3].clicked += Choice4;
+        MultipleChoiceAnswers = new string[4];
+        MultipleChoiceLabels = new Label[4];
+        MultipleChoiceLabels[0] = MultipleChoiceButton[0].MQ<Label>();
+        MultipleChoiceLabels[1] = MultipleChoiceButton[1].MQ<Label>();
+        MultipleChoiceLabels[2] = MultipleChoiceButton[2].MQ<Label>();
+        MultipleChoiceLabels[3] = MultipleChoiceButton[3].MQ<Label>();
+
+        TextAnswer = quizMenuRoot.MQ<VisualElement>("TextAnswer");
+
         restartButton.SetEnabled(true);
         restartButton.visible = false;
 
         SetInformationText("");
         Initialized = true;
+        SetQuestionType(MenuType.MultipleChoice);
+    }
+
+    public void SetQuestionType(MenuType type)
+    {
+        switch (type)
+        {
+        case MenuType.TextAnswer:
+            MultipleChoice.RemoveFromClassList("Visible");
+            MultipleChoice.AddToClassList("Hidden");
+            TextAnswer.RemoveFromClassList("Hidden");
+            TextAnswer.AddToClassList("Visible");
+            break;
+        case MenuType.MultipleChoice:
+            TextAnswer.RemoveFromClassList("Visible");
+            TextAnswer.AddToClassList("Hidden");
+            MultipleChoice.RemoveFromClassList("Hidden");
+            MultipleChoice.AddToClassList("Visible");
+            break;
+        default:
+            break;
+        }
+    }
+
+    public void SetMultipleChoiceQuestions(string[] Answers)
+    {
+        MultipleChoiceAnswers = Answers;
+        for (int i = 0; i < MultipleChoiceLabels.Length; i++)
+        {
+            MultipleChoiceLabels[i].text = Answers[i];
+        }
+    }
+
+    private void Choice1()
+    {
+        OnSelectedChoice(0);
+    }
+    private void Choice2()
+    {
+        OnSelectedChoice(1);
+    }
+    private void Choice3()
+    {
+        OnSelectedChoice(2);
+    }
+    private void Choice4()
+    {
+        OnSelectedChoice(3);
+    }
+
+    public void OnSelectedChoice(int choice)
+    {
+        Debug.Log(choice);
+        SubmitButtonPressed?.Invoke(MultipleChoiceAnswers[choice]);
     }
 
     public void Unsubscribe()
@@ -269,4 +345,10 @@ public class QuizMenu : MonoBehaviour
             Unsubscribe();
         }
     }
+}
+
+public enum MenuType
+{
+    TextAnswer = 0,
+    MultipleChoice = 1,
 }

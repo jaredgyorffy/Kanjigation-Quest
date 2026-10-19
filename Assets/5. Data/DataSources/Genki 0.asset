@@ -20,6 +20,7 @@ MonoBehaviour:
       VerbConjugationTypes: 
       AdjectiveConjugationTypes: 
       NounConjugationTypes: 
+    Data: 
     UseKanaKeyboard: 0
     EnabledByDefault: 1
   - Title: Typing Practice
@@ -28,6 +29,7 @@ MonoBehaviour:
       VerbConjugationTypes: 00000000
       AdjectiveConjugationTypes: 00000000
       NounConjugationTypes: 00000000
+    Data: 
     UseKanaKeyboard: 1
     EnabledByDefault: 0
   VocabData:
@@ -173,5 +175,15 @@ MonoBehaviour:
       - Please help me
       - Please take care of me
     AdverbList: []
+    ReadingList:
+    - Kana: "\u304D\u3087\u3046\u306F\u3044\u3044\u3067\u3059"
+      Answer: Today is good.
+      Key: Today is good.
+      Answers:
+      - Today is good.
+      - Today is bad.
+      - Yesterday was good
+      - Tomorrow will be good.
     GrammerList: []
     GrammerExamples: []
+    KoSoDoAs: []

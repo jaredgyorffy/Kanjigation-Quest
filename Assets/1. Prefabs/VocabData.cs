@@ -17,7 +17,8 @@ public class VocabData
     public List<Expression> ExpressionList;
     [SpreadsheetPage("adverbs")]
     public List<Adverb> AdverbList;
-
+    [SpreadsheetPage("reading")]
+    public List<ReadingQuestion> ReadingList;
     [SpreadsheetPage("grammer")]
     public List<Grammer> GrammerList;
     [SpreadsheetPage("grammerExamples")]

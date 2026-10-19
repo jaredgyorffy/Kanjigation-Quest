@@ -609,12 +609,12 @@ public enum VerbType
 
 public enum ConjugationType
 {
-    StandardNonpast,
-    PoliteNonpast,
-    PoliteNonpastNegative,
+    StandardPresent,
+    PolitePresent,
+    PolitePresentNegative,
     PolitePast,
     PolitePastNegative,
-    StandardNonpastNegative,
+    StandardPresentNegative,
     StandardPast,
     StandardPastNegative,
     PoliteVolitional,
