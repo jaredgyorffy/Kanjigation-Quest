@@ -99,10 +99,9 @@ public class QuizMenu : MonoBehaviour
 
         SetInformationText("");
         Initialized = true;
-        SetQuestionType(MenuType.MultipleChoice);
     }
 
-    public void SetQuestionType(MenuType type)
+    public void SetMenuType(MenuType type)
     {
         switch (type)
         {
@@ -123,12 +122,24 @@ public class QuizMenu : MonoBehaviour
         }
     }
 
-    public void SetMultipleChoiceQuestions(string[] Answers)
+    public void SetMultipleChoiceQuestions(List<string> IncorrectAnswers, string correctAnswer)
     {
-        MultipleChoiceAnswers = Answers;
+        string[] answers = new string[4];
+        List<string> arrayCopy = new List<string>(IncorrectAnswers);
+        for (int i = 0; i < 3; i++)
+        {
+            int random = UnityEngine.Random.Range(0, arrayCopy.Count - 1);
+            Debug.Log(random);
+            string answer = arrayCopy[random];
+            arrayCopy.RemoveAt(random);
+            answers[i] = answer;
+        }
+        answers[3] = correctAnswer;
+        answers.Shuffle();
+        MultipleChoiceAnswers = answers;
         for (int i = 0; i < MultipleChoiceLabels.Length; i++)
         {
-            MultipleChoiceLabels[i].text = Answers[i];
+            MultipleChoiceLabels[i].text = answers[i];
         }
     }
 
@@ -298,7 +309,7 @@ public class QuizMenu : MonoBehaviour
             QuestionImageElement.style.display = DisplayStyle.None;
         }
     }
-    public void SetQuestion(string question)
+    public void SetTextQuestion(string question)
     {
         textField.Focus();
         this.question = question;

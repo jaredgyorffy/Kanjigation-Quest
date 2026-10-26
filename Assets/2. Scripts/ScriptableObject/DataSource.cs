@@ -123,26 +123,25 @@ public class DataSource : ScriptableObject
 
     private void AddAnswersReading()
     {
-
         List<ReadingQuestion> answers = new List<ReadingQuestion>(VocabData.ReadingList);
         VocabData.ReadingList.Clear();
         foreach (ReadingQuestion question in answers)
         {
-            bool containsKey = false;
-            foreach (var answer in VocabData.ReadingList)
+            bool questionExists = false;
+            foreach (ReadingQuestion answer in VocabData.ReadingList)
             {
                 if (question.Key == answer.Key)
                 {
                     answer.Answers.Add(question.Answer);
-                    containsKey = true;
+                    questionExists = true;
                 }
             }
 
-            if (containsKey)
+            if (questionExists)
             {
                 continue;
             }
-            ReadingQuestion NewReading = new ReadingQuestion(question.Kana, question.Answer, question.Key);
+            ReadingQuestion NewReading = new ReadingQuestion(question.Kana, question.Key, question.Key);
             NewReading.Answers.Add(question.Answer);
             VocabData.ReadingList.Add(NewReading);
         }

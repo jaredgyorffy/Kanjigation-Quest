@@ -15,4 +15,5 @@ public enum WordType
     Adverb = 3,
     Expression = 4,
     Grammer = 5,
+    Reading = 6,
 }

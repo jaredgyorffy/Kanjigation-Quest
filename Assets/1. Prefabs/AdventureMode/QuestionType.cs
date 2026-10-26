@@ -39,5 +39,7 @@ public enum QuestionCategory
     Numbers = 501,
     KoSoADo = 502,
 
+    Reading = 601,
+
     FinalBoss = 1000,
 }

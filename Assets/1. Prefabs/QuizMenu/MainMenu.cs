@@ -304,6 +304,10 @@ public class MainMenu : MonoBehaviour
                     {
                         config.KoSOADo.AddRange(globalVariables.WordLists[i].VocabData.KoSoDoAs);
                     }
+                    else if (question.Category == QuestionCategory.Reading)
+                    {
+                        config.Readings.AddRange(globalVariables.WordLists[i].VocabData.ReadingList);
+                    }
                 }
 
                 for (int j = 0; j < contentToggles[i].Count -1 ; j++)
@@ -406,6 +410,7 @@ public class QuizConfiguration
     public List<Noun> Nouns = new();
     public List<Grammer> Grammers = new();
     public List<KoSoADo> KoSOADo = new();
+    public List<ReadingQuestion> Readings = new();
 
     public bool IsValid()
     {

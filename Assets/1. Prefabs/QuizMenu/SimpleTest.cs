@@ -42,7 +42,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
 
     public void InitializeQuiz(QuizConfiguration config, QuizMenu quizmenu)
     {
-        WordLists = new WordLists(config.Verbs, config.Adjectives, config.Nouns, config.Expressions, config.Adverbs, config.Grammers, config.KoSOADo);
+        WordLists = new WordLists(config.Verbs, config.Adjectives, config.Nouns, config.Expressions, config.Adverbs, config.Grammers, config.KoSOADo, config.Readings);
         quizMenu = quizmenu;
         quizMenu.SetNumberVisible(false);
         askedQuestions = new();
@@ -112,12 +112,24 @@ public class SimpleTest : MonoBehaviour, IQuiz
         askedQuestions.Add(currentQuestion);
         Question question = GetQuestion();
         currentQuestion = question;
-        quizMenu.SetQuestion(question.QuestionText);
 
         if (question.Category != QuestionCategory.KoSoADo)
         {
             SetKana(question.Word);
         }
+
+        if (question.Category == QuestionCategory.Reading)
+        {
+            quizMenu.SetTextQuestion(question.QuestionText);
+            quizMenu.SetMenuType(MenuType.MultipleChoice);
+            quizMenu.SetMultipleChoiceQuestions(question.IncorrectAnswers, question.Answers[0]);
+        }
+        else
+        {
+            quizMenu.SetMenuType(MenuType.TextAnswer);
+            quizMenu.SetTextQuestion(question.QuestionText);
+        }
+
     }
 
     private void SetKana(string kana, string Kanji)
@@ -148,6 +160,8 @@ public class SimpleTest : MonoBehaviour, IQuiz
             return GetNumbersQuestion(maxRange);
         case QuestionCategory.KoSoADo:
             return GetKoSoADoQuestion();
+        case QuestionCategory.Reading:
+            return GetReadingQuestion();
         default:
             Debug.LogError($"invalid Question Category {questionType.Category}");
             return null;
@@ -211,6 +225,12 @@ public class SimpleTest : MonoBehaviour, IQuiz
     private Question GetGrammerQuestion()
     {
         return QuizUtility.GetRandomGrammer(WordLists);
+    }
+
+    private Question GetReadingQuestion()
+    {
+        Question reading = QuizUtility.GetRandomReading(WordLists);
+        return QuizUtility.GetRandomReading(WordLists);
     }
 
     public void ToggleHint(bool hintVisible)

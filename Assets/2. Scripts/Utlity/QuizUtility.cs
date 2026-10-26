@@ -591,7 +591,13 @@ public static class QuizUtility
             word = words.Adverbs[index];
             words.Adverbs.RemoveAt(index);
         }
-
         return word;
+    }
+
+    public static Question GetRandomReading(WordLists wordLists)
+    {
+        int index = UnityEngine.Random.Range(0, wordLists.Reading.Count);
+        ReadingQuestion reading = wordLists.Reading[index];
+        return new Question("Choose the best translation.", reading.Meaning, reading, QuestionCategory.Reading, "", reading.Answers);
     }
 }
