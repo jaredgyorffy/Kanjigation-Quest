@@ -13,8 +13,8 @@ public class ReadingQuestion : IWord
     public ReadingQuestion(string Kana, string Meaning, string key)
     {
         this.kana = Kana;
-        this.Answer = Meaning;
-        this.Key = key;
+        this.answer = Meaning;
+        this.key = key;
     }
 
     public string Kanji => "";
@@ -27,8 +27,10 @@ public class ReadingQuestion : IWord
         meanings.Add(Answer);
         return meanings;
     }
-
-    [field: SerializeField] public string Answer;
-    [field: SerializeField] public string Key;
-    [field: SerializeField] public List<string> Answers = new();
+    public string Answer => answer;
+    [SerializeField] private string answer;
+    public string Key => key;
+    [SerializeField] private string key;
+    public List<string> Answers => answers;
+    [SerializeField] private List<string> answers = new();
 }

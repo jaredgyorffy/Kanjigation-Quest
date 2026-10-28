@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: SpreadsheetContainer
+  m_EditorClassIdentifier: Assembly-CSharp::SpreadsheetContainer
+  foldoutImportGUI: 1
+  documentId: 1_4DyT5uDoSl6wbE6CMDT6D5fKIFAJrOM
+  selectedTogglesIds:
+  - ReadingList
+  foldoutSerializationGUI: 0
+  serializationOutputPath: ../../Configs
+  serializationFileName: Configs.v0.1
+  serializationFormat: 0
+  content:
+    VerbList: []
+    NounList: []
+    AdjectiveList: []
+    ExpressionList: []
+    AdverbList: []
+    ReadingList:
+    - kana: "\u304D\u3087\u3046\u306F\u3044\u3044\u3067\u3059"
+      answer: Today is bad.
+      key: Today is good.
+      answers: []
+    - kana: "\u304D\u3087\u3046\u306F\u3044\u3044\u3067\u3059"
+      answer: Yesterday was good
+      key: Today is good.
+      answers: []
+    - kana: "\u304D\u3087\u3046\u306F\u3044\u3044\u3067\u3059"
+      answer: Tomorrow will be good.
+      key: Today is good.
+      answers: []
+    GrammerList: []
+    GrammerExamples: []
+    KoSoDoAs: []

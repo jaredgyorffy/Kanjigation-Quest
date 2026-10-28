@@ -185,11 +185,10 @@ MonoBehaviour:
       - Please take care of me
     AdverbList: []
     ReadingList:
-    - kana: 
-      meaning: 
-      Key: Today is good.
-      Answers:
-      - Today is good.
+    - kana: "\u304D\u3087\u3046\u306F\u3044\u3044\u3067\u3059"
+      answer: Today is good.
+      key: Today is good.
+      answers:
       - Today is bad.
       - Yesterday was good
       - Tomorrow will be good.
