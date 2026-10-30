@@ -77,6 +77,15 @@ MonoBehaviour:
     Data: 
     UseKanaKeyboard: 1
     EnabledByDefault: 1
+  - Title: Reading Questions
+    Category: 601
+    ConjugationTypes:
+      VerbConjugationTypes: 
+      AdjectiveConjugationTypes: 
+      NounConjugationTypes: 
+    Data: 
+    UseKanaKeyboard: 1
+    EnabledByDefault: 1
   VocabData:
     VerbList:
     - kana: "\u3044\u304F"
@@ -684,6 +693,218 @@ MonoBehaviour:
       - properly
       - well
       - skillfully
+    ReadingList:
+    - kana: "\u308F\u305F\u3057\u306F \u30B3\u30FC\u30D2\u30FC\u3092 \u306E\u307F\u307E\u3059"
+      answer: I drink coffee
+      key: I drink coffee
+      answers:
+      - I eat breakfast
+      - I drink tea
+      - My friend drinks coffee
+      - I do not drink coffee
+      - I buy coffee
+      - I make coffee at home
+    - kana: "\u308F\u305F\u3057\u306F\u306B\u307B\u3093\u306E \u3048\u3044\u304C\u3092
+        \u307F\u307E\u3059"
+      answer: I watch Japanese movies
+      key: I watch Japanese movies
+      answers:
+      - I watch American movies
+      - I read Japanese books
+      - My friend watches Japanese movies
+      - I do not watch Japanese movies
+      - I make Japanese movies
+      - I listen to Japanese music
+    - kana: "\u308F\u305F\u3057\u306F \u30B5\u30C3\u30AB\u30FC\u3092 \u3057\u307E\u3059"
+      answer: I play soccer
+      key: I play soccer
+      answers:
+      - I play baseball
+      - I watch soccer
+      - My friend plays soccer
+      - I do not play soccer
+      - I play tennis
+      - I go to soccer games
+    - kana: "\u308F\u305F\u3057\u306E \u3068\u3082\u3060\u3061\u306F \u30B9\u30DD\u30FC\u30C4\u306E\u3056\u3063\u3057\u3092
+        \u3088\u307F\u307E\u3059"
+      answer: My friend reads sports magazines
+      key: My friend reads sports magazines
+      answers:
+      - My friend reads fashion magazines
+      - My friend buys sports magazines
+      - I read sports magazines
+      - My teacher reads sports magazines
+      - My friend watches sports on TV
+      - My friend writes sports magazines
+    - kana: "\u308F\u305F\u3057\u306F \u30ED\u30C3\u30AF\u3092 \u304D\u304D\u307E\u3059"
+      answer: I listen to rock music
+      key: I listen to rock music
+      answers:
+      - I listen to jazz music
+      - I play rock music
+      - My friend listens to rock music
+      - I do not listen to rock music
+      - I listen to classical music
+      - I watch rock concerts
+    - kana: "\u305F\u306A\u304B\u3055\u3093\u306F \u3068\u3057\u3087\u304B\u3093\u306B
+        \u3044\u304D\u307E\u3059"
+      answer: Tanaka-san goes to the library
+      key: Tanaka-san goes to the library
+      answers:
+      - Tanaka-san goes to school
+      - Tanaka-san comes to the library
+      - Suzuki-san goes to the library
+      - Tanaka-san studies at home
+      - Tanaka-san does not go to the library
+      - I go to the library
+    - kana: "\u308F\u305F\u3057\u306E \u3068\u3082\u3060\u3061\u306F \u306B\u307B\u3093\u306B
+        \u304D\u307E\u3059"
+      answer: My friend is coming to Japan
+      key: My friend is coming to Japan
+      answers:
+      - My friend is going to Korea
+      - My friend is leaving Japan
+      - My friend lives in Japan
+      - I am coming to Japan
+      - My teacher is coming to Japan
+      - My friend is studying Japanese
+    - kana: "\u3059\u305A\u304D\u3055\u3093\u306F \u3044\u3048\u3067 \u304A\u3093\u304C\u304F\u3092
+        \u304D\u304D\u307E\u3059"
+      answer: Suzuki-san listens to music at home
+      key: Suzuki-san listens to music at home
+      answers:
+      - Suzuki-san listens to music at school
+      - Suzuki-san watches movies at home
+      - Tanaka-san listens to music at home
+      - Suzuki-san plays music at home
+      - Suzuki-san does not listen to music at home
+      - "I listen to music at Suzuki-san\u2019s house"
+    - kana: "\u308F\u305F\u3057\u306F \u304C\u3063\u3053\u3046\u3067 \u3072\u308B\u3054\u306F\u3093\u3092
+        \u305F\u3079\u307E\u305B\u3093"
+      answer: I do not eat lunch at school
+      key: I do not eat lunch at school
+      answers:
+      - I eat lunch at school
+      - I do not eat breakfast at school
+      - My friend does not eat lunch at school
+      - I do not eat lunch at home
+      - I do not eat dinner at school
+      - I buy lunch at school
+    - kana: "\u308F\u305F\u3057\u306F \u307E\u3044\u306B\u3061 \u306F\u3061\u3058\u306F\u3093\u306B
+        \u3060\u3044\u304C\u304F\u306B \u3044\u304D\u307E\u3059"
+      answer: I go to the university at 8:30 every day
+      key: I go to the university at 8:30 every day
+      answers:
+      - I go to the university at 9:30 every day
+      - I go to the university at 8:00 every day
+      - I go to school at 8:30 every Monday
+      - I leave the university at 8:30 every day
+      - I go to the library at 8:30 every day
+      - My friend goes to the university at 8:30 every day
+    - kana: "\u308F\u305F\u3057\u306F \u307E\u3044\u306B\u3061 \u3058\u3085\u3046\u306B\u3058\u306B
+        \u304C\u3063\u3053\u3046\u3067 \u3072\u308B\u3054\u306F\u3093\u3092 \u305F\u3079\u307E\u3059"
+      answer: I eat lunch at school at 12:00 every day
+      key: I eat lunch at school at 12:00 every day
+      answers:
+      - I eat dinner at school at 12:00 every day
+      - I eat lunch at home at 12:00 every day
+      - I eat lunch at school at 1:00 every day
+      - I eat lunch at school at 12:00 on Mondays
+      - My friend eats lunch at school at 12:00 every day
+      - I do not eat lunch at school at noon
+    - kana: "\u308F\u305F\u3057\u306F \u305F\u3044\u3066\u3044 \u3058\u3085\u3046\u3044\u3061\u3058\u3054\u308D
+        \u306D\u307E\u3059"
+      answer: I usually go to bed around 11:00
+      key: I usually go to bed around 11:00
+      answers:
+      - I usually wake up around 11:00
+      - I usually go to bed around 10:00
+      - I always go to bed at exactly 11:00
+      - I sometimes go to bed around 11:00
+      - My friend usually goes to bed around 11:00
+      - I usually eat dinner around 11:00
+    - kana: "\u3053\u3093\u3070\u3093 \u3048\u3044\u304C\u3092 \u307F\u307E\u305B\u3093\u304B"
+      answer: Would you like to watch a movie tonight?
+      key: Would you like to watch a movie tonight?
+      answers:
+      - Would you like to watch a movie tomorrow?
+      - Would you like to read a book tonight?
+      - I am watching a movie tonight.
+      - Did you watch a movie last night?
+      - Would you like to watch a movie this morning?
+      - I do not watch movies at night.
+    - kana: "\u3053\u3093\u3070\u3093\u306F \u3061\u3087\u3063\u3068\u2026\u2026"
+      answer: "Tonight... well, that\u2019s a bit difficult..."
+      key: "Tonight... well, that\u2019s a bit difficult..."
+      answers:
+      - Tomorrow would be difficult for me
+      - Tonight is a perfect time
+      - I will be free tonight
+      - I would like to go tonight
+      - Last night was a little difficult
+      - Tonight I am going to the library
+    - kana: "\u3042\u3057\u305F\u306F \u3069\u3046\u3067\u3059\u304B"
+      answer: How about tomorrow?
+      key: How about tomorrow?
+      answers:
+      - How about today?
+      - How about next week?
+      - What did you do yesterday?
+      - What time is it tomorrow?
+      - How was yesterday?
+      - Where are you going tomorrow?
+    - kana: "\u30A2\u30D6\u30C9\u30A5\u30EB\u3055\u3093\u3001\u3053\u3093\u3070\u3093
+        \u3070\u3093\u3054\u306F\u3093\u3092 \u305F\u3079\u307E\u305B\u3093\u304B"
+      answer: Abdul-san, would you like to have dinner tonight?
+      key: Abdul-san, would you like to have dinner tonight?
+      answers:
+      - Abdul-san, would you like to have breakfast tonight?
+      - Abdul-san, would you like to have dinner tomorrow?
+      - Tanaka-san, would you like to have dinner tonight?
+      - Abdul-san, did you eat dinner last night?
+      - Abdul-san, would you like to watch a movie tonight?
+      - Abdul-san, I already ate dinner tonight
+    - kana: "\u3044\u3044\u3048\u3001\u3042\u307E\u308A \u30B9\u30DD\u30FC\u30C4\u3092
+        \u3057\u307E\u305B\u3093"
+      answer: "No, I don\u2019t really play sports"
+      key: "No, I don\u2019t really play sports"
+      answers:
+      - Yes, I play sports often
+      - No, I do not watch sports
+      - No, I do not play video games very often
+      - No, my friend rarely plays sports
+      - Yes, I play soccer every day
+      - I sometimes read sports magazines
+    - kana: "\u306F\u3044\u3001\u3088\u304F \u3048\u3044\u304C\u3092 \u307F\u307E\u3059"
+      answer: Yes, I watch movies often
+      key: Yes, I watch movies often
+      answers:
+      - No, I rarely watch movies
+      - Yes, I often read books
+      - Yes, my friend often watches movies
+      - I never watch movies
+      - Yes, I watch movies once a year
+      - Yes, I often make movies
+    - kana: "\u3068\u3057\u3087\u304B\u3093\u3067 \u3079\u3093\u304D\u3087\u3046\u3057\u307E\u3059"
+      answer: I study at the library
+      key: I study at the library
+      answers:
+      - I study at home
+      - I work at the library
+      - I read books at the library
+      - My friend studies at the library
+      - I do not study at the library
+      - I go to the library to eat lunch
+    - kana: "\u3088\u304F\u3068\u3082\u3060\u3061\u306E \u3046\u3061\u306B \u3044\u304D\u307E\u3059"
+      answer: "I often go to my friend\u2019s house"
+      key: "I often go to my friend\u2019s house"
+      answers:
+      - "I often go to my teacher\u2019s house"
+      - "I sometimes go to my friend\u2019s house"
+      - My friend often comes to my house
+      - "I often go to my friend\u2019s school"
+      - "I rarely go to my friend\u2019s house"
+      - "I often go to my parents\u2019 house"
     GrammerList:
     - Kana: "\u3044\u304D\u307E\u305B\u3093\u304B"
       Kanji: "\u3044\u304D\u307E\u305B\u3093\u304B"

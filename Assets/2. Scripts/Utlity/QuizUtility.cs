@@ -598,6 +598,7 @@ public static class QuizUtility
     {
         int index = UnityEngine.Random.Range(0, wordLists.Reading.Count);
         ReadingQuestion reading = wordLists.Reading[index];
+        wordLists.Reading.RemoveAt(index);
         return new Question("Choose the best translation.", reading.Meaning, reading, QuestionCategory.Reading, "", reading.Answers);
     }
 }

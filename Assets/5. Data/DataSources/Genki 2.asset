@@ -59,6 +59,15 @@ MonoBehaviour:
     Data: 
     UseKanaKeyboard: 1
     EnabledByDefault: 1
+  - Title: Reading Questions
+    Category: 601
+    ConjugationTypes:
+      VerbConjugationTypes: 
+      AdjectiveConjugationTypes: 
+      NounConjugationTypes: 
+    Data: 
+    UseKanaKeyboard: 1
+    EnabledByDefault: 1
   VocabData:
     VerbList: []
     NounList:
@@ -434,6 +443,107 @@ MonoBehaviour:
       - hello
       - goodbye
     AdverbList: []
+    ReadingList:
+    - kana: "\u3053\u308C\u306F \u308F\u305F\u3057\u306E \u30DA\u30F3\u3093\u3067\u3059"
+      answer: This is my pen
+      key: This is my pen
+      answers:
+      - That is my pen over there
+      - This is your pen
+      - This is my pencil
+      - This is my notebook
+      - Is this my pen?
+      - "This is Takeshi\u2019s pen"
+    - kana: "\u3042\u308C\u306F \u306A\u3093\u3067\u3059\u304B"
+      answer: What is that?
+      key: What is that?
+      answers:
+      - What is this?
+      - What is that near you?
+      - Who is that?
+      - Where is that?
+      - Is that a book?
+      - That is my bag.
+    - kana: "\u3053\u308C\u306F \u306B\u304F\u3067\u3059\u304B"
+      answer: Is this meat?
+      key: Is this meat?
+      answers:
+      - Is that meat?
+      - This is meat.
+      - Is this fish?
+      - Is this a vegetable?
+      - Where is the meat?
+      - Whose meat is this?
+    - kana: "\u305F\u306A\u304B\u3055\u3093\u306F \u306F\u305F\u3061\u3067\u3059"
+      answer: Tanaka-san is 20 years old
+      key: Tanaka-san is 20 years old
+      answers:
+      - Tanaka-san is 19 years old
+      - Tanaka-san is 21 years old
+      - Suzuki-san is 20 years old
+      - I am 20 years old
+      - Tanaka-san is not 20 years old
+      - Tanaka-san turns 20 next year
+    - kana: "\u3053\u306E\u304B\u3055\u306F \u306B\u305B\u3093\u3048\u3093\u3067\u3059"
+      answer: This umbrella costs 2,000 yen
+      key: This umbrella costs 2,000 yen
+      answers:
+      - This umbrella costs 1,000 yen
+      - This umbrella costs 3,000 yen
+      - That umbrella costs 2,000 yen
+      - This bag costs 2,000 yen
+      - These umbrellas cost 2,000 yen each
+      - How much does this umbrella cost?
+    - kana: "\u3053\u308C\u306F \u308F\u305F\u3057\u306E \u3058\u3066\u3093\u3057\u3083\u3067\u3059"
+      answer: This is my bicycle
+      key: This is my bicycle
+      answers:
+      - That is my bicycle
+      - This is your bicycle
+      - This is my car
+      - This is my motorcycle
+      - Is this my bicycle?
+      - "This is my friend\u2019s bicycle"
+    - kana: "\u3044\u3044\u3048\u3001\u306B\u307B\u3093\u3058\u3093\u3058\u3083\u306A\u3044\u3067\u3059"
+      answer: No, I am not Japanese
+      key: No, I am not Japanese
+      answers:
+      - Yes, I am Japanese
+      - No, I am not Chinese
+      - No, Tanaka-san is not Japanese
+      - I am a Japanese student
+      - No, I do not speak Japanese
+      - Yes, I am from Japan
+    - kana: "\u3044\u3044\u3048\u3001\u3058\u3085\u3046\u304D\u3085\u3046\u3055\u3044\u3058\u3083\u306A\u3044\u3067\u3059"
+      answer: No, I am not 19 years old
+      key: No, I am not 19 years old
+      answers:
+      - Yes, I am 19 years old
+      - No, I am not 20 years old
+      - No, Tanaka-san is not 19 years old
+      - I am turning 19 tomorrow
+      - No, I am not a university student
+      - Yes, I am 18 years old
+    - kana: "\u3053\u308C\u306F \u3060\u308C\u306E \u307C\u3046\u3057\u3067\u3059\u304B"
+      answer: Whose hat is this?
+      key: Whose hat is this?
+      answers:
+      - Whose umbrella is this?
+      - Whose hat is that over there?
+      - Is this your hat?
+      - Where is my hat?
+      - This is my hat.
+      - Who is wearing that hat?
+    - kana: "\u3042\u308C\u306F \u3060\u308C\u306E \u304B\u3055\u3067\u3059\u304B"
+      answer: Whose umbrella is that?
+      key: Whose umbrella is that?
+      answers:
+      - Whose hat is that?
+      - Whose umbrella is this?
+      - Is that your umbrella?
+      - Where is that umbrella?
+      - That is my umbrella.
+      - How much is that umbrella?
     GrammerList:
     - Kana: "\u306D"
       Kanji: 
