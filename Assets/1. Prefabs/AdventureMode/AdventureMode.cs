@@ -126,18 +126,18 @@ public class AdventureMode : MonoBehaviour
         this.playerMaxHP = playerMaxHP;
         playerCurrentHP = playerMaxHP;
 
-        leftButton.clicked += leftButtonPressed;
-        rightButton.clicked += rightButtonPressed;
-        centerButton.clicked += centerButtonPressed;
-        leftButton.clicked += () => SetNextDirection(DungeonDirection.Left);
-        centerButton.clicked += () => SetNextDirection(DungeonDirection.Forward);
-        rightButton.clicked += () => SetNextDirection(DungeonDirection.Right);
         this.restartAction = restartAction;
-        if (Initialized)
+        if (Initialized != true)
         {
-            return;
+            leftButton.clicked += leftButtonPressed;
+            rightButton.clicked += rightButtonPressed;
+            centerButton.clicked += centerButtonPressed;
+            leftButton.clicked += () => SetNextDirection(DungeonDirection.Left);
+            centerButton.clicked += () => SetNextDirection(DungeonDirection.Forward);
+            rightButton.clicked += () => SetNextDirection(DungeonDirection.Right);
+            quizMediator.AnswerSubmitted += ResolveBattle;
         }
-        quizMediator.AnswerSubmitted += ResolveBattle;
+
         Initialized = true;
         SetQuizQuestionType(GetRandomQuestionType(config.questionTypes));
         SetDirectionButtonVisibility(false);
@@ -324,16 +324,7 @@ public class AdventureMode : MonoBehaviour
 
     private void CombatRewards()
     {
-        if (RandomUtility.PercentageChanceOfTrue(0.5f))
-        {
-            Debug.Log("Hints increased");
-            inventory.IncreaseHints();
-        }
-        else
-        {
-            Debug.Log("Health Restored");
-            ModifyPlayerHealth(2);
-        }
+        ModifyPlayerHealth(2);
     }
 
     private void ModifyPlayerHealth(int health)

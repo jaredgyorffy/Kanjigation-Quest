@@ -38,6 +38,7 @@ VisualElement {
 
 .Hidden {
     opacity: 0;
+    display: none;
 }
 
 .Visible {

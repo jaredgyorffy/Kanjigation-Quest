@@ -105,11 +105,6 @@ public class MainMenu : MonoBehaviour
         }
 
         warningText.visible = false;
-
-        if (adventure.Initialized)
-        {
-            adventure.Unsubscribe();
-        }
         //sequenceTest.InitializeQuiz(config, questions, Restart);
         root.visible = false;
     }

@@ -7,7 +7,7 @@ public class PlayerInventory : MonoBehaviour, ILocatableService
     private void Awake()
     {
         ServiceLocator.Instance.Register(this);
-    }
+        Hints = 999;    }
 
     public void IncreaseHints(int hintAmount = 1)
     {
