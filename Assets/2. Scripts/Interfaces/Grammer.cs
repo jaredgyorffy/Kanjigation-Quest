@@ -8,16 +8,18 @@ public class Grammer
     public Grammer()
     {
     }
-    public Grammer(string kana, string kanji, string Key)
+    public Grammer(string kana, string kanji, string Key, string GUID)
     {
         this.Kana = kana;
         this.Kanji = kanji;
         this.Key = Key;
+        this.GUID = GUID;
     }
     [field: SerializeField] public string Kana;
     [field: SerializeField] public string Kanji;
     [field: SerializeField] public string Key;
     [field: SerializeField] public string Explanation;
+    [field: SerializeField] public string GUID;
     [field: SerializeField] public List<GrammerExample> Examples;
 }
 
@@ -29,4 +31,5 @@ public class GrammerExample
     public string Translation;
     public string Hint;
     public string Key;
+    public string GUID;
 }

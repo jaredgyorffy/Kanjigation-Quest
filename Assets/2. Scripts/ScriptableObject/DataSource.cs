@@ -114,7 +114,7 @@ public class DataSource : ScriptableObject
             {
                 continue;
             }
-            Grammer newGrammer = new Grammer(example.Answer, example.Answer, example.Key);
+            Grammer newGrammer = new Grammer(example.Answer, example.Answer, example.Key, example.GUID);
             newGrammer.Examples = new();
             newGrammer.Examples.Add(example);
             VocabData.GrammerList.Add(newGrammer);
@@ -141,7 +141,7 @@ public class DataSource : ScriptableObject
             {
                 continue;
             }
-            ReadingQuestion NewReading = new ReadingQuestion(question.Kana, question.Key, question.Key);
+            ReadingQuestion NewReading = new ReadingQuestion(question.Kana, question.Key, question.Key, question.GUID);
             NewReading.Answers.Add(question.Answer);
             VocabData.ReadingList.Add(NewReading);
         }

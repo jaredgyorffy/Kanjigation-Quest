@@ -67,13 +67,13 @@ public class SimpleTest : MonoBehaviour, IQuiz
             {
                 SetInformationText("Correct");
                 confirmAnswer = true;
-                return (true, "");
+                return (true, answer);
             }
             else
             {
                 SetInformationText("Wrong! Try again?");
                 confirmAnswer = true;
-                return (false, "string");
+                return (false, "");
             }
         }
         else
@@ -82,14 +82,22 @@ public class SimpleTest : MonoBehaviour, IQuiz
             if (CheckAnswer(answer))
             {
                 SetInformationText("");
-                AnswerSubmitted?.Invoke(true, "");
+                AnswerSubmitted?.Invoke(true, answer);
+                if (!string.IsNullOrEmpty(currentQuestion.GUID))
+                {
+                    QuestionStatisticsManager.RecordAnswer(currentQuestion.GUID, true);
+                }
 
                 return (true, "");
             }
             else
             {
                 SetInformationText("");
-                AnswerSubmitted?.Invoke(false, "frogs");
+                AnswerSubmitted?.Invoke(false, "");
+                if (!string.IsNullOrEmpty(currentQuestion.GUID))
+                {
+                    QuestionStatisticsManager.RecordAnswer(currentQuestion.GUID, false);
+                }
                 return (false, GetAnswer());
             }
         }

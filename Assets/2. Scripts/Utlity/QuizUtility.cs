@@ -263,7 +263,7 @@ public static class QuizUtility
     {
         KoSoADo data = GetKoSOADo(wordlist);
         Noun word = new();
-        Question question = new(data.Question, data.Answer, word, QuestionCategory.KoSoADo, "No Hint Implemented");
+        Question question = new(data.Question, data.Answer, word, QuestionCategory.KoSoADo, "No Hint Implemented", "");
         return (question, data.Image);
     }
 
@@ -276,7 +276,7 @@ public static class QuizUtility
     {
         string questionType = "Expression Meaning";
         string hint = "No hints currently available for Expressions";
-        return new Question(questionType, word.Meaning, word, QuestionCategory.Expression, hint);
+        return new Question(questionType, word.Meaning, word, QuestionCategory.Expression, hint, word.GUID);
     }
 
     public static Question GetNumbersQuestion(int number)
@@ -290,14 +290,14 @@ public static class QuizUtility
             word.kanji = NumberTranslator.GetNumberTranslation(number)[0];
             List <string> correctAnswers = new List<string>();
             correctAnswers.Add(number.ToString());
-            return new Question(questionType, correctAnswers, word, QuestionCategory.Numbers, hint);
+            return new Question(questionType, correctAnswers, word, QuestionCategory.Numbers, hint, word.GUID);
         }
         else
         {
             questionType = "Translate the number";
             Noun word = new();
             word.kanji = number.ToString();
-            return new Question(questionType, NumberTranslator.GetNumberTranslation(number), word, QuestionCategory.Numbers, hint);
+            return new Question(questionType, NumberTranslator.GetNumberTranslation(number), word, QuestionCategory.Numbers, hint, word.GUID);
         }
     }
 
@@ -307,7 +307,7 @@ public static class QuizUtility
         string hint = "No hints are available for meaning questions";
 
         IWord word = GetRandomWordByType(ref wordlist, GetRandomWordType(wordlist));
-        return new Question(questionType, word.Meaning, word, QuestionCategory.Vocab, hint);
+        return new Question(questionType, word.Meaning, word, QuestionCategory.Vocab, hint, word.GUID);
     }
 
 
@@ -450,7 +450,7 @@ public static class QuizUtility
             }
         }
 
-        return new Question(questionType, answer, word, QuestionCategory.Conjugation, hint);
+        return new Question(questionType, answer, word, QuestionCategory.Conjugation, hint, "");
     }
     public static WordType GetRandomWordType(ConjugationTypes words, WordLists lists)
     {
@@ -547,9 +547,9 @@ public static class QuizUtility
         GrammerExample example = grammer.Examples[UnityEngine.Random.Range(0, grammer.Examples.Count)];
         List<string> answers = new List<string>();
         answers.Add(example.Answer);
-        Noun fakeWord = new Noun(example.Question, "", answers);
+        Noun fakeWord = new Noun(example.Question, "", answers, grammer.GUID);
 
-        return new Question(example.Hint, answers, fakeWord, QuestionCategory.Grammar, example.Translation);
+        return new Question(example.Hint, answers, fakeWord, QuestionCategory.Grammar, example.Translation, fakeWord.GUID);
     }
 
     public static IWord GetRandomWordByType(ref WordLists words, WordType wordtype)
@@ -599,6 +599,6 @@ public static class QuizUtility
         int index = UnityEngine.Random.Range(0, wordLists.Reading.Count);
         ReadingQuestion reading = wordLists.Reading[index];
         wordLists.Reading.RemoveAt(index);
-        return new Question("Choose the best translation.", reading.Meaning, reading, QuestionCategory.Reading, "", reading.Answers);
+        return new Question("Choose the best translation.", reading.Meaning, reading, QuestionCategory.Reading, "", reading.GUID, reading.Answers);
     }
 }

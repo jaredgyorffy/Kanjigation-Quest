@@ -20,6 +20,8 @@ public class Verb : IWord
     [SerializeField] private string meaningFull;
     public List <string> Meaning => meaning;
     [SerializeField] private List<string> meaning;
+    public string GUID => guid;
+    [SerializeField] private string guid;
     public string PoliteNonpast => ConjugatePoliteNonpast(kana);
     [Foldout("Irregular Conjugation")][ShowIf("Type", VerbType.IRR)][SerializeField][AllowNesting] private string politeNonpast;
 

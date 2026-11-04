@@ -6,6 +6,7 @@ public interface IWord
     public string Kanji { get; }
     public string Kana { get; }
     public List<string> Meaning { get; }
+    public string GUID { get; }
 }
 public enum WordType
 {

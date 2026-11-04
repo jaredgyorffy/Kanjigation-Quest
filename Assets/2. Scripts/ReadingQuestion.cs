@@ -10,16 +10,19 @@ public class ReadingQuestion : IWord
     {
 
     }
-    public ReadingQuestion(string Kana, string Meaning, string key)
+    public ReadingQuestion(string Kana, string Meaning, string key, string GUID)
     {
         this.kana = Kana;
         this.answer = Meaning;
         this.key = key;
+        this.guid = GUID;
     }
 
     public string Kanji => "";
     public string Kana => kana;
     [SerializeField] private string kana;
+    public string GUID => guid;
+    [SerializeField] private string guid;
     public List<string> Meaning => GetMeaning();
     private List<string> GetMeaning()
     {

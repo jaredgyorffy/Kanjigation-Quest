@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: SpreadsheetContainer
   m_EditorClassIdentifier: Assembly-CSharp::SpreadsheetContainer
-  foldoutImportGUI: 1
-  documentId: 1_4DyT5uDoSl6wbE6CMDT6D5fKIFAJrOM
-  selectedTogglesIds:
-  - ReadingList
+  foldoutImportGUI: 0
+  documentId: 
+  selectedTogglesIds: []
   foldoutSerializationGUI: 0
   serializationOutputPath: ../../Configs
   serializationFileName: Configs.v0.1
@@ -26,19 +25,7 @@ MonoBehaviour:
     AdjectiveList: []
     ExpressionList: []
     AdverbList: []
-    ReadingList:
-    - kana: "\u304D\u3087\u3046\u306F\u3044\u3044\u3067\u3059"
-      answer: Today is bad.
-      key: Today is good.
-      answers: []
-    - kana: "\u304D\u3087\u3046\u306F\u3044\u3044\u3067\u3059"
-      answer: Yesterday was good
-      key: Today is good.
-      answers: []
-    - kana: "\u304D\u3087\u3046\u306F\u3044\u3044\u3067\u3059"
-      answer: Tomorrow will be good.
-      key: Today is good.
-      answers: []
+    ReadingList: []
     GrammerList: []
     GrammerExamples: []
     KoSoDoAs: []

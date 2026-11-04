@@ -11,8 +11,13 @@ public class Adverb : IWord
     [SerializeField] public string kanji;
 
     public WordType WordType => WordType.Adverb;
+
     public string MeaningFull => meaningFull;
     [SerializeField] private string meaningFull;
+
     public List<string> Meaning => meaning;
     [SerializeField] private List<string> meaning;
+
+    public string GUID => guid;
+    [SerializeField] private string guid;
 }

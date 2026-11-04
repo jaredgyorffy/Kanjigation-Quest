@@ -9,11 +9,12 @@ public class Noun : IWord
 
     }
 
-    public Noun(string kana, string kanji, List<string> meaning)
+    public Noun(string kana, string kanji, List<string> meaning, string GUID)
     {
         this.kana = kana;
         this.kanji = kanji;
         this.meaning = meaning;
+        this.guid = GUID;
     }
     public string Kana => kana;
     [SerializeField] private string kana;
@@ -26,6 +27,9 @@ public class Noun : IWord
     [SerializeField] private string meaningFull;
     public List<string> Meaning => meaning;
     [SerializeField] private List<string> meaning;
+
+    public string GUID => guid;
+    [SerializeField] private string guid;
 
     public string StandardNonpast => kana;
 

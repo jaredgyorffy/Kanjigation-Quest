@@ -20,6 +20,9 @@ public class Adjective : IWord
     public List<string> Meaning => meaning;
     [SerializeField] private List<string> meaning;
 
+    public string GUID => guid;
+    [SerializeField] private string guid;
+
     public string StandardNonpast => kana;
     public string PolitePast => ConjugatePolitePast(kana);
     [Foldout("Irregular Conjugation")][ShowIf("AdjectiveType", AdjectiveType.IRR)][SerializeField][AllowNesting] private string politePast;
