@@ -44,7 +44,6 @@ public class SimpleTest : MonoBehaviour, IQuiz
     {
         WordLists = new WordLists(config.Verbs, config.Adjectives, config.Nouns, config.Expressions, config.Adverbs, config.Grammers, config.KoSOADo, config.Readings);
         quizMenu = quizmenu;
-        quizMenu.SetNumberVisible(false);
         askedQuestions = new();
         SetInformationText("");
         useKanaKeyboard = config.UseKanaKeyboard;
@@ -85,10 +84,10 @@ public class SimpleTest : MonoBehaviour, IQuiz
                 AnswerSubmitted?.Invoke(true, answer);
                 if (!string.IsNullOrEmpty(currentQuestion.GUID))
                 {
-                    QuestionStatisticsManager.RecordAnswer(currentQuestion.GUID, true);
+                    QuestionStatisticsManager.RecordAnswer(currentQuestion.GUID, QuestionCategory.Vocab, true);
                 }
 
-                return (true, "");
+                return (true, answer);
             }
             else
             {
@@ -96,7 +95,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
                 AnswerSubmitted?.Invoke(false, "");
                 if (!string.IsNullOrEmpty(currentQuestion.GUID))
                 {
-                    QuestionStatisticsManager.RecordAnswer(currentQuestion.GUID, false);
+                    QuestionStatisticsManager.RecordAnswer(currentQuestion.GUID, QuestionCategory.Vocab, false);
                 }
                 return (false, GetAnswer());
             }
@@ -115,10 +114,11 @@ public class SimpleTest : MonoBehaviour, IQuiz
 
     private bool shouldConfirmAnswer => StrictMode || confirmAnswer ? true : false;
 
-    public void PrepareNextQuestion()
+    public void PrepareNextQuestion(QuestionDifficulty questionDifficulty = QuestionDifficulty.Medium)
     {
+        Debug.Log(questionDifficulty);
         askedQuestions.Add(currentQuestion);
-        Question question = GetQuestion();
+        Question question = GetQuestion(questionDifficulty);
         currentQuestion = question;
 
         if (question.Category != QuestionCategory.KoSoADo)
@@ -150,7 +150,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
         quizMenu.SetKana(word.Kana, word.Kanji);
     }
 
-    private Question GetQuestion()
+    private Question GetQuestion(QuestionDifficulty questionDifficulty = QuestionDifficulty.Medium)
     {
         switch (questionType.Category)
         {
@@ -161,7 +161,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
         case QuestionCategory.Expression:
             return GetExpressionQuestion();
         case QuestionCategory.Vocab:
-            return GetVocabQuestion();
+            return GetVocabQuestion(questionDifficulty);
         case QuestionCategory.Numbers:
             int maxRange = 99;
             int.TryParse(questionType.Data, out maxRange);
@@ -199,9 +199,9 @@ public class SimpleTest : MonoBehaviour, IQuiz
         return QuizUtility.GetNumbersQuestion(number);
     }
 
-    private Question GetVocabQuestion()
+    private Question GetVocabQuestion(QuestionDifficulty questionDifficulty = QuestionDifficulty.Medium)
     {
-        return QuizUtility.GetVocabQuestion(ref WordLists);
+        return QuizUtility.GetVocabQuestion(ref WordLists, questionDifficulty = QuestionDifficulty.Medium);
     }
 
     private Question GetExpressionQuestion()

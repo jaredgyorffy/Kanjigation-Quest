@@ -34,28 +34,18 @@ MonoBehaviour:
     EnabledByDefault: 1
   VocabData:
     VerbList:
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 0efa69e0-2863-4f81-a0fb-3bb4f5018444
-      politeNonpast: 
-      politePast: 
-      politeNonPastNegative: 
-      politePastNegative: 
-      standardPast: 
-      standardNonpastNegative: 
-      standardPastNegative: 
-      politeVolitional: 
-      casualVolitional: 
-      teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: b2ec9c95-9d80-4d08-a787-b3209547701f
+    - kana: "\u3042\u3046"
+      kanji: "\u4F1A\u3046"
+      type: 0
+      meaningFull: to meet; to encounter; to see; to have an accident; to have a
+        bad experience
+      meaning:
+      - to meet
+      - to encounter
+      - to see
+      - to have an accident
+      - to have a bad experience
+      guid: dc52ab8e-7c3c-4496-847e-6d9c767f533e
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -66,13 +56,85 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3042\u304F"
+      kanji: "\u958B\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 289e4b9d-8170-45a4-ba3c-843816a9266e
-      politeNonpast: 
+      meaningFull: to open; to be empty; to be vacant; to be available; to be free;
+        to be open; to have been opened (of one's eyes, mouth, etc.); to have been
+        opened; to come to an end; to open (one's eyes, mouth, etc.); to open; to
+        have a hole; to form a gap; to have an interval (between events); to have
+        an interval
+      meaning:
+      - to open
+      - to be empty
+      - to be vacant
+      - to be available
+      - to be free
+      - to be open
+      - to have been opened (of one's eyes
+      - mouth
+      - etc.)
+      - to have been opened
+      - to come to an end
+      - to open (one's eyes
+      - to have a hole
+      - to form a gap
+      - to have an interval (between events)
+      - to have an interval
+      guid: 5397e822-7e22-4eec-a684-a24be17f4d7d
+      politeNonpast: 
+      politePast: 
+      politeNonPastNegative: 
+      politePastNegative: 
+      standardPast: 
+      standardNonpastNegative: 
+      standardPastNegative: 
+      politeVolitional: 
+      casualVolitional: 
+      teForm: 
+    - kana: "\u3042\u3051\u308B"
+      kanji: "\u958B\u3051\u308B"
+      type: 1
+      meaningFull: to open (a door, etc.); to open; to unwrap; to unlock; to open
+        (for business, etc.); to open; to empty; to remove; to make space; to make
+        room; to move out; to clear out; to be away from; to leave (temporarily);
+        to leave; to dawn; to grow light; to end (of a period, season); to end; to
+        begin (of the New Year); to begin; to leave (one's schedule) open; to leave
+        open; to make time (for); to make time; to make (a hole); to make; to open
+        up (a hole); to open up
+      meaning:
+      - to open (a door
+      - etc.)
+      - to open
+      - to unwrap
+      - to unlock
+      - to open (for business
+      - to empty
+      - to remove
+      - to make space
+      - to make room
+      - to move out
+      - to clear out
+      - to be away from
+      - to leave (temporarily)
+      - to leave
+      - to dawn
+      - to grow light
+      - to end (of a period
+      - season)
+      - to end
+      - to begin (of the New Year)
+      - to begin
+      - to leave (one's schedule) open
+      - to leave open
+      - to make time (for)
+      - to make time
+      - to make (a hole)
+      - to make
+      - to open up (a hole)
+      - to open up
+      guid: 1bfa356b-608e-4237-be7a-baed81986805
+      politeNonpast: 
       politePast: 
       politeNonPastNegative: 
       politePastNegative: 
@@ -82,12 +144,85 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 7fcc9d3a-3cf0-4283-9c1d-d02a8ce51db5
+    - kana: "\u3042\u3052\u308B"
+      kanji: "\u4E0A\u3052\u308B"
+      type: 1
+      meaningFull: to raise; to elevate; to do up (one's hair); to do up; to fly
+        (a kite, etc.); to fly; to launch (fireworks, etc.); to launch; to surface
+        (a submarine, etc.); to surface; to land (a boat); to land; to deep-fry;
+        to show someone (into a room); to show someone; to summon (for geishas, etc.);
+        to summon; to send someone (away); to send someone; to enrol (one's child
+        in school); to enrol; to enroll; to increase (price, quality, status, etc.);
+        to increase; to develop (talent, skill); to develop; to improve; to make
+        (a loud sound); to make; to raise (one's voice); to raise; to earn (something
+        desirable); to earn; to praise; to give (an example, etc.); to give; to cite;
+        to summon up (all of one's energy, etc.); to summon up; to arrest; to nominate;
+        to give; to offer up (incense, a prayer, etc.) to the gods (or Buddha, etc.);
+        to offer up to the gods; to bear (a child); to bear; to conduct (a ceremony,
+        esp. a wedding); to conduct; (of the tide) to come in; to come in; to vomit;
+        to do for (the sake of someone else); to do for; to complete; to humbly do
+      meaning:
+      - to raise
+      - to elevate
+      - to do up (one's hair)
+      - to do up
+      - to fly (a kite
+      - etc.)
+      - to fly
+      - to launch (fireworks
+      - to launch
+      - to surface (a submarine
+      - to surface
+      - to land (a boat)
+      - to land
+      - to deep-fry
+      - to show someone (into a room)
+      - to show someone
+      - to summon (for geishas
+      - to summon
+      - to send someone (away)
+      - to send someone
+      - to enrol (one's child in school)
+      - to enrol
+      - to enroll
+      - to increase (price
+      - quality
+      - status
+      - to increase
+      - to develop (talent
+      - skill)
+      - to develop
+      - to improve
+      - to make (a loud sound)
+      - to make
+      - to raise (one's voice)
+      - to earn (something desirable)
+      - to earn
+      - to praise
+      - to give (an example
+      - to give
+      - to cite
+      - to summon up (all of one's energy
+      - to summon up
+      - to arrest
+      - to nominate
+      - to offer up (incense
+      - a prayer
+      - etc.) to the gods (or Buddha
+      - to offer up to the gods
+      - to bear (a child)
+      - to bear
+      - to conduct (a ceremony
+      - esp. a wedding)
+      - to conduct
+      - (of the tide) to come in
+      - to come in
+      - to vomit
+      - to do for (the sake of someone else)
+      - to do for
+      - to complete
+      - to humbly do
+      guid: 8495da5e-1116-4eab-9b91-aed14427ada6
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -98,12 +233,29 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3042\u305D\u3076"
+      kanji: "\u904A\u3076"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 7d881ef3-d920-4cd9-b141-80f3ec14091a
+      meaningFull: to play; to enjoy oneself; to have a good time; to mess about
+        (with alcohol, gambling, philandery, etc.); to mess about; to be idle; to
+        do nothing; to be unused; to go to (for pleasure or for study); to go to;
+        to intentionally throw a ball to lower the batter's concentration
+      meaning:
+      - to play
+      - to enjoy oneself
+      - to have a good time
+      - to mess about (with alcohol
+      - gambling
+      - philandery
+      - etc.)
+      - to mess about
+      - to be idle
+      - to do nothing
+      - to be unused
+      - to go to (for pleasure or for study)
+      - to go to
+      - to intentionally throw a ball to lower the batter's concentration
+      guid: 94a4f148-6354-4dfc-8371-4107f3c76ab6
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -114,12 +266,24 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: a5a09a2a-4bac-49ea-8ef6-ee82a6f5acf7
+    - kana: "\u3042\u3073\u308B"
+      kanji: "\u6D74\u3073\u308B"
+      type: 1
+      meaningFull: to dash over oneself; to take; to bask in; to bathe in; to be
+        flooded with; to be covered in; to suffer; to draw; to have heaped upon;
+        to be showered with
+      meaning:
+      - to dash over oneself
+      - to take
+      - to bask in
+      - to bathe in
+      - to be flooded with
+      - to be covered in
+      - to suffer
+      - to draw
+      - to have heaped upon
+      - to be showered with
+      guid: d844ba1e-d50a-4c31-8777-5c367c8535cd
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -130,12 +294,14 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3042\u3089\u3046"
+      kanji: "\u6D17\u3046"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 88e0a616-e2ef-4094-87f1-c9ce1b04b8b6
+      meaningFull: to wash; to investigate
+      meaning:
+      - to wash
+      - to investigate
+      guid: a0934751-ae35-4782-91b0-5eea3b70ea7c
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -146,12 +312,25 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: f2861613-9bdb-4486-8c1d-ed1e4e3ee087
+    - kana: "\u3042\u308B"
+      kanji: "\u6709\u308B"
+      type: 2
+      meaningFull: Godan verb with ru ending (irregular verb), intransitive verb;
+        Godan verb with ru ending , intransitive verb; to be; to exist; to live;
+        to have; to be located; to be equipped with; to happen; to come about
+      meaning:
+      - Godan verb with ru ending (irregular verb)
+      - intransitive verb
+      - Godan verb with ru ending
+      - to be
+      - to exist
+      - to live
+      - to have
+      - to be located
+      - to be equipped with
+      - to happen
+      - to come about
+      guid: fbe27b10-e9e1-4fed-bb9f-baddb914eeda
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -162,12 +341,13 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3042\u308B\u304F"
+      kanji: "\u6B69\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 8149c362-8ae1-4be7-b95d-ac008f815e68
+      meaningFull: to walk
+      meaning:
+      - to walk
+      guid: dcf6430f-b881-46d5-b9a3-46efb1ed5fe1
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -178,12 +358,20 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3044\u3046"
+      kanji: "\u8A00\u3046"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 1baeb23d-2124-4f9c-a2b5-1857e442b7de
+      meaningFull: to say; to utter; to declare; to name; to call; to go; to make
+        a noise
+      meaning:
+      - to say
+      - to utter
+      - to declare
+      - to name
+      - to call
+      - to go
+      - to make a noise
+      guid: 2a5369ad-8844-4bed-a76f-e180b3684cd8
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -194,12 +382,43 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3044\u304F"
+      kanji: "\u884C\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 6fd75460-94f6-4d81-8cb0-02fd9bc548fe
+      meaningFull: to go; to move (in a direction or towards a specific location);
+        to move; to head (towards); to head; to be transported (towards); to be transported;
+        to reach; to proceed; to take place; to pass through; to come and go; to
+        walk; to die; to pass away; to do (in a specific way); to do; to stream;
+        to flow; to continue; to have an orgasm; to come; to cum; to trip; to get
+        high; to have a drug-induced hallucination
+      meaning:
+      - to go
+      - to move (in a direction or towards a specific location)
+      - to move
+      - to head (towards)
+      - to head
+      - to be transported (towards)
+      - to be transported
+      - to reach
+      - to proceed
+      - to take place
+      - to pass through
+      - to come and go
+      - to walk
+      - to die
+      - to pass away
+      - to do (in a specific way)
+      - to do
+      - to stream
+      - to flow
+      - to continue
+      - to have an orgasm
+      - to come
+      - to cum
+      - to trip
+      - to get high
+      - to have a drug-induced hallucination
+      guid: 7015692e-d5f1-41d9-923a-860a27bcbe6f
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -210,12 +429,18 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 2c00db30-d960-4872-b025-79508d5372c9
+    - kana: "\u3044\u308B"
+      kanji: "\u5C45\u308B"
+      type: 1
+      meaningFull: to be (of animate objects); to be; to exist; to stay; verb indicating
+        continuing action or state
+      meaning:
+      - to be (of animate objects)
+      - to be
+      - to exist
+      - to stay
+      - verb indicating continuing action or state
+      guid: eb746147-db9f-4f65-910e-4a73727c659f
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -226,12 +451,14 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3044\u308B"
+      kanji: "\u8981\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 0408aae8-7ffa-4f2b-a199-3b9b8fe71e33
+      meaningFull: to need; to want
+      meaning:
+      - to need
+      - to want
+      guid: 7cd94e70-8fad-416d-a010-735f6bde7464
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -242,12 +469,52 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: b147313b-e2a9-4761-a66d-89d01c0c289e
+    - kana: "\u3044\u308C\u308B"
+      kanji: "\u5165\u308C\u308B"
+      type: 1
+      meaningFull: to put in; to let in; to take in; to bring in; to insert; to set
+        (a jewel, etc.); to set; to ink in; to admit; to accept; to employ; to hire;
+        to comply; to grant; to adopt (a policy, etc.); to adopt; to take (advice,
+        etc.); to take; to listen to; to pay attention to; to include; to pay (one's
+        rent, etc.); to pay; to cast (a vote); to cast; to make (tea, coffee, etc.);
+        to make; to turn on (a switch, etc.); to turn on; to send (a fax); to send;
+        to call
+      meaning:
+      - to put in
+      - to let in
+      - to take in
+      - to bring in
+      - to insert
+      - to set (a jewel
+      - etc.)
+      - to set
+      - to ink in
+      - to admit
+      - to accept
+      - to employ
+      - to hire
+      - to comply
+      - to grant
+      - to adopt (a policy
+      - to adopt
+      - to take (advice
+      - to take
+      - to listen to
+      - to pay attention to
+      - to include
+      - to pay (one's rent
+      - to pay
+      - to cast (a vote)
+      - to cast
+      - to make (tea
+      - coffee
+      - to make
+      - to turn on (a switch
+      - to turn on
+      - to send (a fax)
+      - to send
+      - to call
+      guid: ec00e698-e927-4c59-a873-84d5b1310c1d
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -258,12 +525,18 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3046\u305F\u3046"
+      kanji: "\u6B4C\u3046"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 03f4fcd0-fce9-4f55-be68-8067a2a2bfbb
+      meaningFull: to sing; to sing (one's praises in a poem, etc.); to sing; to
+        compose a poem; to recite a poem
+      meaning:
+      - to sing
+      - to sing (one's praises in a poem
+      - etc.)
+      - to compose a poem
+      - to recite a poem
+      guid: 90427ad7-0765-425d-bdab-e4ee885d272f
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -274,12 +547,13 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: c0e5b55f-7551-4d7a-8126-e0b38e755ae6
+    - kana: "\u3046\u307E\u308C\u308B"
+      kanji: "\u751F\u307E\u308C\u308B"
+      type: 1
+      meaningFull: to be born
+      meaning:
+      - to be born
+      guid: 5792c79e-9ce2-4fff-9cd6-ea4b51e8fcd2
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -290,12 +564,13 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3046\u308B"
+      kanji: "\u58F2\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 62164332-8851-486c-afa1-20f682817d2c
+      meaningFull: to sell
+      meaning:
+      - to sell
+      guid: bb04ec28-2e76-49ec-885e-a24dbb99d5c4
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -306,12 +581,23 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 9f1e0569-e3ea-47d6-9bbd-a07cad87f116
+    - kana: "\u304A\u304D\u308B"
+      kanji: "\u8D77\u304D\u308B"
+      type: 1
+      meaningFull: to get up; to rise; to blaze up (fire); to blaze up; to wake up;
+        to be awake; to stay awake; to occur; to happen; to take place
+      meaning:
+      - to get up
+      - to rise
+      - to blaze up (fire)
+      - to blaze up
+      - to wake up
+      - to be awake
+      - to stay awake
+      - to occur
+      - to happen
+      - to take place
+      guid: c586ed8d-59f6-468b-b3c1-d57e5c9eea19
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -322,12 +608,46 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304A\u304F"
+      kanji: "\u7F6E\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 07361b43-618b-4400-a24b-56b75c43ba92
+      meaningFull: to put; to place; to leave (behind); to leave; to establish (an
+        organization, a facility, a position, etc.); to establish; to set up; to
+        appoint (someone to a certain position); to appoint; to hire; to employ;
+        to place (one's trust, one's faith, etc); to place; to bear (in mind etc);
+        to bear; to put down a tool hence stopping what one is doing with that tool;
+        to take in (boarders, etc.); to take in; to provide lodging in one's house;
+        to separate spatially or temporally; to do something in advance; to leave
+        something in a certain state; to keep something in a certain state
+      meaning:
+      - to put
+      - to place
+      - to leave (behind)
+      - to leave
+      - to establish (an organization
+      - a facility
+      - a position
+      - etc.)
+      - to establish
+      - to set up
+      - to appoint (someone to a certain position)
+      - to appoint
+      - to hire
+      - to employ
+      - to place (one's trust
+      - one's faith
+      - etc)
+      - to bear (in mind etc)
+      - to bear
+      - to put down a tool hence stopping what one is doing with that tool
+      - to take in (boarders
+      - to take in
+      - to provide lodging in one's house
+      - to separate spatially or temporally
+      - to do something in advance
+      - to leave something in a certain state
+      - to keep something in a certain state
+      guid: c0b31ae3-fe95-42f6-947e-045ca04127b8
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -338,12 +658,17 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 672ee768-8eaf-479b-bf27-12401f550745
+    - kana: "\u304A\u3057\u3048\u308B"
+      kanji: "\u6559\u3048\u308B"
+      type: 1
+      meaningFull: to teach; to instruct; to tell; to inform; to preach
+      meaning:
+      - to teach
+      - to instruct
+      - to tell
+      - to inform
+      - to preach
+      guid: 57e7ebcb-b9c3-480c-9e3f-c7ecd5a54fa2
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -354,12 +679,44 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304A\u3059"
+      kanji: "\u62BC\u3059"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 6aa0479a-c11a-4567-b3ed-27a358996a39
+      meaningFull: to push; to press; to apply pressure from above; to press down;
+        to stamp; to apply a seal; to affix; to press (someone for something); to
+        press; to urge; to compel; to influence; to overwhelm; to overpower; to repress;
+        to push (events along); to push; to advance (a plan); to advance; to do in
+        spite of; to do even though; to force; to make sure; to be pressed for time;
+        to advance troops; to attack; (of light) to be diffused across an entire
+        surface; to be diffused across an entire surface
+      meaning:
+      - to push
+      - to press
+      - to apply pressure from above
+      - to press down
+      - to stamp
+      - to apply a seal
+      - to affix
+      - to press (someone for something)
+      - to urge
+      - to compel
+      - to influence
+      - to overwhelm
+      - to overpower
+      - to repress
+      - to push (events along)
+      - to advance (a plan)
+      - to advance
+      - to do in spite of
+      - to do even though
+      - to force
+      - to make sure
+      - to be pressed for time
+      - to advance troops
+      - to attack
+      - (of light) to be diffused across an entire surface
+      - to be diffused across an entire surface
+      guid: b8ddf52b-1565-417b-9ff3-22dc7e47ea05
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -370,12 +727,26 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 4eda0db8-93bc-4e08-b83c-205b49ac8a90
+    - kana: "\u304A\u307C\u3048\u308B"
+      kanji: "\u899A\u3048\u308B"
+      type: 1
+      meaningFull: to memorize; to memorise; to commit to memory; to learn by heart;
+        to bear in mind; to remember; to learn; to pick up; to acquire; to feel;
+        to think; to regard
+      meaning:
+      - to memorize
+      - to memorise
+      - to commit to memory
+      - to learn by heart
+      - to bear in mind
+      - to remember
+      - to learn
+      - to pick up
+      - to acquire
+      - to feel
+      - to think
+      - to regard
+      guid: 3baf7775-54fb-4824-ad72-db1d5c906c1e
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -386,12 +757,13 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304A\u3088\u3050"
+      kanji: "\u6CF3\u3050"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: ea2c6549-d904-401c-b41c-52af73a23bbb
+      meaningFull: to swim
+      meaning:
+      - to swim
+      guid: a58ab0c9-3016-4fe0-9b60-0862b41db163
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -402,12 +774,36 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 714cf625-0332-4884-a10d-0f35cb0b2f99
+    - kana: "\u304A\u308A\u308B"
+      kanji: "\u964D\u308A\u308B"
+      type: 1
+      meaningFull: to descend; to go down; to come down; to alight; to get off; to
+        disembark; to dismount; to step down; to retire; to give up; to quit; to
+        be granted; to be issued; to be given; to form (of frost, dew, mist, etc.);
+        to form; to be passed (from the body; e.g. of a roundworm)
+      meaning:
+      - to descend
+      - to go down
+      - to come down
+      - to alight
+      - to get off
+      - to disembark
+      - to dismount
+      - to step down
+      - to retire
+      - to give up
+      - to quit
+      - to be granted
+      - to be issued
+      - to be given
+      - to form (of frost
+      - dew
+      - mist
+      - etc.)
+      - to form
+      - to be passed (from the body
+      - e.g. of a roundworm)
+      guid: 6a636d5f-5eb3-4d35-9fbf-7cb73bd82f9e
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -418,12 +814,15 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304A\u308F\u308B"
+      kanji: "\u7D42\u308F\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 41015a91-129f-4eb0-a285-f7b78b9be35f
+      meaningFull: to finish; to end; to close
+      meaning:
+      - to finish
+      - to end
+      - to close
+      guid: 40e9308a-6a0a-4daf-b176-c032876b0ad2
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -434,12 +833,23 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304B\u3046"
+      kanji: "\u8CB7\u3046"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: e78b1dca-892d-4910-86f1-d65b7018b907
+      meaningFull: "to buy; to purchase; to value; to have a high opinion; to stir;
+        to provoke \u304B\u3046: ichi1, news1, nf; \u8CB7\u3046: ichi1, news1, nf10"
+      meaning:
+      - to buy
+      - to purchase
+      - to value
+      - to have a high opinion
+      - to stir
+      - "to provoke \u304B\u3046: ichi1"
+      - news1
+      - nf
+      - "\u8CB7\u3046: ichi1"
+      - nf10
+      guid: fca5183b-f915-44b9-a61b-400b213482d3
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -450,12 +860,26 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304B\u3048\u3059"
+      kanji: "\u8FD4\u3059"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 009d7434-389b-453f-98cf-93d5858b4b69
+      meaningFull: to return (something); to return; to restore; to put back; to
+        turn over; to turn upside down; to overturn; to pay back; to retaliate; to
+        reciprocate; to repeat; to do ... back
+      meaning:
+      - to return (something)
+      - to return
+      - to restore
+      - to put back
+      - to turn over
+      - to turn upside down
+      - to overturn
+      - to pay back
+      - to retaliate
+      - to reciprocate
+      - to repeat
+      - to do ... back
+      guid: e11a9de4-f0d1-4e03-a13d-64fb27ca0a62
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -466,12 +890,20 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304B\u3048\u308B"
+      kanji: "\u5E30\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 610a67e8-306d-4cc4-ae89-1e472eb76f8f
+      meaningFull: to return; to come home; to go home; to go back; to leave; to
+        get home; to get to home plate
+      meaning:
+      - to return
+      - to come home
+      - to go home
+      - to go back
+      - to leave
+      - to get home
+      - to get to home plate
+      guid: 228858d5-3946-4c05-b45b-70e315d20de1
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -482,12 +914,43 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304B\u304B\u308B"
+      kanji: "\u639B\u304B\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: ae56c8bb-bdd0-4f75-9868-61b58857b073
+      meaningFull: to take (a resource, e.g. time or money); to take; to hang; to
+        come into view; to arrive; to come under (a contract, a tax); to come under;
+        to start (engines, motors); to start; to attend; to deal with; to handle;
+        to have started to; to be on the verge of; to overlap; to cover; to (come)
+        at; to at; to be fastened; to be covered; to be caught in; to get a call;
+        to depend on
+      meaning:
+      - to take (a resource
+      - e.g. time or money)
+      - to take
+      - to hang
+      - to come into view
+      - to arrive
+      - to come under (a contract
+      - a tax)
+      - to come under
+      - to start (engines
+      - motors)
+      - to start
+      - to attend
+      - to deal with
+      - to handle
+      - to have started to
+      - to be on the verge of
+      - to overlap
+      - to cover
+      - to (come) at
+      - to at
+      - to be fastened
+      - to be covered
+      - to be caught in
+      - to get a call
+      - to depend on
+      guid: df26eeee-5c93-48fe-805e-946838cb3300
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -498,12 +961,17 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304B\u304F"
+      kanji: "\u66F8\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: dbaeec36-bed4-4078-8a50-0e71c5c9a2c9
+      meaningFull: to write; to compose; to pen; to draw; to paint
+      meaning:
+      - to write
+      - to compose
+      - to pen
+      - to draw
+      - to paint
+      guid: 654806c1-ceec-4402-906d-a69b9dd857e5
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -514,12 +982,88 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 1af80013-2618-4ab7-8bc3-3391e0c9fc15
+    - kana: "\u304B\u3051\u308B"
+      kanji: "\u639B\u3051\u308B"
+      type: 1
+      meaningFull: to hang; to hoist; to raise; to sit; to take (time, money); to
+        take; to expend (money, time, etc.); to expend; to make (a call); to make;
+        to multiply; to secure; to put on (glasses, etc.); to put on; to cover; to
+        burden someone; to apply (insurance); to apply; to turn on (an engine, etc.);
+        to turn on; to set (a dial, an alarm clock, etc.); to set; to put an effect
+        (spell, anaesthetic, etc.) on; to put an effect on; to hold an emotion for
+        (pity, hope, etc.); to hold an emotion for; to bind; to pour (or sprinkle,
+        spray, etc.) onto; to pour onto; to argue (in court); to argue; to deliberate
+        (in a meeting); to deliberate; to present; to increase further; to catch
+        (in a trap, etc.); to catch; to set atop; to erect (a makeshift building);
+        to erect; to hold (a play, festival, etc.); to hold; to wager; to bet; to
+        risk; to stake; to gamble; to be partway doing; to begin (but not complete);
+        to begin; to be about to; indicates (verb) is being directed to (someone);
+        indicates is being directed to
+      meaning:
+      - to hang
+      - to hoist
+      - to raise
+      - to sit
+      - to take (time
+      - money)
+      - to take
+      - to expend (money
+      - time
+      - etc.)
+      - to expend
+      - to make (a call)
+      - to make
+      - to multiply
+      - to secure
+      - to put on (glasses
+      - to put on
+      - to cover
+      - to burden someone
+      - to apply (insurance)
+      - to apply
+      - to turn on (an engine
+      - to turn on
+      - to set (a dial
+      - an alarm clock
+      - to set
+      - to put an effect (spell
+      - anaesthetic
+      - etc.) on
+      - to put an effect on
+      - to hold an emotion for (pity
+      - hope
+      - to hold an emotion for
+      - to bind
+      - to pour (or sprinkle
+      - spray
+      - etc.) onto
+      - to pour onto
+      - to argue (in court)
+      - to argue
+      - to deliberate (in a meeting)
+      - to deliberate
+      - to present
+      - to increase further
+      - to catch (in a trap
+      - to catch
+      - to set atop
+      - to erect (a makeshift building)
+      - to erect
+      - to hold (a play
+      - festival
+      - to hold
+      - to wager
+      - to bet
+      - to risk
+      - to stake
+      - to gamble
+      - to be partway doing
+      - to begin (but not complete)
+      - to begin
+      - to be about to
+      - indicates (verb) is being directed to (someone)
+      - indicates is being directed to
+      guid: 40f475e1-1ef0-46c3-8016-b13860f4cb5f
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -530,12 +1074,16 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304B\u3059"
+      kanji: "\u8CB8\u3059"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 0d777026-4495-4604-825c-32737322fc94
+      meaningFull: to lend; to loan; to rent out; to hire out
+      meaning:
+      - to lend
+      - to loan
+      - to rent out
+      - to hire out
+      guid: 0434ec3a-84c9-4444-a5c5-9b8ce227667e
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -546,12 +1094,16 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: fef7737a-e14a-41fc-a3d4-70d60ea20a6e
+    - kana: "\u304B\u308A\u308B"
+      kanji: "\u501F\u308A\u308B"
+      type: 1
+      meaningFull: to borrow; to have a loan; to rent; to hire
+      meaning:
+      - to borrow
+      - to have a loan
+      - to rent
+      - to hire
+      guid: 4e799384-4df2-4651-a1e7-1340d40e3386
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -562,12 +1114,15 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 8e0b8eee-9534-4590-9387-8710ddd3a3d4
+    - kana: "\u304D\u3048\u308B"
+      kanji: "\u6D88\u3048\u308B"
+      type: 1
+      meaningFull: to go out; to vanish; to disappear
+      meaning:
+      - to go out
+      - to vanish
+      - to disappear
+      guid: a607c86e-8c67-45e4-b21e-6a3fccf071c2
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -578,12 +1133,26 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304D\u304F"
+      kanji: "\u805E\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 62e9fbe3-e814-426d-b475-47e62f88f02f
+      meaningFull: to hear; to listen; to ask; to enquire; to query; to learn of;
+        to hear about; to follow (advice); to follow; to comply with; to smell; to
+        sample fragrance
+      meaning:
+      - to hear
+      - to listen
+      - to ask
+      - to enquire
+      - to query
+      - to learn of
+      - to hear about
+      - to follow (advice)
+      - to follow
+      - to comply with
+      - to smell
+      - to sample fragrance
+      guid: 69002af8-0a16-4a79-af31-5b30ea4c2f82
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -594,12 +1163,96 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304D\u308B"
+      kanji: "\u5207\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: a4f9bd02-519f-4e4c-a9f7-597158f45e85
+      meaningFull: to cut; to cut through; to perform (surgery); to perform; to sever
+        (connections, ties); to sever; to turn off; to terminate; to hang up (the
+        phone); to hang up; to disconnect; to punch (a ticket); to punch; to tear
+        off (a stub); to tear off; to open (something sealed); to open; to start;
+        to set (a limit); to set; to do (something) in less or within a certain time;
+        to do in less or within a certain time; to issue (stamps, vouchers, etc.);
+        to issue; to reduce; to decrease; to discount; to shake off (water, etc.);
+        to shake off; to let drip-dry; to let drain; to cross; to traverse; to criticize
+        sharply; to act decisively; to do (something noticeable); to do; to go first;
+        to make (certain facial expressions, in kabuki); to make; to turn (a vehicle);
+        to turn; to curl (a ball); to curl; to bend; to shuffle (cards); to shuffle;
+        to dismiss; to sack; to let go; to expulse; to excommunicate; to dig (a groove);
+        to dig; to cut (a stencil, on a mimeograph); to cut; to trump; to cut (the
+        connection between two groups) (in go); to cut; to start a fire (with wood-wood
+        friction or by striking a metal against stone); to start a fire; to draw
+        (a shape) in the air (with a sword, etc.); to draw in the air; to finish;
+        to complete
+      meaning:
+      - to cut
+      - to cut through
+      - to perform (surgery)
+      - to perform
+      - to sever (connections
+      - ties)
+      - to sever
+      - to turn off
+      - to terminate
+      - to hang up (the phone)
+      - to hang up
+      - to disconnect
+      - to punch (a ticket)
+      - to punch
+      - to tear off (a stub)
+      - to tear off
+      - to open (something sealed)
+      - to open
+      - to start
+      - to set (a limit)
+      - to set
+      - to do (something) in less or within a certain time
+      - to do in less or within a certain time
+      - to issue (stamps
+      - vouchers
+      - etc.)
+      - to issue
+      - to reduce
+      - to decrease
+      - to discount
+      - to shake off (water
+      - to shake off
+      - to let drip-dry
+      - to let drain
+      - to cross
+      - to traverse
+      - to criticize sharply
+      - to act decisively
+      - to do (something noticeable)
+      - to do
+      - to go first
+      - to make (certain facial expressions
+      - in kabuki)
+      - to make
+      - to turn (a vehicle)
+      - to turn
+      - to curl (a ball)
+      - to curl
+      - to bend
+      - to shuffle (cards)
+      - to shuffle
+      - to dismiss
+      - to sack
+      - to let go
+      - to expulse
+      - to excommunicate
+      - to dig (a groove)
+      - to dig
+      - to cut (a stencil
+      - on a mimeograph)
+      - to trump
+      - to cut (the connection between two groups) (in go)
+      - to start a fire (with wood-wood friction or by striking a metal against stone)
+      - to start a fire
+      - to draw (a shape) in the air (with a sword
+      - to draw in the air
+      - to finish
+      - to complete
+      guid: f77b77dc-e751-4bb5-bc0d-6bd2ad944a23
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -610,12 +1263,20 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 4a951c77-fbbf-4c6f-b1d1-9a24733c0ed6
+    - kana: "\u304D\u308B"
+      kanji: "\u7740\u308B"
+      type: 1
+      meaningFull: to wear (in modern Japanese, from the shoulders down); to wear;
+        to put on; to bear (guilt, etc.); to bear
+      meaning:
+      - to wear (in modern Japanese
+      - from the shoulders down)
+      - to wear
+      - to put on
+      - to bear (guilt
+      - etc.)
+      - to bear
+      guid: 91803420-4bef-4440-9b13-d86b14083005
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -626,12 +1287,30 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u304F\u3082\u308B"
+      kanji: "\u66C7\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: e6f70932-5104-4a69-81d8-23964bc803c1
+      meaningFull: to get cloudy; to cloud over; to become overcast; to cloud up;
+        to fog up; to mist up; to become dim; to be gloomy; to be clouded (expression);
+        to be clouded; to be downcast; to look slightly downward (of a noh mask;
+        indicating sadness, grief, etc.)
+      meaning:
+      - to get cloudy
+      - to cloud over
+      - to become overcast
+      - to cloud up
+      - to fog up
+      - to mist up
+      - to become dim
+      - to be gloomy
+      - to be clouded (expression)
+      - to be clouded
+      - to be downcast
+      - to look slightly downward (of a noh mask
+      - indicating sadness
+      - grief
+      - etc.)
+      guid: af43e668-eb93-4b82-8f8b-7429cd7da608
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -642,12 +1321,30 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: e503a5b1-57c6-4fd5-9aa9-ee015e80119a
+    - kana: "\u304F\u308B"
+      kanji: "\u6765\u308B"
+      type: 2
+      meaningFull: to come (spatially or temporally); to come; to approach; to arrive;
+        to come back; to do ... and come back; to come to be; to become; to get;
+        to grow; to continue; to come from; to be caused by; to derive from; to come
+        to
+      meaning:
+      - to come (spatially or temporally)
+      - to come
+      - to approach
+      - to arrive
+      - to come back
+      - to do ... and come back
+      - to come to be
+      - to become
+      - to get
+      - to grow
+      - to continue
+      - to come from
+      - to be caused by
+      - to derive from
+      - to come to
+      guid: 422dba73-1949-4b47-adfd-8f83e0842281
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -658,12 +1355,20 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3051\u3059"
+      kanji: "\u6D88\u3059"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 05ccec39-a823-4680-949c-43161e969792
+      meaningFull: to erase; to delete; to cross out; to turn off power; to extinguish;
+        to put out; to bump off
+      meaning:
+      - to erase
+      - to delete
+      - to cross out
+      - to turn off power
+      - to extinguish
+      - to put out
+      - to bump off
+      guid: 517b00c8-b0ed-43a0-b6f2-b4579fe2f8a9
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -674,12 +1379,13 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: cde9ad2f-cd78-4d60-98ed-8ce70f7aebeb
+    - kana: "\u3051\u3063\u3053\u3093"
+      kanji: "\u7D50\u5A5A"
+      type: 3
+      meaningFull: marriage
+      meaning:
+      - marriage
+      guid: c76a62ee-9e7c-4004-92d5-387ffecf6836
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -690,12 +1396,14 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: c5f68739-a330-44c5-8905-b1ac80091c40
+    - kana: "\u3053\u305F\u3048\u308B"
+      kanji: "\u7B54\u3048\u308B"
+      type: 1
+      meaningFull: to answer; to reply
+      meaning:
+      - to answer
+      - to reply
+      guid: a9c616eb-2ea4-4626-98fa-5760ab2892e7
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -706,12 +1414,16 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 97c19e15-4979-4ba7-9915-6f91ad1cea1a
+    - kana: "\u30B3\u30D4\u30FC"
+      kanji: "\u30B3\u30D4\u30FC"
+      type: 3
+      meaningFull: copy; photocopy; blurb on a book jacket; catch copy
+      meaning:
+      - copy
+      - photocopy
+      - blurb on a book jacket
+      - catch copy
+      guid: b41909a9-0d22-4358-b43c-9e8ac681d0a2
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -722,12 +1434,18 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3053\u307E\u308B"
+      kanji: "\u56F0\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 84133749-c3e5-4c53-aec8-c707e8488822
+      meaningFull: to be troubled; to be worried; to be bothered; to be embarrassed;
+        to be stumped
+      meaning:
+      - to be troubled
+      - to be worried
+      - to be bothered
+      - to be embarrassed
+      - to be stumped
+      guid: 6c3da43a-d7a6-442d-895f-379dea04f614
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -738,12 +1456,13 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3055\u304F"
+      kanji: "\u54B2\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: b77aedad-c708-4be5-ae5b-f0ba7ed85f49
+      meaningFull: to bloom
+      meaning:
+      - to bloom
+      guid: f21055cf-b05c-475a-885c-425199dd1c39
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -754,12 +1473,64 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3055\u3059"
+      kanji: "\u5DEE\u3059"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: c8db84e1-2b7f-407b-8373-08b8a5abf74c
+      meaningFull: to shine; to be visible; to be tinged with; to rise (of water
+        levels); to rise; to flow in; to be felt; to come over one; to hold up (an
+        umbrella, etc.); to hold up; to put up; to raise; to extend one's arm straight
+        ahead (in dance); to extend one's arm straight ahead; to insert; to put in;
+        to wear (a sword) in one's belt; to wear in one's belt; to wear at one's
+        side; to carry under one's arm; to insert one's arm under an opponent's arm;
+        to pole (a boat); to pole; to pour; to add (liquid); to add; to serve (drinks);
+        to serve; to put on (lipstick, etc.); to put on; to apply; to colour; to
+        dye; to light (a fire); to light; to burn; to shut; to close; to lock; to
+        fasten; to stop in the midst of; to leave undone
+      meaning:
+      - to shine
+      - to be visible
+      - to be tinged with
+      - to rise (of water levels)
+      - to rise
+      - to flow in
+      - to be felt
+      - to come over one
+      - to hold up (an umbrella
+      - etc.)
+      - to hold up
+      - to put up
+      - to raise
+      - to extend one's arm straight ahead (in dance)
+      - to extend one's arm straight ahead
+      - to insert
+      - to put in
+      - to wear (a sword) in one's belt
+      - to wear in one's belt
+      - to wear at one's side
+      - to carry under one's arm
+      - to insert one's arm under an opponent's arm
+      - to pole (a boat)
+      - to pole
+      - to pour
+      - to add (liquid)
+      - to add
+      - to serve (drinks)
+      - to serve
+      - to put on (lipstick
+      - to put on
+      - to apply
+      - to colour
+      - to dye
+      - to light (a fire)
+      - to light
+      - to burn
+      - to shut
+      - to close
+      - to lock
+      - to fasten
+      - to stop in the midst of
+      - to leave undone
+      guid: a9bc3db1-04e7-4afd-807c-507b59c3edfa
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -770,12 +1541,14 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: e9a0c482-e9ea-432a-8e11-e11bd315fd91
+    - kana: "\u3055\u3093\u307D"
+      kanji: "\u6563\u6B69"
+      type: 3
+      meaningFull: walk; stroll
+      meaning:
+      - walk
+      - stroll
+      guid: fe4b4958-a473-47c0-9de1-3d459355673f
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -786,12 +1559,15 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 06ebf3b1-7408-4df9-8e77-399ee6e2d210
+    - kana: "\u3057\u3064\u3082\u3093"
+      kanji: "\u8CEA\u554F"
+      type: 3
+      meaningFull: question; inquiry; enquiry
+      meaning:
+      - question
+      - inquiry
+      - enquiry
+      guid: 99fd39d5-3cbf-4aaa-a31d-e6ceb13f9832
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -802,12 +1578,20 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3057\u306C"
+      kanji: "\u6B7B\u306C"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 8890ef77-7f97-4438-bae7-e961f511402e
+      meaningFull: to die; to pass away; to lose spirit; to lose vigor; to look dead;
+        to cease; to stop
+      meaning:
+      - to die
+      - to pass away
+      - to lose spirit
+      - to lose vigor
+      - to look dead
+      - to cease
+      - to stop
+      guid: 0da81163-467e-455d-a8ec-56aeb264922c
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -818,12 +1602,27 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3057\u307E\u308B"
+      kanji: "\u9589\u307E\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: fab9c1dd-1dd8-47b5-8860-3fe7f0015cc7
+      meaningFull: to be shut; to close; to be closed; to be firm (of a body, face,
+        etc.); to be firm; to be well-knit; to be locked; to tighten; to be tightened;
+        to become sober; to become tense
+      meaning:
+      - to be shut
+      - to close
+      - to be closed
+      - to be firm (of a body
+      - face
+      - etc.)
+      - to be firm
+      - to be well-knit
+      - to be locked
+      - to tighten
+      - to be tightened
+      - to become sober
+      - to become tense
+      guid: 36aa8351-dc67-46fb-9d4b-5e5cec01b44c
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -834,12 +1633,32 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: fb7546ec-f7a4-49e8-a4aa-1ddbde8712f1
+    - kana: "\u3057\u3081\u308B"
+      kanji: "\u7DE0\u3081\u308B"
+      type: 1
+      meaningFull: to tie; to fasten; to tighten; to wear (necktie, belt); to wear;
+        to put on; to total; to sum; to be strict with; to economize; to economise;
+        to cut down on; to salt; to marinate; to pickle; to make sushi adding a mixture
+        of vinegar and salt
+      meaning:
+      - to tie
+      - to fasten
+      - to tighten
+      - to wear (necktie
+      - belt)
+      - to wear
+      - to put on
+      - to total
+      - to sum
+      - to be strict with
+      - to economize
+      - to economise
+      - to cut down on
+      - to salt
+      - to marinate
+      - to pickle
+      - to make sushi adding a mixture of vinegar and salt
+      guid: 0b86aff1-f9eb-4ce9-9e8a-8a29fd774742
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -850,12 +1669,14 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 7551beb9-4dbd-454a-b0a0-c9375c80ec23
+    - kana: "\u3057\u3081\u308B"
+      kanji: "\u9589\u3081\u308B"
+      type: 1
+      meaningFull: to close; to shut
+      meaning:
+      - to close
+      - to shut
+      guid: 85ab867e-0d8d-4040-bc81-60d26bd0724e
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -866,12 +1687,35 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3057\u308B"
+      kanji: "\u77E5\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 4bc8f3b4-850a-41de-9449-5ab0c98104d9
+      meaningFull: to be aware of; to know; to be conscious of; to cognize; to cognise;
+        to notice; to feel; to understand; to comprehend; to grasp; to remember;
+        to be acquainted with (a procedure); to be acquainted with; to experience;
+        to go through; to learn; to be acquainted with (a person); to be acquainted
+        with; to get to know; to concern
+      meaning:
+      - to be aware of
+      - to know
+      - to be conscious of
+      - to cognize
+      - to cognise
+      - to notice
+      - to feel
+      - to understand
+      - to comprehend
+      - to grasp
+      - to remember
+      - to be acquainted with (a procedure)
+      - to be acquainted with
+      - to experience
+      - to go through
+      - to learn
+      - to be acquainted with (a person)
+      - to get to know
+      - to concern
+      guid: b235f7d4-6c7a-4cf5-90f1-6359b72d7e0e
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -882,12 +1726,22 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3059\u3046"
+      kanji: "\u5438\u3046"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 178196c0-a834-4f24-86c3-b279a6574a7b
+      meaningFull: to smoke; to breathe in; to inhale; to suck; to sip; to slurp;
+        to absorb; to soak up; to kiss
+      meaning:
+      - to smoke
+      - to breathe in
+      - to inhale
+      - to suck
+      - to sip
+      - to slurp
+      - to absorb
+      - to soak up
+      - to kiss
+      guid: 061a3243-5a99-40f8-abfa-8d1bf7fc2ad8
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -898,12 +1752,19 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3059\u3080"
+      kanji: "\u4F4F\u3080"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: e88ee28b-b910-408d-b693-ec5af2b595ab
+      meaningFull: to live (of humans); to live; to reside; to inhabit; to dwell;
+        to abide
+      meaning:
+      - to live (of humans)
+      - to live
+      - to reside
+      - to inhabit
+      - to dwell
+      - to abide
+      guid: 4c431948-35cd-4b42-b4bd-7f9cb809b1a5
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -914,12 +1775,73 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 902ad7f6-1aa3-4c22-8db2-b15410805032
+    - kana: "\u3059\u308B"
+      kanji: "\u70BA\u308B"
+      type: 3
+      meaningFull: to do; to cause to become; to make (into); to make; to turn (into);
+        to turn; to serve as; to act as; to work as; to wear (clothes, a facial expression,
+        etc.); to wear; to judge as being; to view as being; to think of as; to treat
+        as; to use as; to decide on; to choose; to be sensed (of a smell, noise,
+        etc.); to be sensed; to be (in a state, condition, etc.); to be; to be worth;
+        to cost; to pass (of time); to pass; to elapse; to place, or raise, person
+        A to a post or status B; to transform A to B; to make A into B; to exchange
+        A for B; to make use of A for B; to view A as B; to handle A as if it were
+        B; to feel A about B; verbalizing suffix (applies to nouns noted in this
+        dictionary with the part of speech "vs"); verbalizing suffix; creates a humble
+        verb (after a noun prefixed with "o" or "go"); creates a humble verb; to
+        be just about to; to be just starting to; to try to; to attempt to
+      meaning:
+      - to do
+      - to cause to become
+      - to make (into)
+      - to make
+      - to turn (into)
+      - to turn
+      - to serve as
+      - to act as
+      - to work as
+      - to wear (clothes
+      - a facial expression
+      - etc.)
+      - to wear
+      - to judge as being
+      - to view as being
+      - to think of as
+      - to treat as
+      - to use as
+      - to decide on
+      - to choose
+      - to be sensed (of a smell
+      - noise
+      - to be sensed
+      - to be (in a state
+      - condition
+      - to be
+      - to be worth
+      - to cost
+      - to pass (of time)
+      - to pass
+      - to elapse
+      - to place
+      - or raise
+      - person A to a post or status B
+      - to transform A to B
+      - to make A into B
+      - to exchange A for B
+      - to make use of A for B
+      - to view A as B
+      - to handle A as if it were B
+      - to feel A about B
+      - verbalizing suffix (applies to nouns noted in this dictionary with the part
+        of speech "vs")
+      - verbalizing suffix
+      - creates a humble verb (after a noun prefixed with "o" or "go")
+      - creates a humble verb
+      - to be just about to
+      - to be just starting to
+      - to try to
+      - to attempt to
+      guid: e3842808-490d-4dbf-9bc1-cff85b37dbc9
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -930,12 +1852,19 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3059\u308F\u308B"
+      kanji: "\u5EA7\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: f06f5fc8-2f08-4301-8352-cb6802eb3649
+      meaningFull: to sit; to squat; to assume (a position); to assume; to hold steady;
+        to hold still
+      meaning:
+      - to sit
+      - to squat
+      - to assume (a position)
+      - to assume
+      - to hold steady
+      - to hold still
+      guid: 6502b5f4-7af6-4fd5-ae17-2315920e6785
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -946,12 +1875,14 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 419cbcbe-4de5-4cbe-a3d8-52e5c743835c
+    - kana: "\u305B\u3093\u305F\u304F"
+      kanji: "\u6D17\u6FEF"
+      type: 3
+      meaningFull: washing; laundry
+      meaning:
+      - washing
+      - laundry
+      guid: 4f7e2355-0554-4686-871f-051c6a22c11c
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -962,12 +1893,16 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: a98d7a77-badc-48f2-b082-af01be8c3577
+    - kana: "\u305D\u3046\u3058"
+      kanji: "\u6383\u9664"
+      type: 3
+      meaningFull: cleaning; sweeping; dusting; scrubbing
+      meaning:
+      - cleaning
+      - sweeping
+      - dusting
+      - scrubbing
+      guid: b77710e3-5880-46e9-aece-aa491e70ee20
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -978,12 +1913,34 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3060\u3059"
+      kanji: "\u51FA\u3059"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: c5f7b875-f282-4baf-81d6-ef20be828ee5
+      meaningFull: to take out; to get out; to put out; to reveal; to show; to submit;
+        to turn in; to publish; to make public; to send; to produce (a sound); to
+        produce; to start (fire); to start; to serve (food); to serve; to begin;
+        to start to; to burst into
+      meaning:
+      - to take out
+      - to get out
+      - to put out
+      - to reveal
+      - to show
+      - to submit
+      - to turn in
+      - to publish
+      - to make public
+      - to send
+      - to produce (a sound)
+      - to produce
+      - to start (fire)
+      - to start
+      - to serve (food)
+      - to serve
+      - to begin
+      - to start to
+      - to burst into
+      guid: 62df9379-1c99-4665-90e2-175a2d6510b1
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -994,12 +1951,21 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u305F\u3064"
+      kanji: "\u7ACB\u3064"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 8b21ce79-255c-4951-a313-f5f34b1d642f
+      meaningFull: to stand; to rise; to stand up; to find oneself; to depart (on
+        a plane, train, etc.); to depart
+      meaning:
+      - to stand
+      - to rise
+      - to stand up
+      - to find oneself
+      - to depart (on a plane
+      - train
+      - etc.)
+      - to depart
+      guid: 80f007b5-69d6-44d4-9799-44255d118f16
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1010,12 +1976,21 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u305F\u306E\u3080"
+      kanji: "\u983C\u3080"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: a9ed7662-0b05-4615-8b61-f3fa15288c6c
+      meaningFull: to request; to beg; to ask; to call; to order; to reserve; to
+        entrust to; to rely on
+      meaning:
+      - to request
+      - to beg
+      - to ask
+      - to call
+      - to order
+      - to reserve
+      - to entrust to
+      - to rely on
+      guid: c6822c17-7b31-4df2-b761-f7821d2491b2
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1026,12 +2001,16 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 5ccbd3d2-ad0f-4b5f-bf99-88dea95be0bc
+    - kana: "\u305F\u3079\u308B"
+      kanji: "\u98DF\u3079\u308B"
+      type: 1
+      meaningFull: to eat; to live on; to live off; to subsist on
+      meaning:
+      - to eat
+      - to live on
+      - to live off
+      - to subsist on
+      guid: caa5ee15-d1f8-4554-bea7-ddb0eae12558
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1042,12 +2021,29 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3061\u304C\u3046"
+      kanji: "\u9055\u3046"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 768eeaf5-7c81-4100-9145-c7346b84b00f
+      meaningFull: "to differ (from); to differ; to vary; to not be in the usual
+        condition; to not match the correct (answer, etc.); to not match the correct;
+        to be different from promised; isn't it?; wasn't it? \u3061\u304C\u3046:
+        ichi1, news2, nf; \u9055\u3046: ichi1, news2, nf27"
+      meaning:
+      - to differ (from)
+      - to differ
+      - to vary
+      - to not be in the usual condition
+      - to not match the correct (answer
+      - etc.)
+      - to not match the correct
+      - to be different from promised
+      - isn't it?
+      - "wasn't it? \u3061\u304C\u3046: ichi1"
+      - news2
+      - nf
+      - "\u9055\u3046: ichi1"
+      - nf27
+      guid: 356d9a41-15e5-4731-aa28-ec9689f5f2ac
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1058,12 +2054,34 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3064\u304B\u3046"
+      kanji: "\u4F7F\u3046"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: aa7ed900-18e1-4146-a541-0644f791a035
+      meaningFull: to use (a thing, method, etc.); to use; to make use of; to put
+        to use; to use (a person, animal, puppet, etc.); to use; to employ; to handle;
+        to manage; to manipulate; to use (time, money, etc.); to use; to spend; to
+        consume; to use (language); to use; to speak
+      meaning:
+      - to use (a thing
+      - method
+      - etc.)
+      - to use
+      - to make use of
+      - to put to use
+      - to use (a person
+      - animal
+      - puppet
+      - to employ
+      - to handle
+      - to manage
+      - to manipulate
+      - to use (time
+      - money
+      - to spend
+      - to consume
+      - to use (language)
+      - to speak
+      guid: dc38573b-143a-494c-a5fc-97221af9a426
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1074,12 +2092,16 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 4e515c86-5e4f-4f00-82c5-1c7b278ab5c1
+    - kana: "\u3064\u304B\u308C\u308B"
+      kanji: "\u75B2\u308C\u308B"
+      type: 1
+      meaningFull: to get tired; to tire; to be worn out; to starve
+      meaning:
+      - to get tired
+      - to tire
+      - to be worn out
+      - to starve
+      guid: 6c346fef-3538-4d71-a53a-462d6af90172
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1090,12 +2112,16 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3064\u304F"
+      kanji: "\u7740\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: ebcbee2d-bb9c-4e3e-a395-1fe1859add45
+      meaningFull: to arrive at; to reach; to sit on; to sit at
+      meaning:
+      - to arrive at
+      - to reach
+      - to sit on
+      - to sit at
+      guid: 82974ae2-01a6-409f-b2a4-a53d9d36d270
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1106,12 +2132,59 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3064\u304F\u308B"
+      kanji: "\u4F5C\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: d88cbb5b-cb61-4d07-abea-55f52a4c98eb
+      meaningFull: to make; to produce; to manufacture; to build; to construct; to
+        prepare (food); to prepare; to brew (alcohol); to brew; to raise; to grow;
+        to cultivate; to train; to till; to draw up (a document); to draw up; to
+        make out; to prepare; to write; to create (an artistic work, etc.); to create;
+        to compose; to coin (a phrase); to coin; to organize; to organise; to establish;
+        to found; to have (a child); to have; to make up (one's face, etc.); to make
+        up; to fabricate (an excuse, etc.); to fabricate; to form (a line, etc.);
+        to form; to set (a record); to set; to commit (a sin, etc.); to commit
+      meaning:
+      - to make
+      - to produce
+      - to manufacture
+      - to build
+      - to construct
+      - to prepare (food)
+      - to prepare
+      - to brew (alcohol)
+      - to brew
+      - to raise
+      - to grow
+      - to cultivate
+      - to train
+      - to till
+      - to draw up (a document)
+      - to draw up
+      - to make out
+      - to write
+      - to create (an artistic work
+      - etc.)
+      - to create
+      - to compose
+      - to coin (a phrase)
+      - to coin
+      - to organize
+      - to organise
+      - to establish
+      - to found
+      - to have (a child)
+      - to have
+      - to make up (one's face
+      - to make up
+      - to fabricate (an excuse
+      - to fabricate
+      - to form (a line
+      - to form
+      - to set (a record)
+      - to set
+      - to commit (a sin
+      - to commit
+      guid: f84b26b5-4975-4832-8f3d-adb45462e41f
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1122,12 +2195,58 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 16758e43-ddb7-40d5-a715-14622dbd6ad2
+    - kana: "\u3064\u3051\u308B"
+      kanji: "\u4ED8\u3051\u308B"
+      type: 1
+      meaningFull: to attach; to join; to add; to append; to affix; to stick; to
+        glue; to fasten; to sew on; to apply (ointment); to apply; to furnish (a
+        house with); to furnish; to wear; to put on; to keep a diary; to make an
+        entry; to appraise; to set (a price); to set; to allot; to budget; to assign;
+        to bring alongside; to place (under guard or doctor); to place; to follow;
+        to shadow; to load; to give (courage to); to give; to keep (an eye on); to
+        keep; to establish (relations or understanding); to establish; to turn on
+        (light); to turn on; to produce flowers; to produce fruit
+      meaning:
+      - to attach
+      - to join
+      - to add
+      - to append
+      - to affix
+      - to stick
+      - to glue
+      - to fasten
+      - to sew on
+      - to apply (ointment)
+      - to apply
+      - to furnish (a house with)
+      - to furnish
+      - to wear
+      - to put on
+      - to keep a diary
+      - to make an entry
+      - to appraise
+      - to set (a price)
+      - to set
+      - to allot
+      - to budget
+      - to assign
+      - to bring alongside
+      - to place (under guard or doctor)
+      - to place
+      - to follow
+      - to shadow
+      - to load
+      - to give (courage to)
+      - to give
+      - to keep (an eye on)
+      - to keep
+      - to establish (relations or understanding)
+      - to establish
+      - to turn on (light)
+      - to turn on
+      - to produce flowers
+      - to produce fruit
+      guid: eedf8d82-9505-46a3-99d0-eb0555a7e400
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1138,12 +2257,29 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: a36a85bd-6d23-4b4b-80a2-6c94d3a4d91a
+    - kana: "\u3064\u3068\u3081\u308B"
+      kanji: "\u52E4\u3081\u308B"
+      type: 1
+      meaningFull: to work (for); to work; to be employed (at); to be employed; to
+        serve (in); to serve; to serve (as); to serve; to act (as); to act; to fill
+        (the position of); to fill; to play the role (of); to play the role; to conduct
+        a religious service
+      meaning:
+      - to work (for)
+      - to work
+      - to be employed (at)
+      - to be employed
+      - to serve (in)
+      - to serve
+      - to serve (as)
+      - to act (as)
+      - to act
+      - to fill (the position of)
+      - to fill
+      - to play the role (of)
+      - to play the role
+      - to conduct a religious service
+      guid: f7ff2aa8-1ff0-4331-8064-eee20cafe7a5
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1154,12 +2290,20 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: a61c0760-5849-42f2-afb7-9b9f0bc6cc60
+    - kana: "\u3067\u304B\u3051\u308B"
+      kanji: "\u51FA\u304B\u3051\u308B"
+      type: 1
+      meaningFull: to go out; to leave; to depart; to start; to set out; to be about
+        to leave; to be just going out
+      meaning:
+      - to go out
+      - to leave
+      - to depart
+      - to start
+      - to set out
+      - to be about to leave
+      - to be just going out
+      guid: 81e7e34c-5c77-450f-89a4-4bfc91386c4a
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1170,12 +2314,31 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 056ce965-0d39-48f7-819c-433e65ee3806
+    - kana: "\u3067\u304D\u308B"
+      kanji: "\u51FA\u6765\u308B"
+      type: 1
+      meaningFull: to be able (in a position) to do; to be able to do; to be up to
+        the task; to be ready; to be completed; to be made; to be built; to be good
+        at; to be permitted (to do); to be permitted; to become intimate; to take
+        up (with somebody); to take up; to grow; to be raised; to become pregnant
+      meaning:
+      - to be able (in a position) to do
+      - to be able to do
+      - to be up to the task
+      - to be ready
+      - to be completed
+      - to be made
+      - to be built
+      - to be good at
+      - to be permitted (to do)
+      - to be permitted
+      - to become intimate
+      - to take up (with somebody)
+      - to take up
+      - to grow
+      - to be raised
+      - to become pregnant
+      guid: fb2d5a55-5006-4e3d-a851-01b2480a03ec
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1186,12 +2349,13 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: f384292e-e733-4cfc-8eab-bb63c0a80c4c
+    - kana: "\u30C6\u30B9\u30C8"
+      kanji: "\u30C6\u30B9\u30C8"
+      type: 3
+      meaningFull: test
+      meaning:
+      - test
+      guid: 1e9a8bfa-493d-4173-98ef-9c527302a1a0
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1202,12 +2366,106 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: ff829adc-3170-4874-b17d-9fb78ddf74e1
+    - kana: "\u3067\u308B"
+      kanji: "\u51FA\u308B"
+      type: 1
+      meaningFull: to leave; to exit; to go out; to come out; to get out; to leave
+        (on a journey); to leave; to depart; to start out; to set out; to move forward;
+        to come to; to get to; to lead to; to reach; to appear; to emerge; to surface;
+        to come forth; to turn up; to be found; to be detected; to be discovered;
+        to be exposed; to show; to be exhibited; to be on display; to appear (in
+        print); to appear; to be published; to be announced; to be issued; to be
+        listed; to attend; to participate; to take part; to enter (an event); to
+        enter; to play in; to perform; to be stated; to be expressed; to come up;
+        to be brought up; to be raised; to sell; to exceed; to go over; to stick
+        out; to protrude; to break out; to occur; to start; to originate; to be produced;
+        to come from; to be derived from; to be given; to get; to receive; to be
+        offered; to be provided; to be presented; to be submitted; to be handed in;
+        to be turned in; to be paid; to answer (phone, door, etc.); to answer; to
+        assume (an attitude); to assume; to act; to behave; to pick up (speed, etc.);
+        to pick up; to gain; to flow; to run; to bleed; to graduate
+      meaning:
+      - to leave
+      - to exit
+      - to go out
+      - to come out
+      - to get out
+      - to leave (on a journey)
+      - to depart
+      - to start out
+      - to set out
+      - to move forward
+      - to come to
+      - to get to
+      - to lead to
+      - to reach
+      - to appear
+      - to emerge
+      - to surface
+      - to come forth
+      - to turn up
+      - to be found
+      - to be detected
+      - to be discovered
+      - to be exposed
+      - to show
+      - to be exhibited
+      - to be on display
+      - to appear (in print)
+      - to be published
+      - to be announced
+      - to be issued
+      - to be listed
+      - to attend
+      - to participate
+      - to take part
+      - to enter (an event)
+      - to enter
+      - to play in
+      - to perform
+      - to be stated
+      - to be expressed
+      - to come up
+      - to be brought up
+      - to be raised
+      - to sell
+      - to exceed
+      - to go over
+      - to stick out
+      - to protrude
+      - to break out
+      - to occur
+      - to start
+      - to originate
+      - to be produced
+      - to come from
+      - to be derived from
+      - to be given
+      - to get
+      - to receive
+      - to be offered
+      - to be provided
+      - to be presented
+      - to be submitted
+      - to be handed in
+      - to be turned in
+      - to be paid
+      - to answer (phone
+      - door
+      - etc.)
+      - to answer
+      - to assume (an attitude)
+      - to assume
+      - to act
+      - to behave
+      - to pick up (speed
+      - to pick up
+      - to gain
+      - to flow
+      - to run
+      - to bleed
+      - to graduate
+      guid: b246d7cd-5da5-443c-a235-896012285670
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1218,12 +2476,17 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 58b989d4-4194-489d-a9dc-19771f491108
+    - kana: "\u3067\u3093\u308F"
+      kanji: "\u96FB\u8A71"
+      type: 3
+      meaningFull: telephone call; phone call; telephone (device); telephone; phone
+      meaning:
+      - telephone call
+      - phone call
+      - telephone (device)
+      - telephone
+      - phone
+      guid: 36c57192-cc16-419a-883d-af21490cfd05
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1234,12 +2497,19 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3068\u3076"
+      kanji: "\u98DB\u3076"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 0c77264e-10b9-4564-ac5d-793ffb977cf0
+      meaningFull: to fly; to soar; to jump; to leap; to spring; to bound; to hop
+      meaning:
+      - to fly
+      - to soar
+      - to jump
+      - to leap
+      - to spring
+      - to bound
+      - to hop
+      guid: 7c460e2a-1a44-4b6a-ac87-7f8ecedcd974
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1250,12 +2520,26 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3068\u307E\u308B"
+      kanji: "\u6B62\u307E\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 0e4ee644-71d1-4d80-b0da-f5d44eeffa36
+      meaningFull: to stop (moving); to stop; to come to a stop; to stop (doing,
+        working, being supplied); to stop; to come to a halt; to cease; to be stopped;
+        to be suspended; to alight; to perch on
+      meaning:
+      - to stop (moving)
+      - to stop
+      - to come to a stop
+      - to stop (doing
+      - working
+      - being supplied)
+      - to come to a halt
+      - to cease
+      - to be stopped
+      - to be suspended
+      - to alight
+      - to perch on
+      guid: 617a55c4-d0db-4b16-8c59-8d99dbcfcfea
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1266,12 +2550,31 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3068\u308B"
+      kanji: "\u53D6\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: f98ebf40-1e45-4434-92ca-045c64be6363
+      meaningFull: to take; to pick up; to harvest; to earn; to win; to choose; to
+        steal; to eat; to have (a meal); to have; to remove (one's glasses, etc.);
+        to remove; to compete (in sumo, cards, etc.); to compete; to play
+      meaning:
+      - to take
+      - to pick up
+      - to harvest
+      - to earn
+      - to win
+      - to choose
+      - to steal
+      - to eat
+      - to have (a meal)
+      - to have
+      - to remove (one's glasses
+      - etc.)
+      - to remove
+      - to compete (in sumo
+      - cards
+      - to compete
+      - to play
+      guid: 64500295-7772-492a-aeba-40bb48c3a1b6
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1282,12 +2585,21 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3068\u308B"
+      kanji: "\u64AE\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: dc5c4ca0-54e9-4705-a8eb-8de6c92750a4
+      meaningFull: to take (a photo); to take; to record (video, audio, etc.); to
+        record; to make (a film); to make
+      meaning:
+      - to take (a photo)
+      - to take
+      - to record (video
+      - audio
+      - etc.)
+      - to record
+      - to make (a film)
+      - to make
+      guid: a0adad7a-e80c-40cd-9f8c-9adea236bb47
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1298,12 +2610,19 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306A\u304F"
+      kanji: "\u9CF4\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 599aecdc-1594-4f63-bdea-705f60eaf9b1
+      meaningFull: to sing (bird); to sing; to bark; to purr; to make sound (animal);
+        to make sound
+      meaning:
+      - to sing (bird)
+      - to sing
+      - to bark
+      - to purr
+      - to make sound (animal)
+      - to make sound
+      guid: a80512af-76f6-476a-ad30-c7f27504f7eb
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1314,12 +2633,19 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306A\u304F\u3059"
+      kanji: "\u7121\u304F\u3059"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 681af9bb-57f4-44d8-b502-f3f36425d519
+      meaningFull: to lose something; to get rid of; to lose someone (wife, child,
+        etc.); to lose someone
+      meaning:
+      - to lose something
+      - to get rid of
+      - to lose someone (wife
+      - child
+      - etc.)
+      - to lose someone
+      guid: a63bec5f-0570-416e-99db-499eed716822
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1330,12 +2656,20 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306A\u3089\u3046"
+      kanji: "\u7FD2\u3046"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 8df742d3-87d7-4176-9084-7f6fbe563bbf
+      meaningFull: to take lessons in; to be taught; to learn (from a teacher); to
+        learn; to study (under a teacher); to study; to get training in
+      meaning:
+      - to take lessons in
+      - to be taught
+      - to learn (from a teacher)
+      - to learn
+      - to study (under a teacher)
+      - to study
+      - to get training in
+      guid: f3494562-326a-486a-84d6-75956117cbbc
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1346,12 +2680,17 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306A\u3089\u3076"
+      kanji: "\u4E26\u3076"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: c29d06f9-8cfa-4b46-984c-032f44969775
+      meaningFull: to line up; to stand in a line; to rival; to match; to equal
+      meaning:
+      - to line up
+      - to stand in a line
+      - to rival
+      - to match
+      - to equal
+      guid: 609517e1-1e9c-4721-ab98-b7a535f772fe
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1362,12 +2701,25 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 84945ce0-5092-4c46-b720-45b03f3250d2
+    - kana: "\u306A\u3089\u3079\u308B"
+      kanji: "\u4E26\u3079\u308B"
+      type: 1
+      meaningFull: to line up; to set up; to arrange in a line; to enumerate; to
+        itemize; to be equal (to); to be equal; to compare well (with); to compare
+        well; to be as good (as); to be as good
+      meaning:
+      - to line up
+      - to set up
+      - to arrange in a line
+      - to enumerate
+      - to itemize
+      - to be equal (to)
+      - to be equal
+      - to compare well (with)
+      - to compare well
+      - to be as good (as)
+      - to be as good
+      guid: ac700dfc-e6eb-4718-8415-ee6d4e2b556e
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1378,12 +2730,33 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306A\u308B"
+      kanji: "\u6210\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: dfdfb19d-00dd-4e0d-8f6f-3593b4b3ecf4
+      meaningFull: to become; to get; to grow; to be; to reach; to attain; to result
+        in; to prove to be; to consist of; to be composed of; to succeed; to be complete;
+        to change into; to be exchanged for; to play a role; to be promoted; to do;
+        Naru
+      meaning:
+      - to become
+      - to get
+      - to grow
+      - to be
+      - to reach
+      - to attain
+      - to result in
+      - to prove to be
+      - to consist of
+      - to be composed of
+      - to succeed
+      - to be complete
+      - to change into
+      - to be exchanged for
+      - to play a role
+      - to be promoted
+      - to do
+      - Naru
+      guid: bde3d70c-f729-46da-a2ca-4de459b7fc3f
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1394,12 +2767,17 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306C\u3050"
+      kanji: "\u8131\u3050"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: f6fa01b1-b479-4f8e-a98d-0014a35f20da
+      meaningFull: to take off (clothes, shoes, etc.); to take off; to undress
+      meaning:
+      - to take off (clothes
+      - shoes
+      - etc.)
+      - to take off
+      - to undress
+      guid: 07fba938-79a0-425f-bdc1-0045da7fd44d
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1410,12 +2788,22 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 3009274e-94a8-48a9-bd41-c5725541c00a
+    - kana: "\u306D\u308B"
+      kanji: "\u5BDD\u308B"
+      type: 1
+      meaningFull: to lie down; to go to bed; to lie in bed; to sleep (lying down);
+        to sleep; to sleep (with someone, i.e. have intercourse); to sleep; to lie
+        idle
+      meaning:
+      - to lie down
+      - to go to bed
+      - to lie in bed
+      - to sleep (lying down)
+      - to sleep
+      - to sleep (with someone
+      - i.e. have intercourse)
+      - to lie idle
+      guid: 32e9f57f-5eb5-4203-b237-600f56293f9a
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1426,12 +2814,32 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306E\u307C\u308B"
+      kanji: "\u4E0A\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: a0370812-b4f4-4879-aa1f-a17053356e7f
+      meaningFull: to ascend; to go up; to climb; to ascend (as a natural process,
+        e.g. the sun); to ascend; to rise; to go to (the capital); to go to; to be
+        promoted; to add up to; to advance (in price); to advance; to swim up (a
+        river); to swim up; to sail up; to come up (on the agenda); to come up
+      meaning:
+      - to ascend
+      - to go up
+      - to climb
+      - to ascend (as a natural process
+      - e.g. the sun)
+      - to rise
+      - to go to (the capital)
+      - to go to
+      - to be promoted
+      - to add up to
+      - to advance (in price)
+      - to advance
+      - to swim up (a river)
+      - to swim up
+      - to sail up
+      - to come up (on the agenda)
+      - to come up
+      guid: b81ed928-31fd-44e2-804b-86ce466789e8
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1442,12 +2850,28 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306E\u3080"
+      kanji: "\u98F2\u3080"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 77df9d79-ba43-4e13-9f46-c5b9d6204cff
+      meaningFull: to drink; to gulp; to swallow; to take (medicine); to take; to
+        smoke (tobacco); to smoke; to engulf; to overwhelm; to keep down; to suppress;
+        to accept; to make light of; to conceal
+      meaning:
+      - to drink
+      - to gulp
+      - to swallow
+      - to take (medicine)
+      - to take
+      - to smoke (tobacco)
+      - to smoke
+      - to engulf
+      - to overwhelm
+      - to keep down
+      - to suppress
+      - to accept
+      - to make light of
+      - to conceal
+      guid: 4c22eb5d-7d85-43c1-a343-603588b45efc
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1458,12 +2882,54 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306E\u308B"
+      kanji: "\u4E57\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 75cff65e-7502-4109-94eb-d73869fdafb5
+      meaningFull: to get on (train, plane, bus, ship, etc.); to get on; to get in;
+        to board; to take; to embark; to get on; to step on; to jump on; to sit on;
+        to mount; to reach; to go over; to pass; to follow; to stay (on track); to
+        stay; to go with (the times, etc.); to go with; to take part; to participate;
+        to join; to get into the swing (and sing, dance, etc.); to get into the swing;
+        to be deceived; to be taken in; to be carried; to be spread; to be scattered;
+        to stick; to attach; to go on
+      meaning:
+      - to get on (train
+      - plane
+      - bus
+      - ship
+      - etc.)
+      - to get on
+      - to get in
+      - to board
+      - to take
+      - to embark
+      - to step on
+      - to jump on
+      - to sit on
+      - to mount
+      - to reach
+      - to go over
+      - to pass
+      - to follow
+      - to stay (on track)
+      - to stay
+      - to go with (the times
+      - to go with
+      - to take part
+      - to participate
+      - to join
+      - to get into the swing (and sing
+      - dance
+      - to get into the swing
+      - to be deceived
+      - to be taken in
+      - to be carried
+      - to be spread
+      - to be scattered
+      - to stick
+      - to attach
+      - to go on
+      guid: f0797650-9f2b-41be-9c00-ec1f0fec6c1f
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1474,12 +2940,27 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306F\u3044\u308B"
+      kanji: "\u5165\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 56347651-9cb7-4a99-94c6-f5e1f4d5655b
+      meaningFull: to enter; to go into; to break into; to join; to enroll; to contain;
+        to hold; to accommodate; to have (an income of); to have; to get; to receive;
+        to score
+      meaning:
+      - to enter
+      - to go into
+      - to break into
+      - to join
+      - to enroll
+      - to contain
+      - to hold
+      - to accommodate
+      - to have (an income of)
+      - to have
+      - to get
+      - to receive
+      - to score
+      guid: 2b6fc7a8-26db-4627-9735-330c7e3e35d2
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1490,12 +2971,24 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306F\u3058\u307E\u308B"
+      kanji: "\u59CB\u307E\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 4edb88e3-6a7e-4558-95ed-2f8b976f029e
+      meaningFull: to begin; to start; to commence; to happen (again); to happen;
+        to begin (anew); to begin; to date (from); to date; to originate (in); to
+        originate
+      meaning:
+      - to begin
+      - to start
+      - to commence
+      - to happen (again)
+      - to happen
+      - to begin (anew)
+      - to date (from)
+      - to date
+      - to originate (in)
+      - to originate
+      guid: baa6f7ad-a46c-454f-95e4-fa4263026f2a
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1506,12 +2999,29 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306F\u3057\u308B"
+      kanji: "\u8D70\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: d82382d9-4cae-4caa-b241-a518f8b95110
+      meaningFull: to run; to travel (movement of vehicles); to travel; to drive;
+        to hurry to; to retreat (from battle); to retreat; to take flight; to run
+        away from home; to elope; to tend heavily toward; to flash; to streak; to
+        shoot through
+      meaning:
+      - to run
+      - to travel (movement of vehicles)
+      - to travel
+      - to drive
+      - to hurry to
+      - to retreat (from battle)
+      - to retreat
+      - to take flight
+      - to run away from home
+      - to elope
+      - to tend heavily toward
+      - to flash
+      - to streak
+      - to shoot through
+      guid: 5b6ba973-82d3-416b-90d7-ece1e1b0e58a
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1522,12 +3032,28 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306F\u305F\u3089\u304F"
+      kanji: "\u50CD\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 3af50db4-6850-4cb6-b41f-bd42d779fc49
+      meaningFull: to work; to labor; to labour; to function; to operate; to be effective;
+        to come into play; to commit; to perpetrate; to do; to act; to practise;
+        to practice; to be conjugated
+      meaning:
+      - to work
+      - to labor
+      - to labour
+      - to function
+      - to operate
+      - to be effective
+      - to come into play
+      - to commit
+      - to perpetrate
+      - to do
+      - to act
+      - to practise
+      - to practice
+      - to be conjugated
+      guid: fb02d86e-78d1-48b7-8b07-b77ad6bd9f7b
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1538,12 +3064,25 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306F\u306A\u3059"
+      kanji: "\u8A71\u3059"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: b622c56f-643c-44d0-91fd-639a5ef57209
+      meaningFull: to talk; to speak; to converse; to chat; to tell; to explain;
+        to narrate; to mention; to describe; to discuss; to speak (a language); to
+        speak
+      meaning:
+      - to talk
+      - to speak
+      - to converse
+      - to chat
+      - to tell
+      - to explain
+      - to narrate
+      - to mention
+      - to describe
+      - to discuss
+      - to speak (a language)
+      guid: fab36a3f-8bfe-4c45-95ad-f88c0e526a2e
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1554,12 +3093,36 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u306F\u308B"
+      kanji: "\u5F35\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: e9377b2f-2c77-47fe-a7b0-ab5c05fa91b5
+      meaningFull: to stick; to paste; to affix; to stretch; to spread; to strain;
+        to tighten; to put up (tent); to put up; to form; to fill; to swell; to stick
+        out; to put; to slap; to be expensive; to keep a watch on; to be on the lookout;
+        to become one tile away from completion; to span; to generate
+      meaning:
+      - to stick
+      - to paste
+      - to affix
+      - to stretch
+      - to spread
+      - to strain
+      - to tighten
+      - to put up (tent)
+      - to put up
+      - to form
+      - to fill
+      - to swell
+      - to stick out
+      - to put
+      - to slap
+      - to be expensive
+      - to keep a watch on
+      - to be on the lookout
+      - to become one tile away from completion
+      - to span
+      - to generate
+      guid: ec5d62fb-d021-43cb-af60-d648364ddec5
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1570,12 +3133,21 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 3f1abf16-ad74-46ed-b092-9e948c4a5634
+    - kana: "\u306F\u308C\u308B"
+      kanji: "\u6674\u308C\u308B"
+      type: 1
+      meaningFull: to clear up; to clear away; to be sunny; to stop raining; to refresh;
+        to be cleared; to be dispelled; to be banished
+      meaning:
+      - to clear up
+      - to clear away
+      - to be sunny
+      - to stop raining
+      - to refresh
+      - to be cleared
+      - to be dispelled
+      - to be banished
+      guid: 0d8887b6-d757-4ec4-98da-b479386365f2
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1586,12 +3158,49 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3072\u304F"
+      kanji: "\u5F15\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 9cf49fc7-fe65-446c-98c5-75efe7093f4b
+      meaningFull: to pull; to draw (attention, etc.); to draw; to attract (interest,
+        etc.); to attract; to draw back; to draw (a card); to draw; to draw (plan,
+        line, etc.); to draw; to catch (cold); to catch; to play (string instr.);
+        to play; to look up; to consult; to haul; to pull (vehicles); to pull; to
+        subtract; to ebb; to fade; to descend (from); to descend; to inherit (a characteristic);
+        to inherit; to quote; to raise (as evidence); to raise; to lay (a cable);
+        to lay; to draw (a cable); to draw
+      meaning:
+      - to pull
+      - to draw (attention
+      - etc.)
+      - to draw
+      - to attract (interest
+      - to attract
+      - to draw back
+      - to draw (a card)
+      - to draw (plan
+      - line
+      - to catch (cold)
+      - to catch
+      - to play (string instr.)
+      - to play
+      - to look up
+      - to consult
+      - to haul
+      - to pull (vehicles)
+      - to subtract
+      - to ebb
+      - to fade
+      - to descend (from)
+      - to descend
+      - to inherit (a characteristic)
+      - to inherit
+      - to quote
+      - to raise (as evidence)
+      - to raise
+      - to lay (a cable)
+      - to lay
+      - to draw (a cable)
+      guid: a2117850-a384-4c7c-9009-572bd3433161
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1602,12 +3211,15 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3072\u304F"
+      kanji: "\u5F3E\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 036835d1-20b5-4bac-8308-96c7107304f6
+      meaningFull: to play (piano, guitar); to play
+      meaning:
+      - to play (piano
+      - guitar)
+      - to play
+      guid: 9ca4ac5f-2fd6-4ca0-8246-01f498eea0aa
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1618,12 +3230,24 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3075\u304F"
+      kanji: "\u5439\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 9795f588-26de-4135-8ae1-8a00505ebe61
+      meaningFull: to blow; to play a wind instrument; to emit; to spout; to whistle;
+        to laugh; to burst into laughter; to smelt; to mint; to brag; to talk big
+      meaning:
+      - to blow
+      - to play a wind instrument
+      - to emit
+      - to spout
+      - to whistle
+      - to laugh
+      - to burst into laughter
+      - to smelt
+      - to mint
+      - to brag
+      - to talk big
+      guid: 12154c1b-00f8-4865-9e2d-083559695756
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1634,12 +3258,14 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3075\u308B"
+      kanji: "\u964D\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: c8faa3da-9b29-4bb7-a257-47481e9ff73f
+      meaningFull: to precipitate; to fall
+      meaning:
+      - to precipitate
+      - to fall
+      guid: a93ff4c9-14ab-4f21-9ff1-fa29825347b4
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1650,12 +3276,16 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 1fccd5ce-dde3-49d9-8354-d12e3e349466
+    - kana: "\u3079\u3093\u304D\u3087\u3046"
+      kanji: "\u52C9\u5F37"
+      type: 3
+      meaningFull: study; diligence; discount; reduction
+      meaning:
+      - study
+      - diligence
+      - discount
+      - reduction
+      guid: ccbd2fad-3c2e-420c-a618-e1721f68b199
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1666,12 +3296,18 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: fcbd1af8-6369-4b76-b396-d57e7003b658
+    - kana: "\u30DD\u30B9\u30C8"
+      kanji: "\u30DD\u30B9\u30C8"
+      type: 3
+      meaningFull: post; position; postbox; mail box; pillar box; post-
+      meaning:
+      - post
+      - position
+      - postbox
+      - mail box
+      - pillar box
+      - post-
+      guid: a87bb9dc-a627-4104-acef-5de92add8f67
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1682,12 +3318,22 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u307E\u304C\u308B"
+      kanji: "\u66F2\u304C\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: c7994744-9654-4a50-8aba-ea945c5928a1
+      meaningFull: to bend; to curve; to warp; to wind; to twist; to turn; to be
+        awry; to be askew; to be crooked
+      meaning:
+      - to bend
+      - to curve
+      - to warp
+      - to wind
+      - to twist
+      - to turn
+      - to be awry
+      - to be askew
+      - to be crooked
+      guid: ea6de6a9-6bd1-45ab-9368-4225e75efdac
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1698,12 +3344,19 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u307E\u3064"
+      kanji: "\u5F85\u3064"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 161acbf4-8efd-44a6-8f53-cd48f0b71071
+      meaningFull: to wait; to await; to look forward to; to anticipate; to depend
+        on; to need
+      meaning:
+      - to wait
+      - to await
+      - to look forward to
+      - to anticipate
+      - to depend on
+      - to need
+      guid: 17b8dad6-ea11-4b75-9de7-3b70cb2fc0dd
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1714,12 +3367,17 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u307F\u304C\u304F"
+      kanji: "\u78E8\u304F"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 01b3e6ba-9ca3-44cb-a2b9-23b8faf9c7b5
+      meaningFull: to polish; to shine; to brush; to refine; to improve
+      meaning:
+      - to polish
+      - to shine
+      - to brush
+      - to refine
+      - to improve
+      guid: 52dc3ada-6448-4ef0-9292-271d3a7ebf19
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1730,12 +3388,14 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: de2241b0-4a6d-41af-af81-16e4026a5cd2
+    - kana: "\u307F\u305B\u308B"
+      kanji: "\u898B\u305B\u308B"
+      type: 1
+      meaningFull: to show; to display
+      meaning:
+      - to show
+      - to display
+      guid: 369087be-6ad9-4a9c-b400-1b32eba53014
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1746,12 +3406,32 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 18a3ca0f-a27c-4d08-b487-727177ab2494
+    - kana: "\u307F\u308B"
+      kanji: "\u898B\u308B"
+      type: 1
+      meaningFull: to see; to look; to watch; to view; to observe; to look over;
+        to look on; to assess; to examine; to judge; to look after; to keep an eye
+        on; to take care of; to try; to try out; to test; to see that; to find that
+      meaning:
+      - to see
+      - to look
+      - to watch
+      - to view
+      - to observe
+      - to look over
+      - to look on
+      - to assess
+      - to examine
+      - to judge
+      - to look after
+      - to keep an eye on
+      - to take care of
+      - to try
+      - to try out
+      - to test
+      - to see that
+      - to find that
+      guid: e2950bc9-cb25-4308-b10c-4aa3c4366bb1
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1762,12 +3442,28 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3082\u3064"
+      kanji: "\u6301\u3064"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 3e6d2411-0ccb-428b-a885-62806d81f949
+      meaningFull: to hold (in one's hand); to hold; to take; to carry; to possess;
+        to have; to own; to maintain; to keep; to last; to be durable; to survive;
+        to take charge of; to be in charge of
+      meaning:
+      - to hold (in one's hand)
+      - to hold
+      - to take
+      - to carry
+      - to possess
+      - to have
+      - to own
+      - to maintain
+      - to keep
+      - to last
+      - to be durable
+      - to survive
+      - to take charge of
+      - to be in charge of
+      guid: 0bf8c09e-a5f5-4935-9432-bac9e22883d3
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1778,12 +3474,25 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3084\u3059\u3080"
+      kanji: "\u4F11\u3080"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 2e4b06ff-a3a7-41f5-9779-92d85740567b
+      meaningFull: to be absent; to take a day off; to rest; to have a break; to
+        go to bed; to (lie down to) sleep; to sleep; to turn in; to retire; to stop
+        doing some ongoing activity for a time; to suspend business
+      meaning:
+      - to be absent
+      - to take a day off
+      - to rest
+      - to have a break
+      - to go to bed
+      - to (lie down to) sleep
+      - to sleep
+      - to turn in
+      - to retire
+      - to stop doing some ongoing activity for a time
+      - to suspend business
+      guid: 6da9da59-45d1-4100-8cfa-53d0a88f7ba4
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1794,12 +3503,15 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: 7e49f8c5-343c-4159-b522-0ad3b637a983
+    - kana: "\u3086\u3063\u304F\u308A"
+      kanji: "\u3086\u3063\u304F\u308A"
+      type: 3
+      meaningFull: slowly; at ease; restful
+      meaning:
+      - slowly
+      - at ease
+      - restful
+      guid: af629d96-6193-4184-a0ac-f66b926f1d15
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1810,12 +3522,29 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3088\u3076"
+      kanji: "\u547C\u3076"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 5be8c462-b811-4521-8b34-8f9a1bcb81bc
+      meaningFull: to call out (to); to call out; to call; to invoke; to summon (a
+        doctor, etc.); to summon; to invite; to designate; to name; to brand; to
+        garner (support, etc.); to garner; to gather; to take as one's wife
+      meaning:
+      - to call out (to)
+      - to call out
+      - to call
+      - to invoke
+      - to summon (a doctor
+      - etc.)
+      - to summon
+      - to invite
+      - to designate
+      - to name
+      - to brand
+      - to garner (support
+      - to garner
+      - to gather
+      - to take as one's wife
+      guid: c3f48c9f-19d1-4bab-9e3e-d096aac340ec
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1826,12 +3555,20 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u3088\u3080"
+      kanji: "\u8AAD\u3080"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: db6af7ff-cd32-47da-95da-cf32f79d9171
+      meaningFull: to read; to count; to guess; to predict; to read (someone's thoughts);
+        to read; to see; to divine
+      meaning:
+      - to read
+      - to count
+      - to guess
+      - to predict
+      - to read (someone's thoughts)
+      - to see
+      - to divine
+      guid: b6d66dd6-573d-49e4-a5e2-2c1bd32f24fc
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1842,12 +3579,20 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: d1e0ad58-d45a-4f3e-9413-9d959cf7fb3e
+    - kana: "\u308A\u3087\u3046\u308A"
+      kanji: "\u6599\u7406"
+      type: 3
+      meaningFull: cooking; cookery; cuisine; dealing with something; handling; administration;
+        management
+      meaning:
+      - cooking
+      - cookery
+      - cuisine
+      - dealing with something
+      - handling
+      - administration
+      - management
+      guid: 16908cf9-5f1a-45b5-aecb-721986461943
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1858,12 +3603,14 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: d79cc040-ea6a-4a8c-b16c-d55713b4ab88
+    - kana: "\u308A\u3087\u3053\u3046"
+      kanji: "\u65C5\u884C"
+      type: 3
+      meaningFull: travel; trip
+      meaning:
+      - travel
+      - trip
+      guid: 895a24e0-5e3d-4843-98ea-ff45a0d8fcad
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1874,12 +3621,14 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: dd759ea0-6e0b-4d6b-8707-fb7538895b8f
+    - kana: "\u308C\u3093\u3057\u3085\u3046"
+      kanji: "\u7DF4\u7FD2"
+      type: 3
+      meaningFull: practice; practising
+      meaning:
+      - practice
+      - practising
+      guid: fbc9a3cd-c87d-4f28-a1ed-cabd2c56b924
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1890,12 +3639,26 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u308F\u304B\u308B"
+      kanji: "\u5206\u304B\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: db32508c-1ec2-484c-be2f-2332d0a1bdd3
+      meaningFull: to understand; to comprehend; to grasp; to see; to get; to follow;
+        to become clear; to be known; to be discovered; to be realized; to be realised;
+        to be found out
+      meaning:
+      - to understand
+      - to comprehend
+      - to grasp
+      - to see
+      - to get
+      - to follow
+      - to become clear
+      - to be known
+      - to be discovered
+      - to be realized
+      - to be realised
+      - to be found out
+      guid: eef57330-c908-4fed-9a10-ccef3ff693b0
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1906,12 +3669,18 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
-      type: 0
-      meaningFull: 
-      meaning: []
-      guid: b6640e7e-56f2-4a1d-a79c-8892d47232de
+    - kana: "\u308F\u3059\u308C\u308B"
+      kanji: "\u5FD8\u308C\u308B"
+      type: 1
+      meaningFull: to forget; to leave carelessly; to be forgetful of; to forget
+        about; to forget (an article); to forget
+      meaning:
+      - to forget
+      - to leave carelessly
+      - to be forgetful of
+      - to forget about
+      - to forget (an article)
+      guid: b12e368e-b4e7-4089-a128-28645fbfa693
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1922,12 +3691,23 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u308F\u305F\u3059"
+      kanji: "\u6E21\u3059"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 2c552c74-1d07-493b-b6c8-d44276755f7b
+      meaningFull: to ferry across; to carry across; to traverse; to lay across;
+        to build across; to hand over; to hand in; to pass; to give; to transfer
+      meaning:
+      - to ferry across
+      - to carry across
+      - to traverse
+      - to lay across
+      - to build across
+      - to hand over
+      - to hand in
+      - to pass
+      - to give
+      - to transfer
+      guid: 36a6f099-abc0-481d-b158-64077377718c
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 
@@ -1938,12 +3718,19 @@ MonoBehaviour:
       politeVolitional: 
       casualVolitional: 
       teForm: 
-    - kana: 
-      kanji: 
+    - kana: "\u308F\u305F\u308B"
+      kanji: "\u6E21\u308B"
       type: 0
-      meaningFull: 
-      meaning: []
-      guid: 8941e2d3-c56a-43b3-8496-74b7a9fa3e42
+      meaningFull: to cross over; to go across; to extend; to cover; to range; to
+        span
+      meaning:
+      - to cross over
+      - to go across
+      - to extend
+      - to cover
+      - to range
+      - to span
+      guid: 10d7a689-6b68-4d14-8a1b-1d927b0a6e0c
       politeNonpast: 
       politePast: 
       politeNonPastNegative: 

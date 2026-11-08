@@ -16,16 +16,16 @@ VisualElement {
     align-self: center;
     -unity-font-style: bold;
     align-items: center;
-    -unity-font-definition: url("project://database/Assets/4.%20Art/Fonts/EnkaDotGothic24.ttf?fileID=12800000&guid=3f1f45f3d7e637345b21c4ce748e2d38&type=3#EnkaDotGothic24");
+    -unity-font-definition: url("project://database/Assets/4.%20Art/Fonts/DotGothic16-Regular.ttf?fileID=12800000&guid=b453dfa22041ecd42bd87cff4ce4aa64&type=3#DotGothic16-Regular");
 }
 
 .Paragraph {
     font-size: 50%;
-    -unity-font-definition: url("project://database/Assets/4.%20Art/Fonts/EnkaDotGothic24.ttf?fileID=12800000&guid=3f1f45f3d7e637345b21c4ce748e2d38&type=3#EnkaDotGothic24");
+    -unity-font-definition: url("project://database/Assets/4.%20Art/Fonts/DotGothic16-Regular.ttf?fileID=12800000&guid=b453dfa22041ecd42bd87cff4ce4aa64&type=3#DotGothic16-Regular");
 }
 
 .Subtitle {
-    -unity-font-definition: url("project://database/Assets/4.%20Art/Fonts/EnkaDotGothic24.ttf?fileID=12800000&guid=3f1f45f3d7e637345b21c4ce748e2d38&type=3#EnkaDotGothic24");
+    -unity-font-definition: url("project://database/Assets/4.%20Art/Fonts/DotGothic16-Regular.ttf?fileID=12800000&guid=b453dfa22041ecd42bd87cff4ce4aa64&type=3#DotGothic16-Regular");
 }
 
 .ToggleList {
@@ -62,7 +62,7 @@ VisualElement {
     margin-bottom: 0%;
     margin-left: 0%;
     transition-duration: 0.25s;
-    background-image: url("project://database/Assets/4.%20Art/Textures/UI/Dialogue/Buttons/20240709dragonButtonA-Sheet.png?fileID=1039246304&guid=94895963f3638ee4e8fc32d4ac3687d6&type=3#20240709dragonButtonA-Sheet_0");
+    background-image: url("project://database/Assets/4.%20Art/Textures/UI/Dialogue/Buttons/20240709dragonButtonA-Sheet.png?fileID=1039246304&guid=94895963f3638ee4e8fc32d4ac3687d6&type=3#orange button");
     -unity-slice-scale: 1px;
     -unity-slice-left: 0;
     -unity-slice-top: 0;

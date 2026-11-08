@@ -5,6 +5,7 @@ using Hieki.Search;
 using UnityEngine;
 using UnityEngine.UIElements;
 using NaughtyAttributes;
+using System.Linq;
 
 public static class QuizUtility
 {
@@ -301,15 +302,44 @@ public static class QuizUtility
         }
     }
 
-    public static Question GetVocabQuestion(ref WordLists wordlist)
+    public static Question GetVocabQuestion(ref WordLists wordlist, QuestionDifficulty questionDifficulty = QuestionDifficulty.Medium)
     {
         string questionType = "Meaning";
         string hint = "No hints are available for meaning questions";
 
-        IWord word = GetRandomWordByType(ref wordlist, GetRandomWordType(wordlist));
+        WordType type = GetRandomWordType(wordlist);
+        IWord word = GetRandomWordByType(ref wordlist, type);
+
         return new Question(questionType, word.Meaning, word, QuestionCategory.Vocab, hint, word.GUID);
     }
 
+    public static IEnumerable<IWord> GetWordListByType(WordLists wordlist, WordType wordType)
+    {
+        return wordType switch
+        {
+            WordType.Noun => wordlist.Nouns,
+            WordType.Verb => wordlist.Verbs,
+            WordType.Adjective => wordlist.Adjectives,
+            WordType.Adverb => wordlist.Adverbs,
+            WordType.Expression => wordlist.Expressions,
+            WordType.Reading => wordlist.Reading,
+            _ => Enumerable.Empty<IWord>()
+        };
+    }
+
+    public static int GetQuestionDifficulty(QuestionDifficulty difficulty)
+    {
+        return difficulty switch
+        {
+            QuestionDifficulty.New => -1,
+            QuestionDifficulty.Trivial => 0,
+            QuestionDifficulty.Easy => 25,
+            QuestionDifficulty.Medium => 50,
+            QuestionDifficulty.Hard => 75,
+            QuestionDifficulty.Impossible => 100,
+            _ => 50
+        };
+    }
 
     public static Question GetConjugationQuestion(WordType wordType, ConjugationType form, IWord word)
     {

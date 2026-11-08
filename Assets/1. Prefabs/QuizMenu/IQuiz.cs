@@ -8,6 +8,6 @@ public interface IQuiz
     public void SetInformationText(string text);
     public (bool, string) OnPressSubmit(string answer);
     public bool CheckAnswer(string userAnswer);
-    public void PrepareNextQuestion();
+    public void PrepareNextQuestion(QuestionDifficulty questionDifficulty = QuestionDifficulty.Medium);
     public void ToggleHint(bool hintVisible);
 }

@@ -1,0 +1,28 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/4.%20Art/UI/Styles/Style_PC.uss?fileID=7433441132597879392&amp;guid=2a25d9aa4030f1f42a59a0d75a5e1857&amp;type=3#Style_PC"/>
+    <Style src="project://database/Assets/4.%20Art/UI/Styles/Style_Mobile.uss?fileID=7433441132597879392&amp;guid=805c508d13f039945a26e84fa781adcf&amp;type=3#Style_Mobile"/>
+<ui:VisualElement name="Panel">
+
+    <!-- Scene elements -->
+    <ui:VisualElement name="SceneLayer">
+        <ui:VisualElement name="EnemyAnchor">
+            <ui:Image name="EnemySprite"
+                      scale-mode="ScaleToFit" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+    <!-- Flexible UI elements -->
+    <ui:VisualElement name="Enemy">
+        <!-- EnemyName and EnemyHP -->
+    </ui:VisualElement>
+
+    <ui:VisualElement name="DialogueBox">
+        <!-- BattleText -->
+    </ui:VisualElement>
+
+    <ui:VisualElement name="Player">
+        <!-- PlayerHPTitle and PlayerHP -->
+    </ui:VisualElement>
+
+</ui:VisualElement>
+</ui:UXML>

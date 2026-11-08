@@ -318,8 +318,20 @@ public class AdventureMode : MonoBehaviour
             quizMediator.CurrentQuiz.SetQuestionType(GetRandomQuestionType(config.questionTypes));
         }
 
-        quizMediator.CurrentQuiz.PrepareNextQuestion();
+        quizMediator.CurrentQuiz.PrepareNextQuestion(GetQuestionDifficulty());
         SetTestVisible(true);
+    }
+
+    private QuestionDifficulty GetQuestionDifficulty()
+    {
+        return currentMonster.MonsterDifficulty switch
+        {
+            MonsterDifficulty.Easy => QuestionDifficulty.Easy,
+            MonsterDifficulty.Medium => QuestionDifficulty.Medium,
+            MonsterDifficulty.Hard => QuestionDifficulty.Hard,
+            MonsterDifficulty.Boss => QuestionDifficulty.Hard,
+            _ => QuestionDifficulty.Medium
+        };
     }
 
     private void CombatRewards()

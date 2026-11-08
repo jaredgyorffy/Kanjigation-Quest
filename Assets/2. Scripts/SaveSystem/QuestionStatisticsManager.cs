@@ -1,12 +1,13 @@
+
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using UnityEngine;
 
 [Serializable]
-public class QuestionStatistics
+public class AnswerStatistics
 {
-    public string questionId;
     public int correctCount;
     public int incorrectCount;
 
@@ -23,13 +24,11 @@ public class QuestionStatistics
             ? (float)correctCount / TotalAttempts
             : 0f;
 
-    // Historical difficulty, from 0 to 100.
     public float BaseDifficulty =>
         TotalAttempts > 0
             ? (float)incorrectCount / TotalAttempts * 100f
             : 50f;
 
-    // Difficulty adjusted by recent performance.
     public int Difficulty
     {
         get
@@ -37,16 +36,12 @@ public class QuestionStatistics
             if (TotalAttempts == 0)
                 return 50;
 
-            float baseDifficulty = BaseDifficulty;
-
-            // Each consecutive correct answer reduces
-            // difficulty by 10 points.
-            float streakAdjustment =
+            float adjustment =
                 consecutiveIncorrect * 10f -
                 consecutiveCorrect * 10f;
 
             return Mathf.RoundToInt(Mathf.Clamp(
-                baseDifficulty + streakAdjustment,
+                BaseDifficulty + adjustment,
                 0f,
                 100f
             ));
@@ -59,8 +54,8 @@ public class QuestionStatistics
         {
             if (DateTime.TryParse(
                 lastEncounteredUtc,
-                System.Globalization.CultureInfo.InvariantCulture,
-                System.Globalization.DateTimeStyles.RoundtripKind,
+                CultureInfo.InvariantCulture,
+                DateTimeStyles.RoundtripKind,
                 out DateTime result))
             {
                 return result.ToUniversalTime();
@@ -69,6 +64,54 @@ public class QuestionStatistics
             return null;
         }
     }
+
+    public void RecordAnswer(bool correct)
+    {
+        if (correct)
+        {
+            correctCount++;
+            consecutiveCorrect++;
+            consecutiveIncorrect = 0;
+        }
+        else
+        {
+            incorrectCount++;
+            consecutiveIncorrect++;
+            consecutiveCorrect = 0;
+        }
+
+        lastEncounteredUtc =
+            DateTime.UtcNow.ToString("O");
+    }
+}
+
+[Serializable]
+public class QuestionStatistics
+{
+    public string questionId;
+
+    public AnswerStatistics meaning = new();
+    public AnswerStatistics reading = new();
+
+    public AnswerStatistics Get(QuestionCategory type)
+    {
+        return type switch
+        {
+            QuestionCategory.Vocab => meaning,
+            QuestionCategory.Reading => reading,
+            _ => throw new ArgumentOutOfRangeException(
+                nameof(type))
+        };
+    }
+
+    public int TotalAttempts =>
+        meaning.TotalAttempts + reading.TotalAttempts;
+
+    // Combined difficulty for the vocabulary word.
+    public int Difficulty =>
+        Mathf.RoundToInt(
+            (meaning.Difficulty + reading.Difficulty) / 2f
+        );
 }
 
 [Serializable]
@@ -85,21 +128,13 @@ public static class QuestionStatisticsManager
     private static string SavePath =>
         Path.Combine(
             Application.persistentDataPath,
-            "userData.json"
+            "question_statistics.json"
         );
-    
-    private static void LogPath()
-    {
-        Debug.Log(Path.Combine(
-            Application.persistentDataPath,
-            "userData.json"));
-    }
+
     private static void EnsureLoaded()
     {
-        if (statistics != null)
-            return;
-        LogPath();
-        Load();
+        if (statistics == null)
+            Load();
     }
 
     public static QuestionStatistics Get(string questionId)
@@ -123,21 +158,35 @@ public static class QuestionStatisticsManager
         return data;
     }
 
+    public static AnswerStatistics Get(
+        string questionId,
+        QuestionCategory type)
+    {
+        return Get(questionId).Get(type);
+    }
+
     public static void RecordAnswer(
         string questionId,
+        QuestionCategory type,
         bool correct)
     {
-        QuestionStatistics data = Get(questionId);
+        AnswerStatistics data = Get(questionId, type);
 
-        if (correct)
-            data.correctCount++;
-        else
-            data.incorrectCount++;
-
-        data.lastEncounteredUtc =
-            DateTime.UtcNow.ToString("O");
+        data.RecordAnswer(correct);
 
         Save();
+    }
+
+    public static int GetDifficulty(
+        string questionId,
+        QuestionCategory type)
+    {
+        return Get(questionId, type).Difficulty;
+    }
+
+    public static int GetDifficulty(string questionId)
+    {
+        return Get(questionId).Difficulty;
     }
 
     public static void Save()
@@ -185,6 +234,10 @@ public static class QuestionStatisticsManager
                     string.IsNullOrEmpty(data.questionId))
                     continue;
 
+                // Initialize missing data from older saves.
+                data.meaning ??= new AnswerStatistics();
+                data.reading ??= new AnswerStatistics();
+
                 statistics[data.questionId] = data;
             }
         }
@@ -194,6 +247,30 @@ public static class QuestionStatisticsManager
                 $"Failed to load question statistics: {e}"
             );
         }
+    }
+
+    public static void Reset(
+        string questionId,
+        QuestionCategory type)
+    {
+        QuestionStatistics data = Get(questionId);
+
+        switch (type)
+        {
+        case QuestionCategory.Vocab:
+            data.meaning = new AnswerStatistics();
+            break;
+
+        case QuestionCategory.Reading:
+            data.reading = new AnswerStatistics();
+            break;
+
+        default:
+            throw new ArgumentOutOfRangeException(
+                nameof(type));
+        }
+
+        Save();
     }
 
     public static void Reset(string questionId)

@@ -10,6 +10,7 @@ public class Monster
     public float MaxHP;
     public Color Tint;
     public MonsterType MonsterType;
+    public MonsterDifficulty MonsterDifficulty;
 }
 
 public enum MonsterType

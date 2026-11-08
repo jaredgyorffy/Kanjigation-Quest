@@ -14,7 +14,6 @@ public class QuizMenu : MonoBehaviour
     private TextField textField;
     private KanaRomajiTranslator textConverter;
     private VisualElement informationBox;
-    private VisualElement number;
 
     private VisualElement QuestionTextElement;
     private VisualElement QuestionImageElement;
@@ -61,7 +60,6 @@ public class QuizMenu : MonoBehaviour
         textField = quizMenuRoot.MQ<TextField>("TextField");
         submitButton = quizMenuRoot.MQ<Button>("Submit");
         submitButton.clicked += OnPressSubmit;
-        number = quizMenuRoot.MQ<VisualElement>("Number");
         QuestionTextElement = quizMenuRoot.MQ<VisualElement>("QuestionText");
         QuestionImageElement = quizMenuRoot.MQ<VisualElement>("QuestionImage");
         hintButton = quizMenuRoot.MQ<Button>("Hint");
@@ -202,11 +200,6 @@ public class QuizMenu : MonoBehaviour
         {
             OnPressSubmit();
         }
-    }
-
-    public void SetNumberVisible(bool visible)
-    {
-        number.visible = visible;
     }
 
     public void SetInformationText(string text)
