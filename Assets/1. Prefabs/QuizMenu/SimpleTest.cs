@@ -17,7 +17,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
 
     private bool confirmAnswer = false;
 
-    private bool StrictMode = false;
+    private bool PracticeMode = false;
     private bool useKanaKeyboard;
 
     public bool Initialized { get; private set; }
@@ -48,7 +48,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
         SetInformationText("");
         useKanaKeyboard = config.UseKanaKeyboard;
         quizMenu.SetKanaKeyboard(useKanaKeyboard);
-        StrictMode = config.Strictmode;
+        PracticeMode = config.PracticeMode;
     }
 
     public void SetInformationText(string text)
@@ -60,7 +60,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
     {
         ToggleHint(false);
 
-        if (shouldConfirmAnswer == false)
+        if (ShouldConfirmAnswer())
         {
             if (CheckAnswer(answer))
             {
@@ -112,7 +112,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
         return QuizUtility.GetAnswer(currentQuestion.Answers);
     }
 
-    private bool shouldConfirmAnswer => StrictMode || confirmAnswer ? true : false;
+    private bool ShouldConfirmAnswer() => PracticeMode && confirmAnswer == false;
 
     public void PrepareNextQuestion(QuestionDifficulty questionDifficulty = QuestionDifficulty.Medium)
     {
