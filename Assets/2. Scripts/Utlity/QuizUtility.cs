@@ -304,11 +304,16 @@ public static class QuizUtility
 
     public static Question GetVocabQuestion(ref WordLists wordlist, QuestionDifficulty questionDifficulty = QuestionDifficulty.Medium)
     {
+        Debug.Log(questionDifficulty);
         string questionType = "Meaning";
         string hint = "No hints are available for meaning questions";
 
         WordType type = GetRandomWordType(wordlist);
-        IWord word = GetRandomWordByType(ref wordlist, type);
+        IWord word = QuestionSelectionUtility.SelectWordByOptions(
+        GetWordListByType(wordlist, type),
+        QuestionCategory.Vocab,
+        QuestionSelectionUtility.GetOptionsByDifficulty(questionDifficulty)
+        );
 
         return new Question(questionType, word.Meaning, word, QuestionCategory.Vocab, hint, word.GUID);
     }

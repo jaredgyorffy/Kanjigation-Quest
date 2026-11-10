@@ -8,5 +8,4 @@ public enum QuestionDifficulty
     Medium,
     Hard,
     Impossible,
-    Leech,
 }

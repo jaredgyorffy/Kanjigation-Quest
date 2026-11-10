@@ -6,7 +6,6 @@ public class SimpleTest : MonoBehaviour, IQuiz
 {
     QuizMenu quizMenu;
     public event Action<bool, string> AnswerSubmitted;
-    public event Action NextQuestion;
 
     private QuestionType questionType;
     private Question currentQuestion;
@@ -18,6 +17,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
     private bool confirmAnswer = false;
 
     private bool PracticeMode = false;
+    private bool studyNewItems = false;
     private bool useKanaKeyboard;
 
     public bool Initialized { get; private set; }
@@ -49,6 +49,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
         useKanaKeyboard = config.UseKanaKeyboard;
         quizMenu.SetKanaKeyboard(useKanaKeyboard);
         PracticeMode = config.PracticeMode;
+        studyNewItems = config.StudyNewItems;
     }
 
     public void SetInformationText(string text)
@@ -82,7 +83,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
             {
                 SetInformationText("");
                 AnswerSubmitted?.Invoke(true, answer);
-                if (!string.IsNullOrEmpty(currentQuestion.GUID))
+                if (!PracticeMode && !string.IsNullOrEmpty(currentQuestion.GUID))
                 {
                     QuestionStatisticsManager.RecordAnswer(currentQuestion.GUID, QuestionCategory.Vocab, true);
                 }
@@ -93,7 +94,7 @@ public class SimpleTest : MonoBehaviour, IQuiz
             {
                 SetInformationText("");
                 AnswerSubmitted?.Invoke(false, "");
-                if (!string.IsNullOrEmpty(currentQuestion.GUID))
+                if (!PracticeMode && !string.IsNullOrEmpty(currentQuestion.GUID))
                 {
                     QuestionStatisticsManager.RecordAnswer(currentQuestion.GUID, QuestionCategory.Vocab, false);
                 }
@@ -116,7 +117,6 @@ public class SimpleTest : MonoBehaviour, IQuiz
 
     public void PrepareNextQuestion(QuestionDifficulty questionDifficulty = QuestionDifficulty.Medium)
     {
-        Debug.Log(questionDifficulty);
         askedQuestions.Add(currentQuestion);
         Question question = GetQuestion(questionDifficulty);
         currentQuestion = question;
@@ -201,7 +201,15 @@ public class SimpleTest : MonoBehaviour, IQuiz
 
     private Question GetVocabQuestion(QuestionDifficulty questionDifficulty = QuestionDifficulty.Medium)
     {
-        return QuizUtility.GetVocabQuestion(ref WordLists, questionDifficulty = QuestionDifficulty.Medium);
+        if (studyNewItems)
+        {
+            return QuizUtility.GetVocabQuestion(ref WordLists, QuestionDifficulty.New);
+        }
+        else
+        {
+            return QuizUtility.GetVocabQuestion(ref WordLists, questionDifficulty);
+        }
+            
     }
 
     private Question GetExpressionQuestion()
